@@ -92,18 +92,35 @@ const BookCollection = ({ className, searchQuery = "" }: BookCollectionProps) =>
         backgroundSize: 'auto',
       }}
     >
-      {/* Section Header */}
-      <div className="max-w-6xl mx-auto mb-12">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-          <span className="font-display text-sm tracking-[0.4em] text-muted-foreground uppercase">
-            Mi Colección
-          </span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-        </div>
-        <p className="text-center font-body text-lg text-muted-foreground italic">
-          "Un libro es un sueño que tienes en tus manos"
-        </p>
+{/* Sección de Encabezado con efecto de fondo traslúcido (Color #c2ae96) */}
+      <div className="max-w-6xl mx-auto mb-16 text-center"> 
+        
+        {/* Contenedor con fondo traslúcido usando #c2ae96 a 70% de opacidad. */}
+        <div className={cn(
+            "p-6 rounded-xl shadow-xl", 
+            "bg-[#c2ae96]/70" // <-- CLASE CLAVE MODIFICADA
+        )}> 
+            
+            {/* Título Principal */}
+            <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-primary/80 mb-6 animate-fade-in-up">
+                Mi Colección
+            </h1>
+
+            {/* Separador y Subtítulo */}
+            <div className="flex items-center gap-4 mb-4">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+              <span className="font-display text-xl tracking-[0.4em] text-primary uppercase">
+                Mi Colección
+              </span>
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+            </div>
+            
+            {/* Cita */}
+            <p className="text-center font-body text-lg text-muted-foreground italic mt-6">
+              "Un libro es un sueño que tienes en tus manos"
+            </p>
+
+        </div> 
       </div>
 
       {/* Books Grid */}

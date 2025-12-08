@@ -461,8 +461,8 @@ const sampleBooks: Book[] = [
     description: "So begins Kaikeyi’s story. The only daughter of the kingdom of Kekaya, she is raised on tales of the gods: how they churned the vast ocean to obtain the nectar of immortality, how they vanquish evil and ensure the land of Bharat prospers, and how they offer powerful boons to the devout and the wise. Yet she watches as her father unceremoniously banishes her mother, listens as her own worth is reduced to how great a marriage alliance she can secure. And when she calls upon the gods for help, they never seem to hear. Desperate for some measure of independence, she turns to the texts she once read with her mother and discovers a magic that is hers alone. With this power, Kaikeyi transforms herself from an overlooked princess into a warrior, diplomat, and most favored queen, determined to carve a better world for herself and the women around her. But as the evil from her childhood stories threatens the cosmic order, the path she has forged clashes with the destiny the gods have chosen for her family. And Kaikeyi must decide if resistance is worth the destruction it will wreak—and what legacy she intends to leave behind.",
     year: 2022,
     genre: "Fantasia, Fantasía Histórica ",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1nUp26wWgrRzlH8DoJ9NHSY7h1ZSWDCc7",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1vup_dS57jCKaXsEPWDv8qGC5l7dGdouN",
     onlineUrl: "",
   },
   {
@@ -474,8 +474,8 @@ const sampleBooks: Book[] = [
     description: "On a mountainside at the edge of the Kaigenese Empire live the most powerful warriors in the world, superhumans capable of raising the sea and wielding blades of ice. For hundreds of years, the fighters of the Kusanagi Peninsula have held the Empire's enemies at bay, earning their frozen spit of land the name 'The Sword of Kaigen.' Born into Kusanagi's legendary Matsuda family, fourteen-year-old Mamoru has always known his purpose: to master his family's fighting techniques and defend his homeland. But when an outsider arrives and pulls back the curtain on Kaigen's alleged age of peace, Mamoru realizes that he might not have much time to become the fighter he was bred to be. Worse, the empire he was bred to defend may stand on a foundation of lies. Misaki told herself that she left the passions of her youth behind when she married into the Matsuda house. Determined to be a good housewife and mother, she hid away her sword, along with everything from her days as a fighter in a faraway country. But with her growing son asking questions about the outside world, the threat of an impending invasion looming across the sea, and her frigid husband grating on her nerves, Misaki finds the fighter in her clawing its way back to the surface. When the winds of war reach their peninsula, will the Matsuda family have the strength to defend their empire? Or will they tear each other apart before the true enemies even reach their shores?",
     year: 2019,
     genre: "Fantasia, Fantasía Histórica ",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1d-U_LQLBdmPzPs4fbkJXb5n2ngrAsJNh",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1PEKCzra7IynLGy1ed5jDzRqHmP6NZ0p2",
     onlineUrl: "",
   },
   {

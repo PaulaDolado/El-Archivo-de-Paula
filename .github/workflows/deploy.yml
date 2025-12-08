@@ -1,0 +1,50 @@
+name: Deploy Vite App to GitHub Pages
+on:
+  push:
+    branches: ["main"] # Se ejecuta al hacer push a la rama principal
+  workflow_dispatch: # Permite ejecutarlo manualmente
+# Otorga permisos para leer contenido y escribir en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        # Descarga el código de tu repositorio
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        # Configura el entorno de Node.js (Vite requiere Node)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Usa la versión LTS, ajusta si es necesario
+
+      - name: Install dependencies
+        # Instala las dependencias del proyecto (node_modules)
+        run: npm install
+
+      - name: Build project
+        # Ejecuta el comando de compilación de Vite, que genera la carpeta 'dist'
+        # ¡Asegúrate de que 'base: "/El-Archivo-de-Paula/"' esté en tu vite.config.js!
+        run: npm run build
+
+      # --- Pasos de Despliegue de GitHub Pages ---
+
+      - name: Setup Pages
+        # Configura el entorno de GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        # Sube la carpeta 'dist' como el artefacto de despliegue
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' 
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        # Despliega el artefacto subido a GitHub Pages
+        uses: actions/deploy-pages@v4

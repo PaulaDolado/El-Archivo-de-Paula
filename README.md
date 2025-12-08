@@ -1,19 +1,14 @@
-# Welcome to your Lovable project
+# Bienvenido al proyecto del Archivo de Paula
 
 ## Project info
 
-**URL**: 
+**URL**: https://pauladolado.github.io/El-Archivo-de-Paula/
 
-## What technologies are used for this project?
+## Qué tecnologias se han utilizado para este proyecto?
 
-This project is built with:
-
+Este proyecto se ha construido con:
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
-
-# Start the development server with auto-reloading and an instant preview.
-npm run dev
-

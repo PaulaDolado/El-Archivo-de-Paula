@@ -100,7 +100,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
             {/* Saga (Solo si existe) */}
             {book.saga && (
                 <p className="text-xs text-gold/80 mt-0.5">
-                    Saga: **{book.saga}**
+                    Saga: {book.saga}
                 </p>
             )}
         </div>
@@ -140,8 +140,8 @@ const BookCard = ({ book, className }: BookCardProps) => {
                     
                     {/* Detalles adicionales */}
                     <div className="flex gap-4 text-xs text-muted-foreground">
-                        {book.year && <span>**Año:** {book.year}</span>}
-                        {book.genre && <span>**Género:** {book.genre}</span>}
+                        {book.year && <span>Año: {book.year}</span>}
+                        {book.genre && <span>Género: {book.genre}</span>}
                     </div>
 
                     <div className="w-full h-px bg-gold/20 my-4" />

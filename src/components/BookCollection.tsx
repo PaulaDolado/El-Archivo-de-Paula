@@ -526,8 +526,8 @@ const sampleBooks: Book[] = [
     description: "El inquisidor Glokta, convertido en un cínico tullido tras su paso por las cárceles de los enemigos de la Unión, es ahora a su vez un eficaz torturador capaz de extraer información de cualquiera. A su vez, el capitán Jezal dan Luthar no ha hecho otra cosa en su vida que desplumar a sus amigos jugando a las cartas y soñar con la gloria de vencer en el Certamen de esgrima. Pero se está fraguando una guerra, y en los campos de batalla del Norte la lucha se rige por normas mucho más sangrientas... Logen Nuevededos, infame bárbaro de pasado sangriento, acaba de perder a sus amigos y está decidido a abandonar sus tierras y dirigirse al Sur, pero los espíritus le advierten que le busca un Mago de los Viejos Tiempos... Sus historias se entrelazan en una fantasía negra repleta de acción y personajes memorables.",
     year: 2006,
     genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1UiFireBMSckyJhp8MR1B4HwzbnqIsjZs",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1YKtCaM85nbkkEdT9akr05JH0MukB3KSD",
     onlineUrl: "",
   },
   {
@@ -539,8 +539,8 @@ const sampleBooks: Book[] = [
     description: "El Superior Glokta tiene la misión de defender una ciudad sitiada por el ejército gurko y minada por la traición, además de descubrir qué ocurrió con su sucesor. Por su parte, los Hombres del Norte han cruzado la frontera y han entrado a sangre y fuego en el territorio de la Unión; para detenerlos no bastará con el ejército del Rey. A su vez, Bayaz, el Primero de los Magos, conduce a un heterogéneo grupo de aventureros en una peligrosa misión por las ruinas del pasado...",
     year: 2008,
     genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1jfC5iyBQhkkkp4oXhUeIvq-Yi9hga3dl",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1GeoetXhSJtaatFeQ_Djy50fdaNxJdk6e",
     onlineUrl: "",
   },
   {
@@ -552,8 +552,8 @@ const sampleBooks: Book[] = [
     description: "El rey de los hombres del Norte se mantiene, y solo hay un guerrero que le pueda detener: su viejo amigo y su enemigo más antiguo; ha llegado la hora de que el Sanguinario vuelva a casa... Glokta está librando una lucha secreta en la que nadie está seguro y nadie es de fiar. Y como sus días de guerrero están lejos, utiliza las armas que le quedan: chantaje, tortura... Jezal dan Luthar ha decidido que la gloria es demasiado dolorosa y prefiere una vida sencilla con la mujer a la que ama. Pero el amor también puede ser doloroso y la gloria tiene la desagradable costumbre de aferrarse a un hombre cuando menos la desea... El Rey de la Unión ha muerto, los campesinos se rebelan y los nobles luchan por su corona. Sólo el Primero de los Magos tiene un plan para salvar el mundo, pero esta vez hay riesgos. Y no hay un riesgo más terrible que romper la Primera Ley... ",
     year: 2008,
     genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=13a6Eh57z-FWvakQBRyFVyoV2ByVvHzhU",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1cEWVPPGNsfgQ90-85MWZpHqILDCsS4ni",
     onlineUrl: "",
   },
   {

@@ -487,8 +487,8 @@ const sampleBooks: Book[] = [
     description: "It was not his war. The galaxy remembers him as a hero: the man who burned every last alien Cielcin from the sky. They remember him as a monster: the devil who destroyed a sun, casually annihilating four billion human lives—even the Emperor himself—against Imperial orders.But Hadrian was not a hero. He was not a monster. He was not even a soldier. On the wrong planet, at the right time, for the best reasons, Hadrian Marlowe starts down a path that can only end in fire. He flees his father and a future as a torturer only to be left stranded on a strange, backwater world. Forced to fight as a gladiator and navigate the intrigues of a foreign planetary court, Hadrian must fight a war he did not start, for an Empire he does not love, against an enemy he will never understand.",
     year: 2018,
     genre: "Ciencia Ficción, Fantasía",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1lzF4EKkmaP6rQ4Pn-OReuYC-4l3iu4NM",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=115iBm4pxrzC6310oBD88bjCJNV9Tx73E",
     onlineUrl: "",
   },
   {
@@ -500,8 +500,8 @@ const sampleBooks: Book[] = [
     description: "Hadrian Marlowe is lost. For half a century, he has searched the farther suns for the lost planet of Vorgossos, hoping to discover a way to contact the elusive alien Cielcin. He has pursued false leads for years among the barbarian Normans as captain of a band of mercenaries, but Hadrian remains determined to make peace and bring an end to nearly four hundred years of war. Desperate to find answers, Hadrian must venture beyond the security of the Sollan Empire and among the Extrasolarians who dwell between the stars. There, he will face not only the aliens he has come to offer peace, but contend with creatures that once were human, with traitors in his midst, and with a meeting that will bring him face to face with no less than the oldest enemy of mankind. If he succeeds, he will usher in a peace unlike any in recorded history. If he fails, the galaxy will burn.",
     year: 2019,
     genre: "Ciencia Ficción, Fantasía",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1t-miD78E0HqQJ93rY_zvonCwsOAxXDcX",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1brcltxj_FGqrfy6Ae76lJPiq-RW7F8cu",
     onlineUrl: "",
   },
   {
@@ -513,8 +513,8 @@ const sampleBooks: Book[] = [
     description: "For almost a hundred years, Hadrian Marlowe has served the Empire in its war against the Cielcin, a vicious alien race bent on humanity’s destruction. Rumors of a new king amongst the Cielcin have reached the Imperial throne. This one is not like the others. It does not raid borderworld territories, preferring precise, strategic attacks on the humans’ Empire. To make matters worse, a cult of personality has formed around Hadrian, spurred on by legends of his having defied death itself. Men call him Halfmortal. Hadrian’s rise to prominence proves dangerous to himself and his team, as pressures within the Imperial government distrust or resent his new influence. Caught in the middle, Hadrian must contend with enemies before him—and behind. And above it all, there is the mystery of the Quiet. Hadrian did defy death. He did return. But the keys to the only place in the universe where Hadrian might find the answers he seeks lie in the hands of the Emperor himself....",
     year: 2020,
     genre: "Ciencia Ficción, Fantasía",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1wWcY87X55ahILiORdK18f3ZipFRN8hnT",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1v4fDh1dXxGMBe7KyMU0tpSqmR0osT8bi",
     onlineUrl: "",
   },
   {

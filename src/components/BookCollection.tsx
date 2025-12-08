@@ -22,8 +22,7 @@ const sampleBooks: Book[] = [
     id: "1",
     title: "Cien Años de Soledad",
     author: "Gabriel García Márquez",
-    cover: "",
-    year: 1967,
+    cover: "/src/assets/covers/reino-de-ladrones.jpg",
     genre: "Realismo Mágico"
   },
   {
@@ -31,7 +30,6 @@ const sampleBooks: Book[] = [
     title: "Don Quijote de la Mancha",
     author: "Miguel de Cervantes",
     cover: "",
-    year: 1605,
     genre: "Novela"
   },
   {
@@ -39,7 +37,6 @@ const sampleBooks: Book[] = [
     title: "La Casa de los Espíritus",
     author: "Isabel Allende",
     cover: "",
-    year: 1982,
     genre: "Realismo Mágico"
   },
   {
@@ -47,7 +44,6 @@ const sampleBooks: Book[] = [
     title: "Rayuela",
     author: "Julio Cortázar",
     cover: "",
-    year: 1963,
     genre: "Novela Experimental"
   },
   {
@@ -55,7 +51,6 @@ const sampleBooks: Book[] = [
     title: "Pedro Páramo",
     author: "Juan Rulfo",
     cover: "",
-    year: 1955,
     genre: "Realismo Mágico"
   },
   {
@@ -63,7 +58,49 @@ const sampleBooks: Book[] = [
     title: "Ficciones",
     author: "Jorge Luis Borges",
     cover: "",
-    year: 1944,
+    genre: "Cuentos"
+  },
+    {
+    id: "7",
+    title: "Cien Años de Soledad",
+    author: "Gabriel García Márquez",
+    cover: "",
+    genre: "Realismo Mágico"
+  },
+  {
+    id: "8",
+    title: "Don Quijote de la Mancha",
+    author: "Miguel de Cervantes",
+    cover: "",
+    year: 1605,
+    genre: "Novela"
+  },
+  {
+    id: "9",
+    title: "La Casa de los Espíritus",
+    author: "Isabel Allende",
+    cover: "",
+    genre: "Realismo Mágico"
+  },
+  {
+    id: "10",
+    title: "Rayuela",
+    author: "Julio Cortázar",
+    cover: "",
+    genre: "Novela Experimental"
+  },
+  {
+    id: "11",
+    title: "Pedro Páramo",
+    author: "Juan Rulfo",
+    cover: "",
+    genre: "Realismo Mágico"
+  },
+  {
+    id: "12",
+    title: "Ficciones",
+    author: "Jorge Luis Borges",
+    cover: "",
     genre: "Cuentos"
   },
 ];

@@ -617,8 +617,8 @@ const sampleBooks: Book[] = [
     description:"UN ÚNICO ASTRONAUTA. UNA MISIÓN IMPOSIBLE. UN ALIADO QUE JAMÁS HABRÍA IMAGINADO. Ryland Grace es el único superviviente en una misión desesperada. Es la última oportunidad y, si fracasa, la humanidad y la Tierra misma perecerán.  Claro que, de momento, él no lo sabe. Ni siquiera puede recordar su propio nombre, y mucho menos la naturaleza de su misión o cómo llevarla a cabo. Lo único que sabe es que ha estado en coma inducido durante mucho mucho tiempo. Acaba de despertar y se encuentra a millones de kilómetros de su hogar, sin más compañía que la de dos cadáveres. Muertos sus compañeros de tripulación, y a medida que va recuperando confusamente los recuerdos, Grace se da cuenta de que se enfrenta a una misión imposible. Recorriendo el espacio en una pequeña nave, depende de él acabar con una amenaza de extinción para nuestra especie. Sin apenas tiempo y con el ser humano más cercano a años luz de distancia, habrá de conseguirlo estando completamente solo.",
     year: 2021,
     genre: "Ciencia-Ficción",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1XEC_LMdhdx7JtXzLc7-tlDGNIHRv5WR9",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1nQWbBUN7JRc86wWIVYKiYTc2yAXPw86B",
     onlineUrl: "",
   },
   {

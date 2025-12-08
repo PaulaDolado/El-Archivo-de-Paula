@@ -409,8 +409,8 @@ const sampleBooks: Book[] = [
     description: "Varg ha dejado atrás el sufrimiento de su vida pasada y se ha convertido en un miembro de pleno derecho de los Hermanos de Sangre. Pero, ahora, sus nuevos camaradas y él se enfrentan al mayor desafío de sus vidas: matar un dragón. Elvar dedica todos sus esfuerzos a consolidar su poder en Snakavik, donde tiene que hacer frente a amenazas internas y externas. Mientras lucha para imponer su autoridad ante la inminente Guerra, debe afrontar una tarea, sin duda, insuperable: dominar la ferocidad de un dios lobo. Biórr y su banda de guerreros se dirigen al norte, sedientos de sangre, pero Guðvarr se mueve por sus propios intereses con la esperanza de ganarse el favor de Lik-Rifa y realizar sus ambiciones. Todos los caminos llevan a Snakavik, donde todo está preparándose para la batalla final: una colisión titánica que sacudirá los cimientos del mundo y será testigo de la verdadera furia de los dioses.",
     year: 2025,
     genre: "Fantasia, Fantasia Épica, Fantasía Vikinga",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1K5O0s5z76CTO0ZcHRjfQTIhGHEJ0erc_",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1OnWz69EOHbL2iKOoNC8wos49IL6rt1VK",
     onlineUrl: "",
   },
   {
@@ -422,8 +422,8 @@ const sampleBooks: Book[] = [
     description: "Jade is the lifeblood of the island of Kekon. It has been mined, traded, stolen, and killed for -- and for centuries, honorable Green Bone warriors like the Kaul family have used it to enhance their magical abilities and defend the island from foreign invasion. Now, the war is over and a new generation of Kauls vies for control of Kekon's bustling capital city. They care about nothing but protecting their own, cornering the jade market, and defending the districts under their protection. Ancient tradition has little place in this rapidly changing nation. When a powerful new drug emerges that lets anyone -- even foreigners -- wield jade, the simmering tension between the Kauls and the rival Ayt family erupts into open violence. The outcome of this clan war will determine the fate of all Green Bones -- from their grandest patriarch to the lowliest motorcycle runner on the streets -- and of Kekon itself.",
     year: 2017,
     genre: "Fantasia, Fantasía Urbana ",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=10LRIQLm_CBsp-rRX83AUSOJRQAOmoqsJ",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1rucwJKMByeZghwuzfohfFx67iYYfn52p",
     onlineUrl: "",
   },
   {
@@ -435,8 +435,8 @@ const sampleBooks: Book[] = [
     description: "On the island of Kekon, the Kaul family is locked in a violent feud for control of the capital city and the supply of magical jade that endows trained Green Bone warriors with supernatural powers they alone have possessed for hundreds of years. Beyond Kekon's borders, war is brewing. Powerful foreign governments and mercenary criminal kingpins alike turn their eyes on the island nation. Jade, Kekon's most prized resource, could make them rich - or give them the edge they'd need to topple their rivals. Faced with threats on all sides, the Kaul family is forced to form new and dangerous alliances, confront enemies in the darkest streets and the tallest office towers, and put honor aside in order to do whatever it takes to ensure their own survival - and that of all the Green Bones of Kekon.",
     year: 2019,
     genre: "Fantasia, Fantasía Urbana ",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1fvEWyJ8PQHK3qdRxqc4-ahv9Z52WRmFi",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1Bi6KUbcEkv1c1YV2JQ-1kvHKXOVE85xz",
     onlineUrl: "",
   },
   {
@@ -448,8 +448,8 @@ const sampleBooks: Book[] = [
     description: "The Kaul siblings battle their rival clans for honour and control over an East Asia-inspired fantasy metropolis in Jade Legacy, the page-turning conclusion to the Green Bone Saga.",
     year: 2021,
     genre: "Fantasia, Fantasía Urbana ",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1qSbJQJXUzROXeVyL8QUhOyNYjdv5-CA9",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1Unyw0htHplVwq5-SPKqIVRHQX9alb41q",
     onlineUrl: "",
   },
   {

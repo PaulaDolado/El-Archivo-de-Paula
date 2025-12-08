@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paper & Parchment tones */
+    --background: 40 30% 96%;
+    --foreground: 25 30% 15%;
+
+    --card: 40 35% 92%;
+    --card-foreground: 25 30% 15%;
+
+    --popover: 40 30% 96%;
+    --popover-foreground: 25 30% 15%;
+
+    /* Rich leather brown */
+    --primary: 25 45% 25%;
+    --primary-foreground: 40 30% 96%;
+
+    /* Aged gold */
+    --secondary: 38 50% 70%;
+    --secondary-foreground: 25 30% 15%;
+
+    /* Muted parchment */
+    --muted: 35 25% 85%;
+    --muted-foreground: 25 20% 40%;
+
+    /* Warm accent */
+    --accent: 32 60% 45%;
+    --accent-foreground: 40 30% 96%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 25% 80%;
+    --input: 30 25% 80%;
+    --ring: 25 45% 25%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --paper: 40 35% 94%;
+    --paper-dark: 35 30% 88%;
+    --leather: 25 50% 20%;
+    --leather-light: 25 40% 35%;
+    --gold: 42 70% 50%;
+    --gold-muted: 38 45% 65%;
+    --ink: 25 35% 12%;
+    --spine: 25 55% 18%;
+
+    /* Gradients */
+    --gradient-paper: linear-gradient(135deg, hsl(40 35% 96%) 0%, hsl(35 30% 90%) 100%);
+    --gradient-leather: linear-gradient(180deg, hsl(25 50% 22%) 0%, hsl(25 55% 15%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 70% 55%) 0%, hsl(38 60% 45%) 100%);
+    --gradient-page: linear-gradient(90deg, hsl(35 25% 85%) 0%, hsl(40 35% 94%) 5%, hsl(40 35% 96%) 100%);
+
+    /* Shadows */
+    --shadow-book: 0 10px 40px -10px hsl(25 50% 15% / 0.4);
+    --shadow-page: -5px 0 30px hsl(25 50% 15% / 0.2);
+    --shadow-hover: 0 20px 60px -15px hsl(25 50% 15% / 0.5);
+
+    /* Typography */
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Cormorant Garamond', serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 40 30% 90%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 40 30% 90%;
+
+    --popover: 25 30% 8%;
+    --popover-foreground: 40 30% 90%;
+
+    --primary: 42 60% 55%;
+    --primary-foreground: 25 30% 10%;
+
+    --secondary: 25 35% 20%;
+    --secondary-foreground: 40 30% 90%;
+
+    --muted: 25 25% 18%;
+    --muted-foreground: 35 20% 60%;
+
+    --accent: 38 50% 50%;
+    --accent-foreground: 25 30% 10%;
+
+    --border: 25 25% 20%;
+    --input: 25 25% 20%;
+    --ring: 42 60% 55%;
+
+    --paper: 25 25% 15%;
+    --paper-dark: 25 30% 10%;
+    --leather: 25 40% 12%;
+    --leather-light: 25 35% 25%;
+    --gold: 42 65% 50%;
+    --gold-muted: 38 40% 40%;
+    --ink: 40 30% 85%;
+    --spine: 25 45% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .paper-texture {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-blend-mode: overlay;
+    background-size: 200px;
+  }
+
+  .page-shadow {
+    box-shadow: 
+      -2px 0 10px hsl(var(--leather) / 0.1),
+      -5px 0 20px hsl(var(--leather) / 0.08),
+      inset 2px 0 5px hsl(var(--leather) / 0.05);
+  }
+
+  .book-spine {
+    background: linear-gradient(180deg, hsl(10 50% 25%) 0%, hsl(10 55% 18%) 100%);
+    box-shadow: 
+      inset -2px 0 3px hsl(25 50% 20% / 0.5),
+      inset 2px 0 3px hsl(0 0% 0% / 0.3);
+  }
+  
+  .book-spine-detail {
+    background-color: hsl(25 50% 18%);
+  }
+
+  .gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gold-border {
+    border-image: var(--gradient-gold) 1;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* Page turn animation */
+  @keyframes page-turn {
+    0% {
+      transform: perspective(2000px) rotateY(0deg);
+      transform-origin: left center;
+    }
+    100% {
+      transform: perspective(2000px) rotateY(-180deg);
+      transform-origin: left center;
+    }
+  }
+
+  @keyframes page-reveal {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-page-turn {
+    animation: page-turn 0.8s ease-in-out forwards;
+  }
+
+  .animate-page-reveal {
+    animation: page-reveal 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--gold-muted) / 0) 0%,
+      hsl(var(--gold) / 0.3) 50%,
+      hsl(var(--gold-muted) / 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+}

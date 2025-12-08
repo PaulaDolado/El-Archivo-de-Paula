@@ -1,16 +1,8 @@
 import { cn } from "@/lib/utils";
 import BookCard from "./BookCard";
+import { Book } from "@/interfaces/book";
 import { useMemo } from "react";
 import collectionBg from "@/assets/collection-bg.jpeg";
-
-interface Book {
-  id: string;
-  title: string;
-  author: string;
-  cover: string;
-  year?: number;
-  genre?: string;
-}
 
 interface BookCollectionProps {
   className?: string;
@@ -20,16 +12,22 @@ interface BookCollectionProps {
 const sampleBooks: Book[] = [
   {
     id: "1",
-    title: "Cien Años de Soledad",
-    author: "Gabriel García Márquez",
-    cover: "/src/assets/covers/reino-de-ladrones.jpg",
-    genre: "Realismo Mágico"
+    title: "Seis de Cuervos",
+    author: "Leigh Bardugo",
+    cover: "https://www.amazon.es/Seis-cuervos-Grisha-Leigh-Bardugo/dp/8416387583", // Reemplaza con una URL real
+    saga: "Duologia de Seis de Cuervos", 
+    description: "Ketterdam: Un desbordante foco de comercio internacional donde todo se puede conseguir por el precio adecuado, como bien sabe el prodigio criminal Kaz Brekker. A Kaz le acaban de ofrecer la oportunidad de llevar a cabo un gran robo, un arriesgado golpe que podría hacerle más rico de lo que jamás se ha atrevido a imaginar en sus sueños más salvajes. Pero no podrá llevarlo a cabo por sí solo: tendrá que reclutar a un peculiar equipo formado por un convicto, una espía, un pistolero, una Grisha, un ladrón y un fugitivo.Aunque ellos no lo saben, llegado el momento los miembros del grupo de Kaz serán los únicos capaces de salvar el mundo de la aniquilación total. Bueno, lo serán si no se matan entre ellos primero.", 
+    year: 2021,
+    genre: "Fantasía, Literatura juvenil",
+    epubUrl: "/files/nombre-del-viento.epub",
+    pdfUrl: "/files/nombre-del-viento.pdf",
+    onlineUrl: "https://lectura-online.com/nombre-del-viento",
   },
   {
     id: "2",
     title: "Don Quijote de la Mancha",
     author: "Miguel de Cervantes",
-    cover: "",
+    cover: "/src/assets/covers/reino-de-ladrones.jpg  ",
     genre: "Novela"
   },
   {

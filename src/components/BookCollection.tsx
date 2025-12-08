@@ -565,8 +565,8 @@ const sampleBooks: Book[] = [
     description:"Una temporada de finales ha comenzado. Comienza con la gran grieta roja a través del corazón del único continente del mundo, arrojando una ceniza que borra el sol. Comienza con la muerte, con un hijo asesinado y una hija desaparecida, con traición y viejas heridas dormidas. Esta es la quietud, una tierra muy familiarizada con catástrofe, donde el poder de la tierra se maneja como un arma. Donde no hay misericordia.",
     year: 2017,
     genre: "Fantasía, Fantasía Épica",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1Bv3VuOjp5qH9kqyc1_hGABsNLi4KR1I5",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1kBRDQM6oIgCm-g-ZHrZi6UTRmFSDdfBx",
     onlineUrl: "",
   },
   {
@@ -578,8 +578,8 @@ const sampleBooks: Book[] = [
     description:"Toda era tiene que llegar a su fin. Ha dado comienzo una estación de desenlaces. Empieza con una gran grieta roja que recorre las entrañas del único continente del planeta, una grieta que escupe una ceniza que oculta la luz del sol. Empieza con la muerte, con un hijo asesinado y una hija perdida. Empieza con una traición, con heridas latentes que comienzan a supurar. El lugar es la Quietud, un continente acostumbrado a la catástrofe en el que la energía de la tierra se utiliza como arma. Y en el que no hay lugar para la misericordia.",
     year: 2018,
     genre: "Fantasía, Fantasía Épica",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1VgadEdR1aahv1WyEjtgqOJor1w3QOXwt",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1-FDFpHcFbo3pSDd8yMF9GMkeCnJLVvpF",
     onlineUrl: "",
   },
   {
@@ -591,8 +591,8 @@ const sampleBooks: Book[] = [
     description:"La luna volverá pronto. Que su regreso proclame la destrucción de la humanidad dependerá de dos mujeres. Essun ha heredado el poder de alabastro Decanillado. Con él espera encontrar a su hija Nassun y forjar un mundo en que los niños orogenes crezcan a salvo. Para Nassun, el que su madre haya sido capaz de dominar el Portal de los Obeliscos es algo que llega tarde. Ha sido testigo del mal que hay en el mundo y ha aceptado lo que Essun no comprende: que, a veces, lo que está corrompido no se puede purificar y hay que destruirlo.",
     year: 2019,
     genre: "Fantasía, Fantasía Épica",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1AznOcjNb_ob_WTPm_i3oei6Zy_3AmOZO",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1MNgHeTAFmd56HBSnAFeGcC5jRJIsmQq2",
     onlineUrl: "",
   },
   {
@@ -604,8 +604,8 @@ const sampleBooks: Book[] = [
     description:"IN A WORLD CONSUMED BY ENDLESS WAR ONE YOUNG MAN WILL BECOME HIS PEOPLE'S ONLY HOPE FOR SURVIVAL. The Omehi people have been fighting an unwinnable war for generations. The lucky ones are born gifted: some have the power to call down dragons, others can be magically transformed into bigger, stronger, faster killing machines. Everyone else is fodder, destined to fight and die in the endless war. Tau Tafari wants more than this, but his plans of escape are destroyed when those closest to him are brutally murdered. With too few gifted left, the Omehi are facing genocide, but Tau cares only for revenge. Following an unthinkable path, he will strive to become the greatest swordsman to ever live, willing to die a hundred thousand times for the chance to kill three of his own people.",
     year: 2019,
     genre: "Fantasía, Fantasía Épica",
-    epubUrl: "",
-    pdfUrl: "",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1nCALgcPzFNmY5HL52AC-xU53-aUuHrIm",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1HwOqHztj3V5gzuFt0xEehP6zYMJiuPwk",
     onlineUrl: "",
   },
   {

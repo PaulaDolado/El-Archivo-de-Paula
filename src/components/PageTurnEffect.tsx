@@ -47,6 +47,13 @@ const handleGoBack = useCallback(() => {
     setSearchQuery(""); 
   }, [isAnimating]);
 
+const handleCollectionSearchSubmit = (e) => {
+    if (e.key === 'Enter') {
+      // No es necesario 'pasar la página', solo actualizar la consulta enviada.
+      setSubmittedQuery(searchQuery);
+    }
+  };
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#190301] ">
       {/* Book spine decoration on left */}
@@ -166,10 +173,27 @@ const handleGoBack = useCallback(() => {
             <ChevronRight className="w-4 h-4 rotate-180" />
             <span>Volver</span>
           </button>
-        </div>
-      </div>
-    </div>
-  );
+
+          {/* 🔍 NUEVO BUSCADOR (Derecha) */}
+          <div className="fixed top-4 right-4 md:right-8 z-50 w-full max-w-xs">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+              <Input
+                type="text"
+                placeholder="Buscar en colección..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={handleCollectionSearchSubmit} // Dispara la búsqueda solo si ya estamos en la colección
+                className="w-full pl-10 py-2 bg-white border border-gray-300 text-gray-800 placeholder:text-gray-500 font-body text-sm rounded-lg focus:border-gold focus:ring-gold/20 shadow-md"
+                onClick={(e) => e.stopPropagation()} // Detener la propagación del clic para evitar que interfiera con el giro de página
+              />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default PageTurnEffect;

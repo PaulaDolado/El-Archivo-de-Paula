@@ -14,7 +14,7 @@ interface BookCollectionProps {
 
 const sampleBooks: Book[] = [
   {
-    id: "41",
+    id: "47",
     title: "Proyecto Hail Mary",
     author: "Andy Weir",
     cover: "https://m.media-amazon.com/images/I/51tdoxl1L6L._SY445_SX342_ControlCacheEqualizer_.jpg", 
@@ -27,7 +27,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "42",
+    id: "48",
     title: "The will of the Many",
     author: "James Islington",
     cover: "https://imagessl2.casadellibro.com/a/l/s7/72/9781982141172.webp", 
@@ -79,7 +79,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "8",
+    id: "9",
     title: "El Dios en Llamas",
     author: "R.F. Kuang",
     cover: "https://cdn11.bigcommerce.com/s-65f8qukrjx/images/stencil/960w/products/7543/17545/The_Burning_God_by_R_F_Kuang__65228.1692595619.jpg?c=1", 
@@ -92,7 +92,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "9",
+    id: "10",
     title: "Amanecer Rojo",
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/51nd23JkBiL._SY445_SX342_ML2_.jpg", 
@@ -105,7 +105,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "9",
+    id: "11",
     title: "Hijo Dorado",
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/61Xtkbld+6L._SY342_.jpg", 
@@ -118,7 +118,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "10",
+    id: "12",
     title: "Mañana Azul",
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/41OKNJdB+QL._SY445_SX342_ML2_.jpg", 
@@ -131,7 +131,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "11",
+    id: "13",
     title: "Oro y Ceniza",
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/61E0AoGmdsL._SY342_.jpg", 
@@ -144,7 +144,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "12",
+    id: "14",
     title: "Edad Oscura",
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/618pGq0SI0L._SY342_.jpg", 
@@ -157,7 +157,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "13",
+    id: "15",
     title: "El Portador de luz",
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/81Z6riEYj2L._SY342_.jpg", 
@@ -170,7 +170,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "14",
+    id: "16",
     title: "El imperio final",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/816IVfekyGL._SY342_.jpg", 
@@ -183,7 +183,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "15",
+    id: "17",
     title: "El Pozo de la Ascensión",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81oUyFs0BCL._SY342_.jpg", 
@@ -196,7 +196,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "16",
+    id: "18",
     title: "El Héroe de las Eras",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81Ovwnu1dNL._SY342_.jpg", 
@@ -209,7 +209,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "16",
+    id: "19",
     title: "Elantris",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81v-hlxgYyL._SY342_.jpg", 
@@ -222,7 +222,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "16",
+    id: "20",
     title: "El camino de los reyes",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81pzG7oNfHL._SY342_.jpg", 
@@ -235,7 +235,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "17",
+    id: "21",
     title: "Palabras Radiantes",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/518cTasQVxL._SY445_SX342_QL70_ML2_.jpg", 
@@ -248,7 +248,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "18",
+    id: "22",
     title: "Juramentada",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/51lr6mscwvL._SY445_SX342_QL70_ML2_.jpg", 
@@ -261,7 +261,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "18",
+    id: "23",
     title: "El Ritmo de la Guerra",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/91Nb4w7arrL._SY342_.jpg", 
@@ -274,7 +274,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "18",
+    id: "24",
     title: "Viento y Verdad",
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/819X7Usv6vL._SY342_.jpg", 
@@ -287,7 +287,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "19",
+    id: "25",
     title: "Malice",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/91yx-Le-hxL._SY342_.jpg", 
@@ -300,7 +300,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "20",
+    id: "26",
     title: "Valour",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/91Dmpq-OYqL._SY342_.jpg", 
@@ -313,7 +313,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "21",
+    id: "27",
     title: "Ruin",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/51ToakteYQL._SY445_SX342_QL70_ML2_.jpg", 
@@ -326,7 +326,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "22",
+    id: "28",
     title: "Wrath",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/517z7iwW+OL._SY445_SX342_QL70_ML2_.jpg", 
@@ -339,7 +339,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "23",
+    id: "29",
     title: "La sombra de los Dioses",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/818QMDv65zL._SY342_.jpg", 
@@ -352,7 +352,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "24",
+    id: "30",
     title: "El Hambre de los Dioses",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/91ft4dAuweL._SY342_.jpg", 
@@ -365,7 +365,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "25",
+    id: "31",
     title: "La Furia de los Dioses",
     author: "John Gwynne",
     cover: "https://m.media-amazon.com/images/I/81kgBmzMIKL._SY342_.jpg", 
@@ -378,7 +378,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "26",
+    id: "32",
     title: "Jade City",
     author: "Fonda Lee",
     cover: "https://m.media-amazon.com/images/I/913imOgCUSL._SY342_.jpg", 
@@ -391,7 +391,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "27",
+    id: "33",
     title: "Jade War",
     author: "Fonda Lee",
     cover: "https://m.media-amazon.com/images/I/81RisQmF5wL._SY342_.jpg", 
@@ -404,7 +404,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "28",
+    id: "34",
     title: "Jade Legacy",
     author: "Fonda Lee",
     cover: "https://m.media-amazon.com/images/I/51Tzme4TqlL._SY445_SX342_ML2_.jpg", 
@@ -417,7 +417,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "29",
+    id: "35",
     title: "Kaikeyi",
     author: "Vaishnavi Patel",
     cover: "https://m.media-amazon.com/images/I/81ee9t8CX+L._SY342_.jpg", 
@@ -430,7 +430,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "30",
+    id: "36",
     title: "The Sword of Kaigen",
     author: "M.L. Wang",
     cover: "https://m.media-amazon.com/images/I/51dDO+Iv8sL._SY445_SX342_QL70_ML2_.jpg", 
@@ -443,7 +443,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "31",
+    id: "37",
     title: "Empire of Silence",
     author: "Christopher Ruocchio",
     cover: "https://m.media-amazon.com/images/I/81Y4R71134L._SY342_.jpg", 
@@ -456,7 +456,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "32",
+    id: "38",
     title: "Howling Dark",
     author: "Christopher Ruocchio",
     cover: "https://m.media-amazon.com/images/I/51cseMTOTJL._SY445_SX342_QL70_ML2_.jpg", 
@@ -469,7 +469,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "33",
+    id: "39",
     title: "Demon in White",
     author: "Christopher Ruocchio",
     cover: "https://m.media-amazon.com/images/I/518q6vFzIlL._SY445_SX342_QL70_ML2_.jpg", 
@@ -482,7 +482,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "34",
+    id: "40",
     title: "La voz de las espadas",
     author: "Joe Abercrombie",
     cover: "https://m.media-amazon.com/images/I/81zkxwzjC0L._SY342_.jpg", 
@@ -495,7 +495,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "35",
+    id: "41",
     title: "Antes de que los Cuelguen",
     author: "Joe Abercrombie",
     cover: "https://hablamosdelibros.es/wp-content/uploads/2023/09/LG00157701.jpg", 
@@ -508,7 +508,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "36",
+    id: "42",
     title: "El Último Argumento de los Reyes",
     author: "Joe Abercrombie",
     cover: "https://imagessl3.casadellibro.com/a/l/s7/43/9788420676043.webp", 
@@ -521,7 +521,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "37",
+    id: "43",
     title: "La Quinta Estación",
     author: "N.K. Jemisin",
     cover: "https://m.media-amazon.com/images/I/51vZJ0ruBdL._SY445_SX342_ControlCacheEqualizer_.jpg", 
@@ -534,7 +534,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "38",
+    id: "44",
     title: "El portal de los obeliscos",
     author: "N.K. Jemisin",
     cover: "https://m.media-amazon.com/images/I/61tOiB1EXjL._SY445_SX342_ControlCacheEqualizer_.jpg", 
@@ -547,7 +547,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "39",
+    id: "45",
     title: "El cielo de piedra",
     author: "N.K. Jemisin",
     cover: "https://m.media-amazon.com/images/I/514BiTXMASL._SY445_SX342_ControlCacheEqualizer_.jpg", 
@@ -560,7 +560,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "40",
+    id: "46",
     title: "The Rage of Dragons",
     author: "Evan Winter",
     cover: "https://m.media-amazon.com/images/I/51O50hBBVhL._SY445_SX342_ControlCacheEqualizer_.jpg", 
@@ -643,7 +643,7 @@ const sampleBooks: Book[] = [
 const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectionProps) => {
   const [params] = useSearchParams();
   const SearchQuery = incomingQuery ?? params.get("q") ?? "";
-  
+
   const filteredBooks = useMemo(() => {
   if (!SearchQuery.trim()) return sampleBooks;
   

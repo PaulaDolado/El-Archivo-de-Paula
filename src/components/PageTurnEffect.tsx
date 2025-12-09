@@ -10,21 +10,42 @@ const PageTurnEffect = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  //Nuevo estado para almacenar la consulta de búsqueda final
+  const [submittedQuery, setSubmittedQuery] = useState("");
+
   const handlePageTurn = useCallback(() => {
     if (isAnimating || isPageTurned) return;
     
     setIsAnimating(true);
     setIsPageTurned(true);
+
+    // Al pasar la página, actualiza la consulta enviada con lo que esté en el input
+    setSubmittedQuery(searchQuery);
     
     setTimeout(() => {
       setIsAnimating(false);
     }, 800);
-  }, [isAnimating, isPageTurned]);
+  }, [isAnimating, isPageTurned,searchQuery]);
 
-  const handleGoBack = useCallback(() => {
-    if (isAnimating) return;
-    setIsPageTurned(false);
-  }, [isAnimating]);
+  // **NUEVA FUNCIÓN:** Maneja la pulsación de Enter en el input de búsqueda
+  const handleSearchSubmit = (e) => {
+    // Verifica si se ha presionado la tecla 'Enter'
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Previene cualquier acción por defecto del formulario (si existiera)
+      // 1. Guarda la consulta de búsqueda actual
+      setSubmittedQuery(searchQuery);
+      // 2. "Pasa la página" para mostrar la colección
+      handlePageTurn();
+    }
+  };
+
+const handleGoBack = useCallback(() => {
+    if (isAnimating) return;
+    setIsPageTurned(false);
+    // **Opcional:** Limpiar la consulta cuando se regresa a la portada
+    setSubmittedQuery(""); 
+    setSearchQuery(""); 
+  }, [isAnimating]);
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#190301] ">
@@ -77,6 +98,7 @@ const PageTurnEffect = () => {
               placeholder="Buscar por título o autor..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={handleSearchSubmit}
               className="w-full pl-12 pr-4 py-6 bg-paper/95 border-gold/30 text-foreground placeholder:text-muted-foreground/70 font-body text-base rounded-lg focus:border-gold focus:ring-gold/20"
               onClick={(e) => e.stopPropagation()}
             />
@@ -127,7 +149,7 @@ const PageTurnEffect = () => {
         )}
       >
         <div className="relative h-full overflow-y-auto">
-          <BookCollection className={isPageTurned ? "animate-page-reveal" : ""} searchQuery={searchQuery} />
+          <BookCollection className={isPageTurned ? "animate-page-reveal" : ""} searchQuery={submittedQuery} />
           
           {/* Back button */}
           <button

@@ -33,6 +33,9 @@ const BookCard = ({ book, className }: BookCardProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   // Generate a unique color based on book id for variety
+  const darkGreen = '#3e5732ff';
+  const darkRed = '#6d0414ff';
+
   const colors = [
     "from-leather to-leather-light",
     "from-amber-900 to-amber-800",
@@ -99,7 +102,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
             </p>
             {/* Saga (Solo si existe) */}
             {book.saga && (
-                <p className="text-xs text-gold/80 mt-0.5">
+                <p className="text-xs mt-0.5" style={{ color: darkGreen }}>
                     Saga: {book.saga}
                 </p>
             )}
@@ -113,9 +116,14 @@ const BookCard = ({ book, className }: BookCardProps) => {
             <DialogTitle className="font-display text-2xl text-foreground text-center">
               {book.title}
             </DialogTitle>
-            <p className="font-body text-md text-muted-foreground text-center italic mb-4">
+            <p className="font-body text-md text-muted-foreground text-center italic mb-4"style={{ color: darkRed }}>
               {book.author} 
-              {book.saga && <span className="text-gold/80 ml-2"> (Saga: {book.saga})</span>}
+              {book.saga && (
+                    <span className="ml-2" style={{ color: darkGreen }}> 
+                        (Saga: {book.saga})
+                    </span>
+                  )
+                }
             </p>
           </DialogHeader>
           
@@ -133,9 +141,9 @@ const BookCard = ({ book, className }: BookCardProps) => {
             {/* Columna 2: Descripción y Botones */}
             <div className="md:col-span-2 flex flex-col justify-between">
                 <div>
-                    <h4 className="font-display text-lg text-gold mb-2">Sinopsis</h4>
-                    <p className="font-body text-sm text-foreground/90 mb-6">
-                        {book.description || "No hay una descripción disponible para este libro."}
+                    <h4 className="font-display text-lg text-gold mb-2 " style={{ color: darkRed }}>Sinopsis</h4>
+                    <p className="font-body text-sm mb-6">
+                       {book.description || "No hay una descripción disponible para este libro."}
                     </p>
                     
                     {/* Detalles adicionales */}

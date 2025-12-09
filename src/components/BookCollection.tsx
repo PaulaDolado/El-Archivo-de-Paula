@@ -3,6 +3,7 @@ import BookCard from "./BookCard";
 import { Book } from "@/interfaces/book";
 import { useMemo } from "react";
 import collectionBg from "@/assets/collection-bg.jpeg";
+import collectionBg2 from "@/assets/collection2-bg.jpeg";
 
 interface BookCollectionProps {
   className?: string;
@@ -649,62 +650,92 @@ const BookCollection = ({ className, searchQuery = "" }: BookCollectionProps) =>
     );
   }, [searchQuery]);
 
-  return (
+  // Estilos CSS para el fondo de la CUADRÍCULA DE LIBROS (collectionBg2)
+  const bookGridBackgroundStyle = {
+    // Establecer la NUEVA imagen de fondo SOLO para el grid
+    backgroundImage: `url(${collectionBg2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    // Aseguramos que la posición sea relativa para el overlay
+    position: "relative" as "relative", 
+  };
+
+  // El overlay para oscurecer la imagen del grid y hacer el texto legible
+  const gridOverlayStyle = {
+    position: "absolute" as "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0, 0, 0, 0.1)", // Negro semi-transparente (40% opacidad)
+    // El overlay tiene z-index 1, el contenido del grid tendrá z-index 2 o más
+    zIndex: 1, 
+  };
+
+return (
     <div 
       className={cn(
         "min-h-screen pt-28 pb-16 px-8 md:px-16",
         className
       )}
+      // Este es el fondo GENERAL, que incluye el gradiente de color #c2ae96
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(194, 174, 150, 0.95) 0%, rgba(194, 174, 150, 0.5) 12%, transparent 5%), url(${collectionBg})`,
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
       }}
     >
-{/* Sección de Encabezado con efecto de fondo traslúcido (Color #c2ae96) */}
+      {/* Sección de Encabezado con efecto de fondo traslúcido (Color #c2ae96) */}
       <div className="max-w-6xl mx-auto mb-16 text-center"> 
-            {/* Título Principal */}
-            <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-primary mb-6 animate-fade-in-up">
-                Mi Colección
-            </h1>
+        {/* Título Principal */}
+        <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-primary mb-6 animate-fade-in-up">
+          Mi Colección
+        </h1>
 
-            {/* Separador y Subtítulo */}
-            <div className="flex items-center gap-4 mb-4">
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-              <span className="font-display text-xl tracking-[0.4em] text-primary uppercase">
-                Descubre y descarga libros en PDF, EPUB o lee online.
-              </span>
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-            </div>
-            
-            {/* Cita 
-            <p className="text-center font-body text-lg text-muted-foreground italic mt-6">
-              "Un libro es un sueño que tienes en tus manos"
-            </p>
-            */}
-            
+        {/* Separador y Subtítulo */}
+        <div className="flex items-center gap-4 mb-4">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+          <span className="font-display text-xl tracking-[0.4em] text-primary uppercase">
+            Descubre y descarga libros en PDF, EPUB o lee online.
+          </span>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+        </div>
       </div>
 
-      {/* Books Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
-        {filteredBooks.length > 0 ? (
-          filteredBooks.map((book, index) => (
-            <div
-              key={book.id}
-              className="animate-fade-in-up opacity-0"
-              style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
-            >
-              <BookCard book={book} />
+      {/* --- INICIO: Nuevo Contenedor para la Imagen de Fondo Específica del Grid --- */}
+      <div 
+        className="max-w-7xl mx-auto rounded-xl shadow-2xl p-6" // Añadimos padding y sombra para destacarlo del fondo general
+        style={bookGridBackgroundStyle} // Aplicamos collectionBg2
+      >
+        {/* Overlay sobre collectionBg2 para mejorar la legibilidad del texto del libro */}
+        <div className="rounded-xl" style={gridOverlayStyle}></div> 
+
+        {/* Books Grid - Z-index 10 asegura que esté por encima del overlay */}
+        <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
+          {filteredBooks.length > 0 ? (
+            filteredBooks.map((book, index) => (
+              <div
+                key={book.id}
+                className="animate-fade-in-up opacity-0"
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
+              >
+                {/* NOTA: Asegúrate de que BookCard utilice texto de color claro 
+                (ej. text-white) para destacar sobre el fondo oscuro.
+                */}
+                <BookCard book={book} />
+              </div>
+            ))
+          ) : (
+            <div className="col-span-full text-center py-12 text-white">
+              <p className="font-body text-lg italic">
+                No se encontraron libros que coincidan con tu búsqueda
+              </p>
             </div>
-          ))
-        ) : (
-          <div className="col-span-full text-center py-12">
-            <p className="font-body text-lg text-muted-foreground italic">
-              No se encontraron libros que coincidan con tu búsqueda
-            </p>
-          </div>
-        )}
+          )}
+        </div>
       </div>
+      {/* --- FIN: Contenedor con Imagen de Fondo Específica --- */}
 
       {/* Footer decoration */}
       <div className="max-w-6xl mx-auto mt-16 flex justify-center">

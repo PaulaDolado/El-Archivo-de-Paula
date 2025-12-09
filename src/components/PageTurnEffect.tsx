@@ -179,7 +179,7 @@ const handleCollectionSearchSubmit = (e) => {
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
                <Input type="text"
-                placeholder="Buscar en colección..."
+                placeholder="Buscar en Mi Colección..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                  onKeyDown={handleCollectionSearchSubmit} // Dispara la búsqueda solo si ya estamos en la colección

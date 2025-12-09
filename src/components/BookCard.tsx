@@ -85,7 +85,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
           <img
             src={book.cover}
             alt={`Portada de ${book.title}`}
-            className="w-full h-full object-cover rounded-md shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+            className="w-full h-full object-contain rounded-md shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
           />
 
         </div>

@@ -674,12 +674,8 @@ const BookCollection = ({ className, searchQuery = "" }: BookCollectionProps) =>
   };
 
 return (
-    <div 
-      className={cn(
-        "min-h-screen pt-28 pb-16 px-8 md:px-16",
-        className
-      )}
-      // Este es el fondo GENERAL, que incluye el gradiente de color #c2ae96
+    <div className={cn("min-h-screen pt-28 pb-16 px-8 md:px-16",className )}
+      // Este es el fondo GENERAL
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(194, 174, 150, 0.95) 0%, rgba(194, 174, 150, 0.5) 12%, transparent 5%), url(${collectionBg})`,
         backgroundRepeat: 'repeat',

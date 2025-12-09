@@ -613,7 +613,7 @@ const sampleBooks: Book[] = [
   },
   {
     id: "4",
-    title: "",
+    title: "GodsGrave",
     author: "Jay Kristoff",
     cover: "https://m.media-amazon.com/images/I/51gOXFtGDCL._SY445_SX342_ControlCacheEqualizer_.jpg",
     saga: "The Nevernight Chtonicle #2", 

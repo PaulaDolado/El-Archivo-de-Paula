@@ -15,11 +15,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        {/*
-          *** CAMBIO CLAVE AQUÍ: Añadir la propiedad basename ***
-          Esto le dice al router que la ruta base de la aplicación es:
-          https://PaulaDolado.github.io/El-Archivo-de-Paula/
-        */}
+        {/*Esto le dice al router que la ruta base de la aplicación es:*/}
         <BrowserRouter basename="/El-Archivo-de-Paula"> 
           <Routes>
             <Route path="/" element={<Index />} />

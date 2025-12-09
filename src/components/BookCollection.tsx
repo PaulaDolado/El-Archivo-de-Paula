@@ -2,8 +2,10 @@ import { cn } from "@/lib/utils";
 import BookCard from "./BookCard";
 import { Book } from "@/interfaces/book";
 import { useMemo } from "react";
+import { useSearchParams } from "react-router-dom";
 import collectionBg from "@/assets/collection-bg.jpeg";
 import collectionBg2 from "@/assets/collection2-bg.jpeg";
+
 
 interface BookCollectionProps {
   className?: string;
@@ -638,17 +640,21 @@ const sampleBooks: Book[] = [
 
 ];
 
-const BookCollection = ({ className, searchQuery = "" }: BookCollectionProps) => {
+const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectionProps) => {
+  const [params] = useSearchParams();
+  const SearchQuery = incomingQuery ?? params.get("q") ?? "";
+  
   const filteredBooks = useMemo(() => {
-    if (!searchQuery.trim()) return sampleBooks;
-    
-    const query = searchQuery.toLowerCase().trim();
-    return sampleBooks.filter(
-      (book) =>
-        book.title.toLowerCase().includes(query) ||
-        book.author.toLowerCase().includes(query)
-    );
-  }, [searchQuery]);
+  if (!SearchQuery.trim()) return sampleBooks;
+  
+  const query = SearchQuery.toLowerCase().trim();
+
+  return sampleBooks.filter(
+    (book) =>
+      book.title.toLowerCase().includes(query) ||
+      book.author.toLowerCase().includes(query)
+  );
+}, [SearchQuery]);
 
   // Estilos CSS para el fondo de la CUADRÍCULA DE LIBROS (collectionBg2)
   const bookGridBackgroundStyle = {

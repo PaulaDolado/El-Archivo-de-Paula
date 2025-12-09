@@ -142,7 +142,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
             <div className="md:col-span-2 flex flex-col justify-between">
                 <div>
                     <h4 className="font-display text-lg text-gold mb-2 " style={{ color: darkRed }}>Sinopsis</h4>
-                    <p className="font-body text-sm mb-6">
+                    <p className="font-body text-sm mb-6" style={{ textAlign: "justify" }}>
                        {book.description || "No hay una descripción disponible para este libro."}
                     </p>
                     

@@ -109,7 +109,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
       
       {/* Download Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-3xl bg-paper border-gold/30">
+        <DialogContent className="sm:max-w-5xl bg-paper border-gold/30">
           <DialogHeader>
             <DialogTitle className="font-display text-2xl text-foreground text-center">
               {book.title}

@@ -742,9 +742,9 @@ return (
       {/* Footer decoration */}
       <div className="max-w-6xl mx-auto mt-16 flex justify-center">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-px bg-gold/40" />
-          <div className="w-2 h-2 rotate-45 bg-gold/60" />
-          <div className="w-12 h-px bg-gold/40" />
+          <div className="w-12 h-px bg-[#6d0414]/40" />
+          <div className="w-2 h-2 rotate-45 bg-[#6d0414]/60"/>
+          <div className="w-12 h-px bg-[#6d0414]/40" />
         </div>
       </div>
     </div>

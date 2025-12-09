@@ -120,7 +120,7 @@ const PageTurnEffect = () => {
       {/* Book Collection Page (Behind) */}
       <div 
         className={cn(
-          "fixed inset-0 ml-8 md:ml-12 z-20",
+          "fixed inset-0 ml-8 md:ml-12 z-20 bg-[#b8ae90]",
           "transition-opacity duration-500",
           !isPageTurned && "opacity-0 pointer-events-none",
           isPageTurned && "opacity-100"

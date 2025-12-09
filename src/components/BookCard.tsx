@@ -97,19 +97,17 @@ const BookCard = ({ book, className }: BookCardProps) => {
                 {book.title}
             </h3>
             {/* Autor */}
-            <p className="text-xs text-muted-foreground italic mt-0.5">
+            <p className="text-sm italic mt-0.5">
                 {book.author}
             </p>
-            {/* Saga (Solo si existe) */}
-            {book.saga && (
-                <p className="text-xs mt-0.5" style={{ color: darkGreen }}>
-                    Saga: {book.saga}
-                </p>
+            {/* Saga */}
+            {book.saga && (<p className="text-sm mt-0.5" style={{ color: darkGreen }}>
+              {book.saga} </p>
             )}
         </div>
       </div>
       
-      {/* Download Dialog - EL DIALOGO DE DETALLE HA SIDO MODIFICADO */}
+      {/* Download Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="sm:max-w-3xl bg-paper border-gold/30">
           <DialogHeader>
@@ -159,7 +157,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
                 <div className="flex flex-col gap-3">
                   <Button
                     variant="outline"
-                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50"
+                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
                     onClick={() => handleDownload('epub')}
                     disabled={!book.epubUrl}
                   >
@@ -173,7 +171,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
                   
                   <Button
                     variant="outline"
-                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50"
+                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
                     onClick={() => handleDownload('pdf')}
                     disabled={!book.pdfUrl}
                   >
@@ -187,7 +185,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
                   
                   <Button
                     variant="outline"
-                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50"
+                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
                     onClick={() => handleDownload('online')}
                     disabled={!book.onlineUrl}
                   >

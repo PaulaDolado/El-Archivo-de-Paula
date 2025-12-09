@@ -27,7 +27,7 @@ const PageTurnEffect = () => {
   }, [isAnimating]);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-leather">
+    <div className="relative min-h-screen overflow-hidden bg-[#190301] ">
       {/* Book spine decoration on left */}
       <div className="fixed left-0 top-0 bottom-0 w-8 md:w-12 book-spine z-40">
         <div className="absolute inset-y-0 left-0 w-full flex flex-col items-center justify-center gap-8">

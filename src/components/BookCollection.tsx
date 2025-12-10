@@ -14,6 +14,19 @@ interface BookCollectionProps {
 
 const sampleBooks: Book[] = [
   {
+    id: "48",
+    title: "Los jardines de la luna",
+    author: "Steven Erikson",
+    cover: "https://d3525k1ryd2155.cloudfront.net/f/019/310/9780765310019.IN.0.m.jpg", 
+    saga: "Malaz: El libro de los Caídos #1", 
+    description:"Tras guerras interminables y amargas luchas internas, el descontento se ha apoderado del Imperio de Malaz. Incluso las tropas imperiales, siempre ansiosas por derramar sangre, necesitan un respiro. Sin embargo, las pretensiones expansionistas de la emperatriz Laseen no tienen límites, más aun cuando son reforzadas por sus temibles agentes de la Garra. El sargento Whiskeyjack y su escuadrón necesitan tiempo para llorar los muertos del último asedio, pero Darujhistan, la última de las Ciudades Libres de Genabackis, los espera; en ella ha puesto la emperatriz su mirada depredadora. El Imperio no está solo en este juego. Las fuerzas siniestras conspiran dentro y fuera de las sendas mágicas, y entretanto, hasta los dioses se preparan para la batalla...",
+    year: 1999,
+    genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1PIjGlvyoQ55V91Ewc3n82npm3DX4Zn41",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1cJ73I6Ui4DCcfNJAaYmhsGUtrf4gASzj",
+    onlineUrl: "",
+  },
+  {
     id: "47",
     title: "Proyecto Hail Mary",
     author: "Andy Weir",

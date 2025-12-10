@@ -182,9 +182,9 @@ const handleCollectionSearchSubmit = (e) => {
                 placeholder="Buscar en Mi Colección..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                 onKeyDown={handleCollectionSearchSubmit} // Dispara la búsqueda solo si ya estamos en la colección
+                 onKeyDown={handleCollectionSearchSubmit} 
                  className="w-full pl-10 py-2 bg-white border border-gray-300 text-gray-800 placeholder:text-gray-500 font-body text-sm rounded-lg focus:border-gold focus:ring-gold/20 shadow-md"
-                 onClick={(e) => e.stopPropagation()} // Detener la propagación del clic para evitar que interfiera con el giro de página
+                 onClick={(e) => e.stopPropagation()}
                 />
                 </div>
           </div>

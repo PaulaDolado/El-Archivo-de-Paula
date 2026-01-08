@@ -14,6 +14,19 @@ interface BookCollectionProps {
 
 const sampleBooks: Book[] = [
   {
+    id: "56",
+    title: "Storm Front",
+    author: "Jim Butcher",
+    cover: "https://m.media-amazon.com/images/I/41r0b4e7RfL._SY445_SX342_.jpg", 
+    saga: "", 
+    description:"As a professional wizard, Harry Dresden knows firsthand that the “everyday” world is actually full of strange and magical things—and most of them don’t play well with humans. And those that do enjoy playing with humans far too much. He also knows he’s the best at what he does. Technically, he’s the only at what he does. But even though Harry is the only game in town, business—to put it mildly—stinks. So when the Chicago P.D. bring him in to consult on a double homicide committed with black magic, Harry's seeing dollar signs. But where there's black magic, there's a black mage behind it. And now that mage knows Harry's name...",
+    year: 2019,
+    genre: "Fantasía, Ficción, Magia", 
+    epubUrl: "https://drive.google.com/uc?export=download&id=1VrzR756E7_OrKRzXoJ59FrxsdkTZarnC",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=10yQsfMZ84YyPo5SAvhVe9eHzrkh1XNsl",
+    onlineUrl: "",
+  },
+  {
     id: "55",
     title: "La paciente silenciosa",
     author: "Alex Michaelides",
@@ -661,6 +674,19 @@ const sampleBooks: Book[] = [
     genre: "Fantasía, Fantasía Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1nCALgcPzFNmY5HL52AC-xU53-aUuHrIm",
     pdfUrl: "https://drive.google.com/uc?export=download&id=1HwOqHztj3V5gzuFt0xEehP6zYMJiuPwk",
+    onlineUrl: "",
+  },
+  {
+    id: "57",
+    title: "The Fires of Vengeance",
+    author: "Evan Winter",
+    cover: "https://m.media-amazon.com/images/I/51RjdgxS-pL._SY300_.jpg", 
+    saga: "The Burning #2", 
+    description:"Desperate to delay an impending attack by the indigenous people of Xidda, Tau and his queen craft a dangerous plan. If Tau succeeds, the queen will have the time she needs to assemble her forces and launch an all-out assault on her own capital city, where her sister is being propped up as the 'true' Queen of the Omehi. If the city can be taken, if Tsiora can reclaim her throne and reunite her people, then the Omehi might have a chance to survive the coming onslaught.",
+    year: 2020,
+    genre: "Fantasía, Fantasía Épica", 
+    epubUrl: "https://drive.google.com/uc?export=download&id=1oBVOGXVoKcMSGHvpVCmK_t2NQN2nD6_0",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1YXSpfpyrlSD1ASLGqUfmW8vjSEqUIFPr",
     onlineUrl: "",
   },
   {

@@ -13,6 +13,19 @@ interface BookCollectionProps {
 }
 
 const sampleBooks: Book[] = [
+  {
+    id: "54",
+    title: "Blood Over Bright Haven",
+    author: "M. L. Wang",
+    cover: "https://m.media-amazon.com/images/I/51YIONQ8egL._SY445_SX342_.jpg", 
+    saga: "", 
+    description:"For twenty years, Sciona has devoted every waking moment to the study of magic, fueled by a mad desire to achieve the impossible: to be the first woman ever admitted to the High Magistry at the University of Magics and Industry. When Sciona finally passes the qualifying exam and becomes a highmage, she finds her challenges have just begun. Her new colleagues are determined to make her feel unwelcome—and, instead of a qualified lab assistant, they give her a janitor. What neither Sciona nor her peers realize is that her taciturn assistant was not always a janitor. Ten years ago, he was a nomadic hunter who lost his family on their perilous journey from the wild plains to the city. But now he sees the opportunity to understand the forces that decimated his tribe, drove him from his homeland, and keep the privileged in power. At first, mage and outsider have a fractious relationship. But working together, they uncover an ancient secret that could change the course of magic forever—if it doesn’t get them killed first.",
+    year: 2023,
+    genre: "Fantasía, Fantasía Épica", 
+    epubUrl: "https://drive.google.com/uc?export=download&id=15gE-s-J66lmDFR9VeVSEa7u_THRuzTn6",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1x8DqWWvykdGNkS6o3_m-aNQWF3fxVxVy",
+    onlineUrl: "",
+  },
   
   {
     id: "53",

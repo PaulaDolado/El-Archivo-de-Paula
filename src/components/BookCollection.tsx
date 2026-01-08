@@ -15,7 +15,7 @@ interface BookCollectionProps {
 const sampleBooks: Book[] = [
   
   {
-    id: "52",
+    id: "53",
     title: "Los jardines de la luna",
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/51N6EPWJ2XL._SY445_SX342_ML2_.jpg", 
@@ -28,7 +28,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "51",
+    id: "52",
     title: "Las puertas de la Casa de la Muerte",
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/716SRbduDiL._SY466_.jpg", 
@@ -41,7 +41,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "50",
+    id: "51",
     title: "Memorias del Hielo",
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/514VA37DMHL._SY445_SX342_ML2_.jpg", 
@@ -54,7 +54,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "49",
+    id: "50",
     title: "La casa de Cadenas",
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/71pEJN7I0lL._SY466_.jpg", 
@@ -67,7 +67,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "48",
+    id: "49",
     title: "Mareas de Medianoche",
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/517npRzsevL._SY466_.jpg", 
@@ -80,7 +80,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "47",
+    id: "48",
     title: "Proyecto Hail Mary",
     author: "Andy Weir",
     cover: "https://m.media-amazon.com/images/I/51tdoxl1L6L._SY445_SX342_ControlCacheEqualizer_.jpg", 
@@ -93,12 +93,12 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "48",
-    title: "The will of the Many",
+    id: "47",
+    title: "La voluntad de muchos",
     author: "James Islington",
     cover: "https://imagessl2.casadellibro.com/a/l/s7/72/9781982141172.webp", 
     saga: "Hierarchy #1", 
-    description:"At the elite Catenan Academy, a young fugitive uncovers layered mysteries and world-changing secrets in this new fantasy series by internationally bestselling author of The Licanius Trilogy, James Islington. AUDI. VIDE. TACE. The Catenan Republic—the Hierarchy—may rule the world now, but they do not know everything. I tell them my name is Vis Telimus. I tell them I was orphaned after a tragic accident three years ago, and that good fortune alone has led to my acceptance into their most prestigious school. I tell them that once I graduate, I will gladly join the rest of civilised society in allowing my strength, my drive and my focus—what they call Will—to be leeched away and added to the power of those above me, as millions already do. As all must eventually do. I tell them that I belong, and they believe me. But the truth is that I have been sent to the Academy to find answers. To solve a murder. To search for an ancient weapon. To uncover secrets that may tear the Republic apart. And that I will never, ever cede my Will to the empire that executed my family. To survive, though, I will still have to rise through the Academy’s ranks. I will have to smile, and make friends, and pretend to be one of them and win. Because if I cannot, then those who want to control me, who know my real name, will no longer have any use for me. And if the Hierarchy finds out who I truly am, they will kill me.",
+    description:"En la elitista Academia Catena, un joven fugitivo va a ir desvelando las capas de un elaborado misterio y secretos capaces de cambiar el mundo a lo largo de esta nueva saga de fantasía del autor superventas internacional James Islington. AUDI. VIDI. TACE. Los habitantes de la república Catena, también llamada la Jerarquía, quizá dominen el mundo, pero no lo saben todo. Les he dicho que mi nombre es Vis Telimus. Les he dicho que me convertí en huérfano después de un trágico accidente hace tres años, y que ha sido solo la buena fortuna la que ha hecho que me acepten en su escuela más prestigiosa. Les he dicho que una vez que me gradúe me uniré gustosamente al resto de la sociedad civilizada, lo que quiere decir que permitiré que mi fuerza, mis deseos y mi determinación, lo que ellos llaman la Voluntad, sean parasitados y añadidos al poder de aquellos que están por encima de mí, como ya lo hacen millones. Como todos deben acabar haciendo. Les digo que soy uno de ellos, y me creen.Pero la verdad es que he sido enviado a la academia en busca de respuestas. Para resolver un asesinato. Para buscar un arma antigua. Para descubrir secretos que podrían hacer caer la república. Y nunca, jamás, cederé mi voluntad al imperio que ejecutó a mi familia Para sobrevivir, sin embargo, tendré que ir escalando posiciones dentro de la academia. Tendré que sonreír, que hacer amigos, y fingir que soy uno de ellos. Porque si no lo hago, aquellos que me quieren controlar, los que saben mi auténtico nombre, ya no me necesitarán. Y si la Jerarquía descubre quién soy de verdad, me matarán.",
     year: 2023,
     genre: "Fantasía, Fantasía Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1AF4lMVbzufQYuMQgZSuQMFc8ofW-1TTl",

@@ -14,6 +14,19 @@ interface BookCollectionProps {
 
 const sampleBooks: Book[] = [
   {
+    id: "55",
+    title: "La paciente silenciosa",
+    author: "Alex Michaelides",
+    cover: "https://m.media-amazon.com/images/I/41Fcxm7e++L._SY445_SX342_.jpg", 
+    saga: "", 
+    description:"SOLO ELLA SABE LO QUE SUCEDIÓ. SOLO YO PUEDO HACERLA HABLAR. Alicia Berenson, una pintora de éxito, dispara cinco tiros en la cabeza de su marido, y no vuelve a hablar nunca más. Su negativa a emitir palabra alguna convierte una tragedia doméstica en un misterio que atrapa la imaginación de toda Inglaterra. Theo Faber, un ambicioso psicoterapeuta forense obsesionado con el caso, está empeñado en desentrañar el misterio de lo que ocurrió aquella noche fatal y consigue una plaza en The Grove, la unidad de seguridad en el norte de Londres a la que Alicia fue enviada hace seis años y en la que sigue obstinada en su silencio. Pronto descubre que el mutismo de la paciente está mucho más enraizado de lo que pensaba. Pero, si al final hablara, ¿estaría dispuesto a escuchar la verdad?",
+    year: 2021,
+    genre: "Thriller Psicológico", 
+    epubUrl: "https://drive.google.com/uc?export=download&id=1qxAL7PhaTCNqoPEKGRxkKJeDT6cdkYLD",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1EsHu9WK70_dJb3DaCqTO6wH3SEYVuWT4",
+    onlineUrl: "",
+  },
+  {
     id: "54",
     title: "Blood Over Bright Haven",
     author: "M. L. Wang",
@@ -26,7 +39,6 @@ const sampleBooks: Book[] = [
     pdfUrl: "https://drive.google.com/uc?export=download&id=1x8DqWWvykdGNkS6o3_m-aNQWF3fxVxVy",
     onlineUrl: "",
   },
-  
   {
     id: "53",
     title: "Los jardines de la luna",

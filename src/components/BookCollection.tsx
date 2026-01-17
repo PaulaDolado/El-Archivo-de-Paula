@@ -75,7 +75,7 @@ const sampleBooks: Book[] = [
     year: 2005,
     genre: "Cómics manga, novelas gráficas",
     epubUrl: "https://drive.google.com/uc?export=download&id=1UDk0qnk-vaTaNE9PLpFxQw4ge9a1bVWS",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=11-Ke-wdPwx9VSW8yUotetNPOjvpYI8DV",
     onlineUrl: "",
   },
   {

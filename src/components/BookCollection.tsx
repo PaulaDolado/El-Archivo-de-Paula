@@ -87,7 +87,7 @@ const sampleBooks: Book[] = [
     description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
     year: 1990,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
-    epubUrl: "https://drive.google.com/uc?export=download&id=17gBonkAdHT4UB1aJEm0EAanutaXaItkX",
+    epubUrl: "https://www.mediafire.com/file/db0s0fnz3cxm2yr/Berserk_Tomo_01-07.zip/file",
     pdfUrl: "https://drive.google.com/uc?export=download&id=",
     onlineUrl: "",
   },

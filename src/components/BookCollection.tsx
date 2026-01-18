@@ -13,78 +13,17 @@ interface BookCollectionProps {
 }
 
 const sampleBooks: Book[] = [
-    {
-    id: "71",
-    title: "Berserk",
-    author: "Kentaro Miura",
-    cover: "https://m.media-amazon.com/images/I/41YlKzBpM1L._SY445_SX342_ML2_.jpg", 
-    saga: "Tomo 36-42", 
-    description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
-    year: 2011,
-    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
-    epubUrl: "https://drive.google.com/uc?export=download&id=1npWU2iSc6ZwhoaHOJBR2L0v8zXZ00QkA",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
-    onlineUrl: "",
-  },
-  {
-    id: "70",
-    title: "Berserk",
-    author: "Kentaro Miura",
-    cover: "https://m.media-amazon.com/images/I/41QebloUa3L._SY445_SX342_ML2_.jpg", 
-    saga: "Tomo 29-35", 
-    description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
-    year: 2005,
-    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
-    epubUrl: "https://www.mediafire.com/file/p7olqdiumm1iw5m/Berserk_Tomo_29-35.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
-    onlineUrl: "",
-  },
-  {
-    id: "69",
-    title: "Berserk",
-    author: "Kentaro Miura",
-    cover: "https://www.pro-bems.com/IMAGES/images_1/BER07316441/m/BER07316441_1.jpg", 
-    saga: "Tomo 22-28", 
-    description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
-    year: 2001,
-    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
-    epubUrl: "https://www.mediafire.com/file/kdjrm1jc5mdsxom/Berserk_Tomo_22-28.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
-    onlineUrl: "",
-  },
-  {
-    id: "68",
-    title: "Berserk",
-    author: "Kentaro Miura",
-    cover: "https://m.media-amazon.com/images/I/51yyy32E6tL._SY445_SX342_ML2_.jpg", 
-    saga: "Tomo 15-21", 
-    description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
-    year: 1998,
-    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
-    epubUrl: "https://www.mediafire.com/file/a8h5bgyijmg8j6z/Berserk_Tomo_15-21.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
-    onlineUrl: "",
-  },
-  {
+{
     id: "67",
-    title: "Berserk",
-    author: "Kentaro Miura",
-    cover: "https://m.media-amazon.com/images/I/51lpzs5ucFL._SY445_SX342_ML2_.jpg", 
-    saga: "Tomo 08-14", 
-    description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
-    year: 1994,
-    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
-    epubUrl: "https://www.mediafire.com/file/m8m2q6ea0dpcdqh/Berserk_Tomo_08-14.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
-    onlineUrl: "",
-  },
-  {
-    id: "66",
     title: "Berserk",
     author: "Kentaro Miura",
     cover: "https://m.media-amazon.com/images/I/91rdTtLWAHL._SY425_.jpg",
     saga: "Tomo 01-07", 
-    description:"Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro... Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones. A Todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género. El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias. Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.",
+    description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
+Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.
+A todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género.
+El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias.
+Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
     year: 1990,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
     epubUrl: "https://www.mediafire.com/file/db0s0fnz3cxm2yr/Berserk_Tomo_01-07.zip/file",
@@ -92,7 +31,92 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "65",
+    id: "68",
+    title: "Berserk",
+    author: "Kentaro Miura",
+    cover: "https://m.media-amazon.com/images/I/51lpzs5ucFL._SY445_SX342_ML2_.jpg", 
+    saga: "Tomo 08-14", 
+    description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
+Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.
+A todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género.
+El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias.
+Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
+    year: 1994,
+    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
+    epubUrl: "https://www.mediafire.com/file/m8m2q6ea0dpcdqh/Berserk_Tomo_08-14.zip/file",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    onlineUrl: "",
+  },
+  {
+    id: "69",
+    title: "Berserk",
+    author: "Kentaro Miura",
+    cover: "https://m.media-amazon.com/images/I/51yyy32E6tL._SY445_SX342_ML2_.jpg", 
+    saga: "Tomo 15-21", 
+    description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
+Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.
+A todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género.
+El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias.
+Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
+    year: 1998,
+    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
+    epubUrl: "https://www.mediafire.com/file/a8h5bgyijmg8j6z/Berserk_Tomo_15-21.zip/file",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    onlineUrl: "",
+  },
+  {
+    id: "70",
+    title: "Berserk",
+    author: "Kentaro Miura",
+    cover: "https://www.pro-bems.com/IMAGES/images_1/BER07316441/m/BER07316441_1.jpg", 
+    saga: "Tomo 22-28", 
+    description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
+Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.
+A todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género.
+El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias.
+Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
+    year: 2001,
+    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
+    epubUrl: "https://www.mediafire.com/file/kdjrm1jc5mdsxom/Berserk_Tomo_22-28.zip/file",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    onlineUrl: "",
+  },
+  {
+    id: "71",
+    title: "Berserk",
+    author: "Kentaro Miura",
+    cover: "https://m.media-amazon.com/images/I/41QebloUa3L._SY445_SX342_ML2_.jpg", 
+    saga: "Tomo 29-35", 
+    description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
+Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.
+A todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género.
+El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias.
+Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
+    year: 2005,
+    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
+    epubUrl: "https://www.mediafire.com/file/p7olqdiumm1iw5m/Berserk_Tomo_29-35.zip/file",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    onlineUrl: "",
+  },
+  {
+    id: "72",
+    title: "Berserk",
+    author: "Kentaro Miura",
+    cover: "https://m.media-amazon.com/images/I/41YlKzBpM1L._SY445_SX342_ML2_.jpg", 
+    saga: "Tomo 36-42", 
+    description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
+Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.
+A todo esto, sumado a los elementos fantásticos más comunes de las novelas del género convierten a Berserk en una obra de arte dentro del género.
+El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuando era niño, y que se mueve y actúa por venganza y por un odio mucho mayor que cualquier miedo o dolor físico. Su enorme espada (tan alta como él) y su increíble destreza atraerán la atención de Grifith, el jefe de la Banda del Halcón, un grupo de mercenarios famoso por sus victorias.
+Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
+    year: 2011,
+    genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1npWU2iSc6ZwhoaHOJBR2L0v8zXZ00QkA",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    onlineUrl: "",
+  },
+  {
+    id: "73",
     title: "Las mentiras de Locke Lamora",
     author: "Scott Lynch",
     cover: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBTahr2XvdvNDWmfimbjDXvYUFROE-U7KC-xvnKBDN1sn_v8dd", 
@@ -105,7 +129,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
 {
-    id: "57",
+    id: "58",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/I/51UWqKOHEsL._SY445_SX342_ML2_.jpg", 
@@ -118,7 +142,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "58",
+    id: "59",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/I/51dsfwrkv9L._SY425_.jpg", 
@@ -131,7 +155,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "59",
+    id: "60",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/I/51QXTFQE91L._SY445_SX342_ML2_.jpg", 
@@ -144,7 +168,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "60",
+    id: "61",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/I/51As033a8WL._SY445_SX342_ML2_.jpg", 
@@ -157,7 +181,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "61",
+    id: "62",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://imagessl8.casadellibro.com/a/l/s7/08/9788416243808.webp", 
@@ -170,7 +194,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "62",
+    id: "63",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/I/51opxL-pyFL._SY445_SX342_ML2_.jpg", 
@@ -183,7 +207,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "63",
+    id: "64",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1266507323i/7749279.jpg", 
@@ -196,7 +220,7 @@ const sampleBooks: Book[] = [
     onlineUrl: "",
   },
   {
-    id: "64",
+    id: "65",
     title: "Vagabond",
     author: "Takehiko Inoue",
     cover: "https://m.media-amazon.com/images/I/51bCTNrzjXL._SY445_SX342_ML2_.jpg", 

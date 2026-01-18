@@ -204,7 +204,7 @@ const sampleBooks: Book[] = [
     description:"Cuenta la historia del legendario espadachín Musashi Miyamoto, la figura histórica más importante del Japón en lo que se refiere al desarrollo de las técnicas de lucha con espada. Desde su juventud como el violento e iracundo joven llamado Takezo, sobreviviendo (aun estando del lado perdedor) a una de las batallas más sangrientas de la historia: Sekigahara; hasta su decisión de pasar a llamarse Musashi y embarcarse en una búsqueda de autosuperación personal que lo llevará a enfrentarse con los más grandes expertos de las artes marciales del país.",
     year: 1998,
     genre: "Cómics manga, novelas gráficas",
-    epubUrl: "https://drive.google.com/uc?export=download&id=1fgK1hjd_u3dX83VaEeYNXqjbDyWkoob5",
+    epubUrl: "https://www.mediafire.com/file/bmiylqhbdqnb1b2/Vagabond_-_Takehiko_Inoue_T01-05.zip/file",
     pdfUrl: "https://drive.google.com/uc?export=download&id=15W9pIL7CwKRhDySbeAgDTibm1HQKweu9",
     onlineUrl: "",
   },

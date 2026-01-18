@@ -227,8 +227,11 @@ const sampleBooks: Book[] = [
     author: "Alex Michaelides",
     cover: "https://m.media-amazon.com/images/I/41Fcxm7e++L._SY445_SX342_.jpg", 
     saga: "", 
-    description:"SOLO ELLA SABE LO QUE SUCEDIÓ. SOLO YO PUEDO HACERLA HABLAR. Alicia Berenson, una pintora de éxito, dispara cinco tiros en la cabeza de su marido, y no vuelve a hablar nunca más. Su negativa a emitir palabra alguna convierte una tragedia doméstica en un misterio que atrapa la imaginación de toda Inglaterra. Theo Faber, un ambicioso psicoterapeuta forense obsesionado con el caso, está empeñado en desentrañar el misterio de lo que ocurrió aquella noche fatal y consigue una plaza en The Grove, la unidad de seguridad en el norte de Londres a la que Alicia fue enviada hace seis años y en la que sigue obstinada en su silencio. Pronto descubre que el mutismo de la paciente está mucho más enraizado de lo que pensaba. Pero, si al final hablara, ¿estaría dispuesto a escuchar la verdad?",
-    year: 2021,
+    description:`SOLO ELLA SABE LO QUE SUCEDIÓ. 
+    SOLO YO PUEDO HACERLA HABLAR.
+    Alicia Berenson, una pintora de éxito, dispara cinco tiros en la cabeza de su marido, y no vuelve a hablar nunca más. Su negativa a emitir palabra alguna convierte una tragedia doméstica en un misterio que atrapa la imaginación de toda Inglaterra.
+    Theo Faber, un ambicioso psicoterapeuta forense obsesionado con el caso, está empeñado en desentrañar el misterio de lo que ocurrió aquella noche fatal y consigue una plaza en The Grove, la unidad de seguridad en el norte de Londres a la que Alicia fue enviada hace seis años y en la que sigue obstinada en su silencio.
+    Pronto descubre que el mutismo de la paciente está mucho más enraizado de lo que pensaba. Pero, si al final hablara, ¿estaría dispuesto a escuchar la verdad?`,year: 2021,
     genre: "Thriller Psicológico", 
     epubUrl: "https://drive.google.com/uc?export=download&id=1qxAL7PhaTCNqoPEKGRxkKJeDT6cdkYLD",
     pdfUrl: "https://drive.google.com/uc?export=download&id=1EsHu9WK70_dJb3DaCqTO6wH3SEYVuWT4",
@@ -253,7 +256,9 @@ const sampleBooks: Book[] = [
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/51N6EPWJ2XL._SY445_SX342_ML2_.jpg", 
     saga: "Malaz: El libro de los Caídos #1", 
-    description:"Tras guerras interminables y amargas luchas internas, el descontento se ha apoderado del Imperio de Malaz. Incluso las tropas imperiales, siempre ansiosas por derramar sangre, necesitan un respiro. Sin embargo, las pretensiones expansionistas de la emperatriz Laseen no tienen límites, más aun cuando son reforzadas por sus temibles agentes de la Garra. El sargento Whiskeyjack y su escuadrón necesitan tiempo para llorar los muertos del último asedio, pero Darujhistan, la última de las Ciudades Libres de Genabackis, los espera; en ella ha puesto la emperatriz su mirada depredadora. El Imperio no está solo en este juego. Las fuerzas siniestras conspiran dentro y fuera de las sendas mágicas, y entretanto, hasta los dioses se preparan para la batalla...",
+    description:`Tras guerras interminables y amargas luchas internas, el descontento se ha apoderado del Imperio de Malaz. Incluso las tropas imperiales, siempre ansiosas por derramar sangre, necesitan un respiro. Sin embargo, las pretensiones expansionistas de la emperatriz Laseen no tienen límites, más aun cuando son reforzadas por sus temibles agentes de la Garra.
+    El sargento Whiskeyjack y su escuadrón necesitan tiempo para llorar los muertos del último asedio, pero Darujhistan, la última de las Ciudades Libres de Genabackis, los espera; en ella ha puesto la emperatriz su mirada depredadora.
+    El Imperio no está solo en este juego. Las fuerzas siniestras conspiran dentro y fuera de las sendas mágicas, y entretanto, hasta los dioses se preparan para la batalla...`,
     year: 1999,
     genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
     epubUrl: "https://drive.google.com/uc?export=download&id=1PIjGlvyoQ55V91Ewc3n82npm3DX4Zn41",
@@ -266,7 +271,9 @@ const sampleBooks: Book[] = [
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/716SRbduDiL._SY466_.jpg", 
     saga: "Malaz: El libro de los Caídos #2", 
-    description:"En el vasto dominio de las Siete Ciudades, en el desierto Santo Raraku, la vidente Sha'ik y sus seguidores se preparan para el Torbellino, la sublevación profetizada desde hace mucho tiempo. Será un brote de fanatismo que envolverá al imperio en un salvajismo y una sed de sangre sin precedentes. Estallará uno de los conflictos más sangrientos de su historia y surgirán nuevos destinos y leyendas... En las minas de otaralita, Felisin sueña con vengarse de su hermana, que la condenó a una vida de esclava. Los ahora-proscritos Abrasapuentes, Violín y el asesino Kalam han jurado devolver a Apsalar a su patria y matar a la emperatriz Laseen. Mientras tanto, Coltaine, el carismático comandante malazano, conduce a sus soldados a una última batalla para salvar la vida de treinta mil refugiados. Y a esa tierra arruinada llegan dos viejos conocidos, Mappo y el jaghut Icarium, portadores de un secreto devastador que amenaza con liberarse de sus cadenas...",
+    description:`Debilitado por los acontecimientos en Darujhistan, el Imperio de Malaz se halla al borde de la anarquía. En el vasto dominio de las Siete Ciudades, en el desierto Santo Raraku, la vidente Sha'ik y sus seguidores se preparan para el Torbellino, la sublevación profetizada desde hace mucho tiempo. Será un brote de fanatismo que envolverá al imperio en un salvajismo y una sed de sangre sin precedentes. Estallará uno de los conflictos más sangrientos de su historia y surgirán nuevos destinos y leyendas...
+    En las minas de otaralita, Felisin sueña con vengarse de su hermana, que la condenó a una vida de esclava. Los ahora-proscritos Abrasapuentes, Violín y el asesino Kalam han jurado devolver a Apsalar a su patria y matar a la emperatriz Laseen.
+    Mientras tanto, Coltaine, el carismático comandante malazano, conduce a sus soldados a una última batalla para salvar la vida de treinta mil refugiados. Y a esa tierra arruinada llegan dos viejos conocidos, Mappo y el jaghut Icarium, portadores de un secreto devastador que amenaza con liberarse de sus cadenas...`,
     year: 2000,
     genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
     epubUrl: "https://drive.google.com/uc?export=download&id=1Zqk3LrQWmpDXN7Z2lRgOoY9YsqOhatxo",
@@ -279,7 +286,8 @@ const sampleBooks: Book[] = [
     author: "Steven Erikson",
     cover: "https://m.media-amazon.com/images/I/514VA37DMHL._SY445_SX342_ML2_.jpg", 
     saga: "Malaz: El libro de los Caídos #3", 
-    description:"Una fuerza aterradora ha surgido en el continente asolado de Genabackis. Como una marea de sangre corrompida, el Dominio Painita cruza el continente como lava hirviente que consume a todos los que no escuchan la palabra de su profeta, el Vidente Painita. En su camino se interpone una alianza incómoda: la hueste de Dujek Unbrazo y los veteranos Abrasapuentes de Whiskeyjack, junto con antiguos adversarios: el caudillo Caladan Brood, Anomander Rake y sus tiste andii. Superados en número y desconfiando de todo y de todos, deben hacer llegar el mensaje a cualquier posible aliado, incluyendo las Espadas Grises, una hermandad mercenaria que ha jurado defender a toda costa la ciudad sitiada de Capustan. Pero son más los clanes antiguos que se están reuniendo. Los t#lan imass se alzan para responder a una antigua llamada primitiva. Algo maligno amenaza este mundo: las sendas están envenenadas y abundan los rumores sobre un dios que se ha deshecho de sus cadenas y está empeñado en vengarse...",
+    description:`Una fuerza aterradora ha surgido en el continente asolado de Genabackis. Como una marea de sangre corrompida, el Dominio Painita cruza el continente como lava hirviente que consume a todos los que no escuchan la palabra de su profeta, el Vidente Painita. En su camino se interpone una alianza incómoda: la hueste de Dujek Unbrazo y los veteranos Abrasapuentes de Whiskeyjack, junto con antiguos adversarios: el caudillo Caladan Brood, Anomander Rake y sus tiste andii. Superados en número y desconfiando de todo y de todos, deben hacer llegar el mensaje a cualquier posible aliado, incluyendo las Espadas Grises, una hermandad mercenaria que ha jurado defender a toda costa la ciudad sitiada de Capustan.
+    Pero son más los clanes antiguos que se están reuniendo. Los t#lan imass se alzan para responder a una antigua llamada primitiva. Algo maligno amenaza este mundo: las sendas están envenenadas y abundan los rumores sobre un dios que se ha deshecho de sus cadenas y está empeñado en vengarse...`,
     year: 2001, 
     genre: "Fantasía, Fantasía Épica, Fantasía Oscura",
     epubUrl: "https://drive.google.com/uc?export=download&id=1CsPm9TTBYIGa9v2-s6AzqnAATjlhTsG6",
@@ -318,7 +326,10 @@ const sampleBooks: Book[] = [
     author: "Andy Weir",
     cover: "https://m.media-amazon.com/images/I/51tdoxl1L6L._SY445_SX342_ControlCacheEqualizer_.jpg", 
     saga: "", 
-    description:"UN ÚNICO ASTRONAUTA. UNA MISIÓN IMPOSIBLE. UN ALIADO QUE JAMÁS HABRÍA IMAGINADO. Ryland Grace es el único superviviente en una misión desesperada. Es la última oportunidad y, si fracasa, la humanidad y la Tierra misma perecerán.  Claro que, de momento, él no lo sabe. Ni siquiera puede recordar su propio nombre, y mucho menos la naturaleza de su misión o cómo llevarla a cabo. Lo único que sabe es que ha estado en coma inducido durante mucho mucho tiempo. Acaba de despertar y se encuentra a millones de kilómetros de su hogar, sin más compañía que la de dos cadáveres. Muertos sus compañeros de tripulación, y a medida que va recuperando confusamente los recuerdos, Grace se da cuenta de que se enfrenta a una misión imposible. Recorriendo el espacio en una pequeña nave, depende de él acabar con una amenaza de extinción para nuestra especie. Sin apenas tiempo y con el ser humano más cercano a años luz de distancia, habrá de conseguirlo estando completamente solo.",
+    description:`UN ÚNICO ASTRONAUTA. 
+    UNA MISIÓN IMPOSIBLE. 
+    UN ALIADO QUE JAMÁS HABRÍA IMAGINADO. 
+    Ryland Grace es el único superviviente en una misión desesperada. Es la última oportunidad y, si fracasa, la humanidad y la Tierra misma perecerán.  Claro que, de momento, él no lo sabe. Ni siquiera puede recordar su propio nombre, y mucho menos la naturaleza de su misión o cómo llevarla a cabo. Lo único que sabe es que ha estado en coma inducido durante mucho mucho tiempo. Acaba de despertar y se encuentra a millones de kilómetros de su hogar, sin más compañía que la de dos cadáveres. Muertos sus compañeros de tripulación, y a medida que va recuperando confusamente los recuerdos, Grace se da cuenta de que se enfrenta a una misión imposible. Recorriendo el espacio en una pequeña nave, depende de él acabar con una amenaza de extinción para nuestra especie. Sin apenas tiempo y con el ser humano más cercano a años luz de distancia, habrá de conseguirlo estando completamente solo.`,
     year: 2021,
     genre: "Ciencia-Ficción",
     epubUrl: "https://drive.google.com/uc?export=download&id=1XEC_LMdhdx7JtXzLc7-tlDGNIHRv5WR9",
@@ -331,7 +342,15 @@ const sampleBooks: Book[] = [
     author: "James Islington",
     cover: "https://imagessl2.casadellibro.com/a/l/s7/72/9781982141172.webp", 
     saga: "Hierarchy #1", 
-    description:"En la elitista Academia Catena, un joven fugitivo va a ir desvelando las capas de un elaborado misterio y secretos capaces de cambiar el mundo a lo largo de esta nueva saga de fantasía del autor superventas internacional James Islington. AUDI. VIDI. TACE. Los habitantes de la república Catena, también llamada la Jerarquía, quizá dominen el mundo, pero no lo saben todo. Les he dicho que mi nombre es Vis Telimus. Les he dicho que me convertí en huérfano después de un trágico accidente hace tres años, y que ha sido solo la buena fortuna la que ha hecho que me acepten en su escuela más prestigiosa. Les he dicho que una vez que me gradúe me uniré gustosamente al resto de la sociedad civilizada, lo que quiere decir que permitiré que mi fuerza, mis deseos y mi determinación, lo que ellos llaman la Voluntad, sean parasitados y añadidos al poder de aquellos que están por encima de mí, como ya lo hacen millones. Como todos deben acabar haciendo. Les digo que soy uno de ellos, y me creen.Pero la verdad es que he sido enviado a la academia en busca de respuestas. Para resolver un asesinato. Para buscar un arma antigua. Para descubrir secretos que podrían hacer caer la república. Y nunca, jamás, cederé mi voluntad al imperio que ejecutó a mi familia Para sobrevivir, sin embargo, tendré que ir escalando posiciones dentro de la academia. Tendré que sonreír, que hacer amigos, y fingir que soy uno de ellos. Porque si no lo hago, aquellos que me quieren controlar, los que saben mi auténtico nombre, ya no me necesitarán. Y si la Jerarquía descubre quién soy de verdad, me matarán.",
+    description:`En la elitista Academia Catena, un joven fugitivo va a ir desvelando las capas de un elaborado misterio y secretos capaces de cambiar el mundo a lo largo de esta nueva saga de fantasía del autor superventas internacional James Islington.
+    AUDI. VIDI. TACE.
+    Los habitantes de la república Catena, también llamada la Jerarquía, quizá dominen el mundo, pero no lo saben todo.
+    Les he dicho que mi nombre es Vis Telimus. Les he dicho que me convertí en huérfano después de un trágico accidente hace tres años, y que ha sido solo la buena fortuna la que ha hecho que me acepten en su escuela más prestigiosa. Les he dicho que una vez que me gradúe me uniré gustosamente al resto de la sociedad civilizada, lo que quiere decir que permitiré que mi fuerza, mis deseos y mi determinación, lo que ellos llaman la Voluntad, sean parasitados y añadidos al poder de aquellos que están por encima de mí, como ya lo hacen millones. Como todos deben acabar haciendo.
+    Les digo que soy uno de ellos, y me creen.
+    Pero la verdad es que he sido enviado a la academia en busca de respuestas. Para resolver un asesinato. Para buscar un arma antigua. Para descubrir secretos que podrían hacer caer la república.
+    Y nunca, jamás, cederé mi voluntad al imperio que ejecutó a mi familia.
+    Para sobrevivir, sin embargo, tendré que ir escalando posiciones dentro de la academia. Tendré que sonreír, que hacer amigos, y fingir que soy uno de ellos. Porque si no lo hago, aquellos que me quieren controlar, los que saben mi auténtico nombre, ya no me necesitarán.
+    Y si la Jerarquía descubre quién soy de verdad, me matarán.`,
     year: 2023,
     genre: "Fantasía, Fantasía Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1AF4lMVbzufQYuMQgZSuQMFc8ofW-1TTl",
@@ -409,7 +428,10 @@ const sampleBooks: Book[] = [
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/61Xtkbld+6L._SY342_.jpg", 
     saga: "Red Rising #2", 
-    description: "Tras una implacable competición en el Instituto de Marte, Darrow se ha anado un puesto de honor entre la élite gobernante. Ahora luce la cicatriz curvada de los dorados, los más crueles y brillantes de los humanos. Pero Darrow no es como ellos… SU FUTURO SE HA CONSTRUIDO SOBRE MENTIRAS, SU PASADO ESTÁ MARCADO POR LA TRAGEDIA. Y NO PERDONA. NO OLVIDA. Para hacer realidad su objetivo de destruir el sistema desde dentro, Darrow debe convertirse en el mejor de los dorados. El más fuerte. El más inteligente. El más implacable. Solo así devolverá la luz a su pueblo. Aunque su sombra se torne más oscura a cada paso.", 
+    description: `Tras una implacable competición en el Instituto de Marte, Darrow se ha anado un puesto de honor entre la élite gobernante. Ahora luce la cicatriz curvada de los dorados, los más crueles y brillantes de los humanos. Pero Darrow no es como ellos…
+    SU FUTURO SE HA CONSTRUIDO SOBRE MENTIRAS, SU PASADO ESTÁ MARCADO POR LA TRAGEDIA. Y NO PERDONA. NO OLVIDA.
+    Para hacer realidad su objetivo de destruir el sistema desde dentro, Darrow debe convertirse en el mejor de los dorados. El más fuerte. El más inteligente. El más implacable. Solo así devolverá la luz a su pueblo.
+    Aunque su sombra se torne más oscura a cada paso.`,
     year: 2015,
     genre: "Ciencia Ficción",
     epubUrl: "https://drive.google.com/uc?export=download&id=16MCyC17pDqRNhNSIq6uTf_USMDLhRRaF",
@@ -422,7 +444,10 @@ const sampleBooks: Book[] = [
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/41OKNJdB+QL._SY445_SX342_ML2_.jpg", 
     saga: "Red Rising #3", 
-    description: " HONOR. VENGANZA. REVOLUCIÓN. Arriesgándolo todo para hundir la Sociedad dorada, Darrow ha sobrevivido a las despiadadas rivalidades entre los guerreros más poderosos. Ha logrado ascender y ha aguardado pacientemente el momento de desencadenar la revolución que acabará con la jerarquía desde dentro. Por fin ha llegado la hora… TRAICIONADO POR SUS ALIADOS. ABANDONADO A LA OSCURIDAD. UNA VOZ SE ALZARÁ POR LA JUSTICIA. Para vencer, necesitará persuadir a los que están sumidos en la oscuridad para que rompan sus cadenas y reclamen un destino que se les ha negado durante mucho tiempo. Un destino demasiado glorioso para renunciar a él. CUANDO LA LIBERTAD ESTÁ A TU ALCANCE LA ESPERANZA SE CONVIERTE EN TU ENEMIGO.", 
+    description: `HONOR
+    VENGANZA
+    REVOLUCIÓN
+    Arriesgándolo todo para hundir la Sociedad dorada, Darrow ha sobrevivido a las despiadadas rivalidades entre los guerreros más poderosos. Ha logrado ascender y ha aguardado pacientemente el momento de desencadenar la revolución que acabará con la jerarquía desde dentro. Por fin ha llegado la hora… TRAICIONADO POR SUS ALIADOS. ABANDONADO A LA OSCURIDAD. UNA VOZ SE ALZARÁ POR LA JUSTICIA. Para vencer, necesitará persuadir a los que están sumidos en la oscuridad para que rompan sus cadenas y reclamen un destino que se les ha negado durante mucho tiempo. Un destino demasiado glorioso para renunciar a él. CUANDO LA LIBERTAD ESTÁ A TU ALCANCE LA ESPERANZA SE CONVIERTE EN TU ENEMIGO.`,
     year: 2016,
     genre: "Ciencia Ficción",
     epubUrl: "https://drive.google.com/uc?export=download&id=1MvwahH13UbelHMub4DJatk8529or-6lY",
@@ -435,7 +460,8 @@ const sampleBooks: Book[] = [
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/61E0AoGmdsL._SY342_.jpg", 
     saga: "Red Rising #4", 
-    description: "Darrow nació esclavo. Pero se convirtió en un arma. Acabó con siglos de gobierno dorado y se convirtió en el héroe de una república nueva y poderosa. Ahora deberá arriesgar todo por lo que ha luchado en una última misión desesperada. Pero nuevos destinos se entrelazarán con el suyo. Una joven roja huye de la tragedia de un campo de refugiados y logra una nueva vida que ni siquiera habría sido capaz de imaginar. Un exsoldado se ve obligado a robar lo más preciado del universo… o a pagarlo con su vida. Y Lisandro au Lune, el heredero en el exilio de la soberana, merodea por las estrellas, obsesionado por la pérdida del mundo que Darrow ha transformado y soñando con el que brotará de sus cenizas.",
+    description: `Darrow nació esclavo. Pero se convirtió en un arma. Acabó con siglos de gobierno dorado y se convirtió en el héroe de una república nueva y poderosa. Ahora deberá arriesgar todo por lo que ha luchado en una última misión desesperada. Pero nuevos destinos se entrelazarán con el suyo.
+    Una joven roja huye de la tragedia de un campo de refugiados y logra una nueva vida que ni siquiera habría sido capaz de imaginar. Un exsoldado se ve obligado a robar lo más preciado del universo… o a pagarlo con su vida. Y Lisandro au Lune, el heredero en el exilio de la soberana, merodea por las estrellas, obsesionado por la pérdida del mundo que Darrow ha transformado y soñando con el que brotará de sus cenizas.`,
     year: 2018,
     genre: "Ciencia Ficción",
     epubUrl: "https://drive.google.com/uc?export=download&id=1ex3lyQKeY9Du5uxXArRvydHWEOO2zsvR",
@@ -448,7 +474,11 @@ const sampleBooks: Book[] = [
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/618pGq0SI0L._SY342_.jpg", 
     saga: "Red Rising #5", 
-    description: "HÉROE, TRAIDOR, VILLANO. Hace diez años, Darrow encabezó una revolución que creó un nuevo mundo. Hoy disputa una guerra sin cuartel en Mercurio con la esperanza de salvarlo de la destrucción. Pero, ahora que deja a su paso un reguero de muerte, ¿seguirá siendo el héroe que rompió las cadenas? ¿O surgirá otra leyenda que ocupe su lugar? A SU SOMBRA, CADA VEZ MÁS OSCURA, SE ALZAN NUEVOS HÉROES. LISANDRO AU LUNE, el heredero en el exilio, ha regresado al Núcleo. Si consigue unir a las traicioneras familias doradas, la joven República podría perecer. La joven LIRIA, antigua refugiada roja, está acusada de traición y su única esperanza es una huida desesperada con nuevos e inverosímiles aliados. Secuestrados por una nueva amenaza para la República, PAX y ELECTRA, los hijos de Darrow y Sevro, deben confiar en un ladrón, EFRAÍN, para que los salve... Y este debe buscar en ellos su oportunidad para redimirse. ROMPIÓ LAS CADENAS PARA LUEGO ROMPER EL MUNDO.",
+    description: `HÉROE, TRAIDOR, VILLANO.
+    Hace diez años, Darrow encabezó una revolución que creó un nuevo mundo. Hoy disputa una guerra sin cuartel en Mercurio con la esperanza de salvarlo de la destrucción. Pero, ahora que deja a su paso un reguero de muerte, ¿seguirá siendo el héroe que rompió las cadenas? ¿O surgirá otra leyenda que ocupe su lugar?
+    A SU SOMBRA, CADA VEZ MÁS OSCURA, SE ALZAN NUEVOS HÉROES.
+    LISANDRO AU LUNE, el heredero en el exilio, ha regresado al Núcleo. Si consigue unir a las traicioneras familias doradas, la joven República podría perecer. La joven LIRIA, antigua refugiada roja, está acusada de traición y su única esperanza es una huida desesperada con nuevos e inverosímiles aliados. Secuestrados por una nueva amenaza para la República, PAX y ELECTRA, los hijos de Darrow y Sevro, deben confiar en un ladrón, EFRAÍN, para que los salve... Y este debe buscar en ellos su oportunidad para redimirse.
+    ROMPIÓ LAS CADENAS PARA LUEGO ROMPER EL MUNDO.`,
     year: 2019,
     genre: "Ciencia Ficción",
     epubUrl: "https://drive.google.com/uc?export=download&id=1Zwdlhybqg8EElMYMXpdDyT5yfgfss4j3",
@@ -461,7 +491,13 @@ const sampleBooks: Book[] = [
     author: "Pierce Brown",
     cover: "https://m.media-amazon.com/images/I/81Z6riEYj2L._SY342_.jpg", 
     saga: "Red Rising #6", 
-    description: "HÉROE LÍDER LEYENDA. El Segador es una leyenda, más mito que hombre: el salvador de mundos, el líder del Amanecer, el rompedor de cadenas. Pero el Segador también es Darrow, nacido de la tierra roja de Marte: un marido, un padre, un amigo. Abandonado lejos de casa tras una devastadora derrota en los campos de batalla de Mercurio, Darrow anhela regresar junto a su esposa y soberana, Virginia. ADEMÁS, DARROW DEBE DEFENDER MARTE DE LISANDRO, SU SANGUINARIO ASPIRANTE A CONQUISTADOR. LISANDRO AU LUNE ansía destruir el Amanecer y reestablecer la supremacía de los dorados, y arrasará los mundos para satisfacer sus ambiciones. Así comienza el largo viaje de regreso a casa de Darrow para reencontrarse con las personas que ama: VIRGINIA, CASIO, SEVRO. Una aventura interplanetaria donde se reunirán viejos amigos, se forjarán nuevas alianzas y se enfrentarán los rivales en el campo de batalla. Porque el sueño de Eo sigue vivo y después de la era oscura vendrá una nueva época de luz, de victoria y de esperanza. SI LOS MUNDOS UNA VEZ NECESITARON AL SEGADOR, AHORA NECESITAN A DARROW PARA DEFENDER LA REPÚBLICA.",
+    description: `HÉROE LÍDER LEYENDA
+    El Segador es una leyenda, más mito que hombre: el salvador de mundos, el líder del Amanecer, el rompedor de cadenas. Pero el Segador también es Darrow, nacido de la tierra roja de Marte: un marido, un padre, un amigo. Abandonado lejos de casa tras una devastadora derrota en los campos de batalla de Mercurio, Darrow anhela regresar junto a su esposa y soberana, Virginia.
+    ADEMÁS, DARROW DEBE DEFENDER MARTE DE LISANDRO, SU SANGUINARIO ASPIRANTE A CONQUISTADOR.
+    LISANDRO AU LUNE ansía destruir el Amanecer y reestablecer la supremacía de los dorados, y arrasará los mundos para satisfacer sus ambiciones.
+    Así comienza el largo viaje de regreso a casa de Darrow para reencontrarse con las personas que ama: VIRGINIA, CASIO, SEVRO. 
+    Una aventura interplanetaria donde se reunirán viejos amigos, se forjarán nuevas alianzas y se enfrentarán los rivales en el campo de batalla. Porque el sueño de Eo sigue vivo y después de la era oscura vendrá una nueva época de luz, de victoria y de esperanza.
+    SI LOS MUNDOS UNA VEZ NECESITARON AL SEGADOR, AHORA NECESITAN A DARROW PARA DEFENDER LA REPÚBLICA.`,
     year: 2023,
     genre: "Ciencia Ficción",
     epubUrl: "https://drive.google.com/uc?export=download&id=1rcgXEjr8cJqV3uONZhsLzkirVIQoWHh9",
@@ -474,7 +510,10 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/816IVfekyGL._SY342_.jpg", 
     saga: "Nacidos de la Bruma #1", 
-    description: "Las brumas gobiernan la noche. El lord Legislador domina el mundo. En otros tiempos, un héroe se alzó para salvar la humanidad. Fracasó. Desde entonces, el mundo es un erial de ceniza y niebla gobernado por un emperador inmortal conocido como el lord Legislador. Pero la esperanza perdura. Una nueva revuelta cobra forma cimentándose en la treta definitiva: la astucia de un brillante genio del crimen y la determinación de una heroína insólita, una joven ladrona callejera que deberá aprender a controlar el poder de los nacidos de la bruma",
+    description: `Las brumas gobiernan la noche. El lord Legislador domina el mundo.
+    En otros tiempos, un héroe se alzó para salvar la humanidad. Fracasó.
+    Desde entonces, el mundo es un erial de ceniza y niebla gobernado por un emperador inmortal conocido como el lord Legislador.
+    Pero la esperanza perdura. Una nueva revuelta cobra forma cimentándose en la treta definitiva: la astucia de un brillante genio del crimen y la determinación de una heroína insólita, una joven ladrona callejera que deberá aprender a controlar el poder de los nacidos de la bruma.`,
     year: 2006,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1C_-8EUM0VIFqf-lwK7djalMaafSyrx-u",
@@ -487,7 +526,10 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81oUyFs0BCL._SY342_.jpg", 
     saga: "Nacidos de la Bruma #2", 
-    description: "Durante mil años nada ha cambiado: han caído las cenizas, los skaa han sido esclavizados y el Lord Legislador ha dominado el mundo. Pero lo imposible ha sucedido. El Lord Legislador ha muerto. Sin embargo, vencer y matarlo fue la parte sencilla. El verdadero desafío será sobrevivir a las consecuencias de su caída. Tomar el poder tal vez resultó fácil, pero ¿qué ocurre después?, ¿cómo se utiliza? La tarea de reconstruir el mundo, ahora que Kelsier no está, ha quedado en manos de Vin. Y las brumas, desde que el Lord Legislador cayó, se han vuelto cada vez más impredecibles... A medida que el asedio se intensifica, la antigua leyenda del Pozo de la Ascensión ofrece un único rayo de esperanza. En ese mundo de aventura épica, la estrategia política y religiosa debe lidiar con los siempre misteriosos poderes de la alomancia...",
+    description: `El mal ha sido derrotado. Pero la guerra acaba de empezar.
+    Lograron lo imposible y pusieron fin al reinado milenario de lord Legislador. Ahora Vin, que ha pasado de ser una ladronzuela a una poderosa nacida de la bruma, y Elend Venture, el joven noble e idealista que la ama, deberán construir una sociedad nueva y próspera sobre las cenizas de ese imperio derrotado.
+    Mientras las tensiones siguen creciendo tras la revuelta, una antigua leyenda ofrece un atisbo de esperanza para el pueblo. Sin embargo, incluso si las habladurías son ciertas, nadie sabe dónde se encuentra el Pozo de la Ascensión ni qué clase de poder otorga.
+    Es muy posible que matar al lord Legislador fuera la parte fácil. Sobrevivir a las consecuencias de su caída será el verdadero desafío.`,
     year: 2007,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1WybAAsWk5yg_3Ff-rUxfkeOBYD6GFhyx",
@@ -500,7 +542,8 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81Ovwnu1dNL._SY342_.jpg", 
     saga: "Nacidos de la Bruma #3", 
-    description: "Vin cumplió la profecía y liberó el poder acumulado en el Pozo de la Ascensión. Sin embargo, todo resultó ser una trampa, y ahora el ser divino llamado Ruina campa a sus anchas por el mundo decidido a arrasarlo con terremotos y ríos de fuego. Tras haber esquivado la muerte convirtiéndose en un nacido de la bruma, el emperador Elend Venture confía en que las pistas que dejó el lord Legislador les sirvan para contraatacar. Las profecías hablan de un héroe, pero ¿no estaban corrompidas? Vin deberá desenmarañar la verdad para compensar su error. Solo así llegará a ser el Héroe de las Eras antes de que Ruina aniquile toda la vida sobre el planeta.",
+    description: `Vin cumplió la profecía y liberó el poder acumulado en el Pozo de la Ascensión. Sin embargo, todo resultó ser una trampa, y ahora el ser divino llamado Ruina campa a sus anchas por el mundo decidido a arrasarlo con terremotos y ríos de fuego.
+    Tras haber esquivado la muerte convirtiéndose en un nacido de la bruma, el emperador Elend Venture confía en que las pistas que dejó el lord Legislador les sirvan para contraatacar. Las profecías hablan de un héroe, pero ¿no estaban corrompidas? Vin deberá desenmarañar la verdad para compensar su error. Solo así llegará a ser el Héroe de las Eras antes de que Ruina aniquile toda la vida sobre el planeta.`,
     year: 2008,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1JH2FcdYJwJfUI-cS8yUKdnTTz8dM-2it",
@@ -513,7 +556,8 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81v-hlxgYyL._SY342_.jpg", 
     saga: "", 
-    description: "Bienvenidos a la ciudad de Elantris, la poderosa y bella capital de Arelon llamada «la ciudad de los dioses». Antaño famosa sede de inmortales, lugar repleto de poderosa magia, Elantris ha caído en desgracia. Ahora solo acoge a los nuevos «muertos en vida», postrados en una insufrible «no-vida» tras una misteriosa y terrible transformación. Un matrimonio de Estado destinado a unir los reinos de Arelon y Teod se frustra, ya que el novio, Raoden, el príncipe de Arelon, sufre inesperadamente la Transformación, se convierte en un «muerto en vida» y debe refugiarse en Elantris. Su reciente esposa, la princesa Sarene de Teod, creyéndolo muerto, se ve obligada a incorporarse a la vida de Arelon y su nueva capital, Kae. Mientras, el embajador y alto sacerdote de otro reino vecino, Fjordell, usará su habilidad política para intentar dominar Arelod y Teod con el propósito de someterlos a su emperador y su dios.",
+    description: `Bienvenidos a la ciudad de Elantris, la poderosa y bella capital de Arelon llamada «la ciudad de los dioses». Antaño famosa sede de inmortales, lugar repleto de poderosa magia, Elantris ha caído en desgracia. Ahora solo acoge a los nuevos «muertos en vida», postrados en una insufrible «no-vida» tras una misteriosa y terrible transformación.
+    Un matrimonio de Estado destinado a unir los reinos de Arelon y Teod se frustra, ya que el novio, Raoden, el príncipe de Arelon, sufre inesperadamente la Transformación, se convierte en un «muerto en vida» y debe refugiarse en Elantris. Su reciente esposa, la princesa Sarene de Teod, creyéndolo muerto, se ve obligada a incorporarse a la vida de Arelon y su nueva capital, Kae. Mientras, el embajador y alto sacerdote de otro reino vecino, Fjordell, usará su habilidad política para intentar dominar Arelod y Teod con el propósito de someterlos a su emperador y su dios.`,
     year: 2005,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1--gWarB-mB9Hn9hhYcvxcLU0jj1fhIQh",
@@ -526,7 +570,13 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/81pzG7oNfHL._SY342_.jpg", 
     saga: "El archivo de las tormentas #1", 
-    description: "Anhelo los días previos a la Última Desolación. Los días en que los Heraldos nos abandonaron y los Caballeros Radiantes se giraron en nuestra contra. Un tiempo en que aún había magia en el mundo y honor en el corazón de los hombres. El mundo fue nuestro, pero lo perdimos. Probablemente no hay nada más estimulante para las almas de los hombres que la victoria. ¿O tal vez fue la victoria una ilusión durante todo ese tiempo? ¿Comprendieron nuestros enemigos que cuanto más duramente luchaban, más resistíamos nosotros? Quizá vieron que el fuego y el martillo tan solo producían mejores espadas. Pero ignoraron el acero durante el tiempo suficiente para oxidarse. Hay cuatro personas a las que observamos. La primera es el médico, quien dejó de curar para convertirse en soldado durante la guerra más brutal de nuestro tiempo. La segunda es el asesino, un homicida que llora siempre que mata. La tercera es la mentirosa, una joven que viste un manto de erudita sobre un corazón de ladrona. Por último está el alto príncipe, un guerrero que mira al pasado mientras languidece su sed de guerra. El mundo puede cambiar. La potenciación y el uso de las esquirlas pueden aparecer de nuevo, la magia de los días pasados puede volver a ser nuestra. Esas cuatro personas son la clave. Una de ellas nos redimirá. Y una de ellas nos destruirá. ",
+    description:  `Anhelo los días previos a la Última Desolación.
+Los días en que los Heraldos nos abandonaron y los Caballeros Radiantes se giraron en nuestra contra. Un tiempo en que aún había magia en el mundo y honor en el corazón de los hombres.
+El mundo fue nuestro, pero lo perdimos. Probablemente no hay nada más estimulante para las almas de los hombres que la victoria.
+¿O tal vez fue la victoria una ilusión durante todo ese tiempo? ¿Comprendieron nuestros enemigos que cuanto más duramente luchaban, más resistíamos nosotros? Quizá vieron que el fuego y el martillo tan solo producían mejores espadas. Pero ignoraron el acero durante el tiempo suficiente para oxidarse.
+Hay cuatro personas a las que observamos. La primera es el médico, quien dejó de curar para convertirse en soldado durante la guerra más brutal de nuestro tiempo. La segunda es el asesino, un homicida que llora siempre que mata. La tercera es la mentirosa, una joven que viste un manto de erudita sobre un corazón de ladrona. Por último está el alto príncipe, un guerrero que mira al pasado mientras languidece su sed de guerra.
+El mundo puede cambiar. La potenciación y el uso de las esquirlas pueden aparecer de nuevo, la magia de los días pasados puede volver a ser nuestra. Esas cuatro personas son la clave.
+Una de ellas nos redimirá. Y una de ellas nos destruirá.`,
     year: 2010,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=12dfWFsYVIu59NdaaLHNg6EXkrmRGckwx",
@@ -539,7 +589,12 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/518cTasQVxL._SY445_SX342_QL70_ML2_.jpg", 
     saga: "El archivo de las tormentas #2", 
-    description: "Los Caballeros Radiantes deben volver a alzarse. Los antiguos juramentos por fin se han pronunciado. Los hombres buscan lo que se perdió. Temo que la búsqueda los destruya. Es la naturaleza de la magia. Un alma rota tiene grietas donde puede colarse algo más. Las potencias, los poderes de la creación misma, pueden abrazar un alma rota, pero también pueden ampliar sus fisuras. El Corredor del Viento está perdido en una tierra quebrada, en equilibro entre la venganza y el honor. La Tejedora de Luz, lentamente consumida por su pasado, busca la mentira en la que debe convertirse. El Forjador de Vínculos, nacido en la sangre y la muerte, se esfuerza ahora por reconstruir lo que fue destruido. La Exploradora, a caballo entre los destinos de dos pueblos, se ve obligada a elegir entre una muerte lenta y una terrible traición a todo en lo que cree. Ya es hora de despertarlos, pues acecha la eterna tormenta. ",
+    description: `Los Caballeros Radiantes deben volver a alzarse.
+Los antiguos juramentos por fin se han pronunciado. Los hombres buscan lo que se perdió. Temo que la búsqueda los destruya.
+Es la naturaleza de la magia. Un alma rota tiene grietas donde puede colarse algo más. Las potencias, los poderes de la creación misma, pueden abrazar un alma rota, pero también pueden ampliar sus fisuras.
+El Corredor del Viento está perdido en una tierra quebrada, en equilibro entre la venganza y el honor. La Tejedora de Luz, lentamente consumida por su pasado, busca la mentira en la que debe convertirse. El Forjador de Vínculos, nacido en la sangre y la muerte, se esfuerza ahora por reconstruir lo que fue destruido. La Exploradora, a caballo entre los destinos de dos pueblos, se ve obligada a elegir entre una muerte lenta y una terrible traición a todo en lo que cree.
+Ya es hora de despertarlos, pues acecha la eterna tormenta.
+Y el asesino ha llegado.`,
     year: 2014,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=12GRcuThlmTBAmB3aMrEUQ772azUsWDEQ",
@@ -552,7 +607,8 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/51lr6mscwvL._SY445_SX342_QL70_ML2_.jpg", 
     saga: "El archivo de las tormentas #3", 
-    description: "La humanidad se enfrenta a una nueva Desolación con el regreso de los Portadores del Vacío, un enemigo tan grande en número como en sed de venganza. La victoria fugaz de los ejércitos alezi de Dalinar Kholin ha tenido consecuencias: el enemigo parshendi ha convocado la violenta tormenta eterna, que arrasa el mundo y hace que los hasta ahora pacíficos parshmenios descubran con horror que llevan un milenio esclavizados por los humanos. Al mismo tiempo, en una desesperada huida para alertar a su familia de la amenaza, Kaladin se pregunta si la repentina ira de los parshmenios está justificada. Entretanto, en la torre de la ciudad de Urithiru, a salvo de la tormenta, Shallan Davar investiga las maravillas de la antigua fortaleza de los Caballeros Radiantes y desentierra oscuros secretos que acechan en las profundidades. Dalinar descubre entonces que su sagrada misión de unificar su tierra natal de Alezkar era corta de miras. A menos que todas las naciones sean capaces de unirse y dejar de lado el pasado sangriento de Dalinar, ni siquiera la restauración de los Caballeros Radiantes conseguirá impedir el fin de la civilización.",
+    description: `La humanidad se enfrenta a una nueva Desolación con el regreso de los Portadores del Vacío, un enemigo tan grande en número como en sed de venganza. La victoria fugaz de los ejércitos alezi de Dalinar Kholin ha tenido consecuencias: el enemigo parshendi ha convocado la violenta tormenta eterna, que arrasa el mundo y hace que los hasta ahora pacíficos parshmenios descubran con horror que llevan un milenio esclavizados por los humanos. Al mismo tiempo, en una desesperada huida para alertar a su familia de la amenaza, Kaladin se pregunta si la repentina ira de los parshmenios está justificada.
+Entretanto, en la torre de la ciudad de Urithiru, a salvo de la tormenta, Shallan Davar investiga las maravillas de la antigua fortaleza de los Caballeros Radiantes y desentierra oscuros secretos que acechan en las profundidades. Dalinar descubre entonces que su sagrada misión de unificar su tierra natal de Alezkar era corta de miras. A menos que todas las naciones sean capaces de unirse y dejar de lado el pasado sangriento de Dalinar, ni siquiera la restauración de los Caballeros Radiantes conseguirá impedir el fin de la civilización.`,
     year: 2017,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1jREkjpOrNXuEcC5Ze72bZwjg7g_5UzIq",
@@ -565,7 +621,12 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/91Nb4w7arrL._SY342_.jpg", 
     saga: "El archivo de las tormentas #4", 
-    description: "Hay secretos que hemos guardado mucho tiempo. Vigilantes. Insomnes. Eternos. Y pronto dejarán de ser nuestros. La Una que es Tres busca, sin saberlo, el alma capturada. El spren aprisionado, olvidado hace mucho tiempo. ¿Puede liberar su propia alma a tiempo de hallar el conocimiento que condena a todos los pueblos de Roshar? El Soldado Caído acaricia y ama la lanza, incluso mientras el arma hiende su propia carne. Camina siempre hacia delante, siempre hacia la oscuridad, sin luz. No puede llevar consigo a nadie, salvo aquello que él mismo puede avivar. La Hermana Derrumbada comprende sus errores y piensa que ella misma es un error. Parece muy alejada de sus antepasados, pero no comprende que son quienes la llevan a hombros. Hacia la victoria, y hacia ese silencio, el más importante de todos. Y la Madre de Máquinas, la más crucial de todos ellos, danza con mentirosos en un gran baile. Debe desenmascararlos, alcanzar sus verdades ocultas y entregarlas al mundo. Tiene que reconocer que las peores mentiras son las que se cuenta a sí misma. Si lo hace, nuestros secretos por fin se convertirán en verdades.",
+    description: `Hay secretos que hemos guardado mucho tiempo. Vigilantes. Insomnes. Eternos. Y pronto dejarán de ser nuestros.
+La Una que es Tres busca, sin saberlo, el alma capturada. El spren aprisionado, olvidado hace mucho tiempo. ¿Puede liberar su propia alma a tiempo de hallar el conocimiento que condena a todos los pueblos de Roshar?
+El Soldado Caído acaricia y ama la lanza, incluso mientras el arma hiende su propia carne. Camina siempre hacia delante, siempre hacia la oscuridad, sin luz. No puede llevar consigo a nadie, salvo aquello que él mismo puede avivar.
+La Hermana Derrumbada comprende sus errores y piensa que ella misma es un error. Parece muy alejada de sus antepasados, pero no comprende que son quienes la llevan a hombros. Hacia la victoria, y hacia ese silencio, el más importante de todos.
+Y la Madre de Máquinas, la más crucial de todos ellos, danza con mentirosos en un gran baile. Debe desenmascararlos, alcanzar sus verdades ocultas y entregarlas al mundo. Tiene que reconocer que las peores mentiras son las que se cuenta a sí misma.
+Si lo hace, nuestros secretos por fin se convertirán en verdades.`,
     year: 2020,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1NbyLmdBo6ngh5vpJFjIopPSGvBcVM8It",
@@ -578,7 +639,9 @@ const sampleBooks: Book[] = [
     author: "Brandon Sanderson",
     cover: "https://m.media-amazon.com/images/I/819X7Usv6vL._SY342_.jpg", 
     saga: "El archivo de las tormentas #5", 
-    description: "Dalinar Kholin desafió al malvado dios Odium a un duelo de campeones en el que se decidirá el futuro de Roshar. Los Caballeros Radiantes solo tienen diez días para prepararse... y la repentina ascensión del taimado e implacable Taravangian al puesto de Odium lo ha sumido todo en una tremenda confusión. La lucha desesperada prosigue simultáneamente a lo largo y ancho del mundo: Adolin en Azimir, Sigzil y Venli en las Llanuras Quebradas y Jasnah en Ciudad Thaylen. El exasesino Seth deberá purgar Shinovar, su tierra natal, de la oscura influencia de los Deshechos. Lo acompaña Kaladin, que afronta una nueva batalla ayudando a Seth a combatir sus propios demonios... y tendrá que hacer lo mismo con Ishar, el demente Heraldo del Todopoderoso. Al mismo tiempo, Shallan, Renarin y Rlain se esfuerzan en desentrañar el misterio que hay tras la Deshecha Ba-Ado-Mishram, el de qué papel tuvo en la esclavización de la especie cantora y en el hecho de que los antiguos Caballeros Radiantes mataran a sus spren. Y Dalinar y Navani buscan una ventaja contra el campeón de Odium que solo puede hallarse en el Reino Espiritual, donde el recuerdo y la posibilidad se combinan en el caos. El destino de todo el Cosmere pende de un hilo.",
+    description: `Dalinar Kholin desafió al malvado dios Odium a un duelo de campeones en el que se decidirá el futuro de Roshar. Los Caballeros Radiantes solo tienen diez días para prepararse... y la repentina ascensión del taimado e implacable Taravangian al puesto de Odium lo ha sumido todo en una tremenda confusión.
+La lucha desesperada prosigue simultáneamente a lo largo y ancho del mundo: Adolin en Azimir, Sigzil y Venli en las Llanuras Quebradas y Jasnah en Ciudad Thaylen. El exasesino Seth deberá purgar Shinovar, su tierra natal, de la oscura influencia de los Deshechos. Lo acompaña Kaladin, que afronta una nueva batalla ayudando a Seth a combatir sus propios demonios... y tendrá que hacer lo mismo con Ishar, el demente Heraldo del Todopoderoso.
+Al mismo tiempo, Shallan, Renarin y Rlain se esfuerzan en desentrañar el misterio que hay tras la Deshecha Ba-Ado-Mishram, el de qué papel tuvo en la esclavización de la especie cantora y en el hecho de que los antiguos Caballeros Radiantes mataran a sus spren. Y Dalinar y Navani buscan una ventaja contra el campeón de Odium que solo puede hallarse en el Reino Espiritual, donde el recuerdo y la posibilidad se combinan en el caos. El destino de todo el Cosmere pende de un hilo.`,
     year: 2024,
     genre: "Fantasia, Fantasia Épica",
     epubUrl: "https://drive.google.com/uc?export=download&id=1hENzxl_DXRELCFtLY0YFNQTK-5cnYcn5",

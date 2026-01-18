@@ -1,24 +1,18 @@
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle,} from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Download, BookOpen, FileText, File } from "lucide-react";
-
 
 interface Book {
   id: string;
   title: string;
   author: string;
-  cover: string; 
+  cover: string;
   year?: number;
   genre?: string;
-  saga?: string; 
-  description?: string; 
+  saga?: string;
+  description?: string;
   epubUrl?: string;
   pdfUrl?: string;
   onlineUrl?: string;
@@ -45,7 +39,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
     "from-slate-800 to-slate-700",
   ];
   const colorIndex = parseInt(book.id) % colors.length;
-  const spineColor = colors[colorIndex];
+  // const spineColor = colors[colorIndex]; // Variable no usada en este snippet, pero mantenida por consistencia
 
   const handleDownload = (type: 'epub' | 'pdf' | 'online') => {
     // Placeholder URLs - in a real app, these would be actual file URLs
@@ -69,7 +63,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
   return (
     <>
-      <div 
+      <div
         className={cn(
           "group relative cursor-pointer",
           "transition-all duration-500 ease-out",
@@ -78,125 +72,130 @@ const BookCard = ({ book, className }: BookCardProps) => {
         )}
         onClick={() => setIsDialogOpen(true)}
       >
-        {/* Book Container - EL COMPONENTE DE LA COLECCIÓN HA SIDO REEMPLAZADO */}
+        {/* Book Container */}
         <div className="relative aspect-[3/4]">
-          
-          {/* Cover Image - NUEVA ESTRUCTURA */}
+          {/* Cover Image */}
           <img
             src={book.cover}
             alt={`Portada de ${book.title}`}
             className="w-full h-full object-contain rounded-md shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
           />
-
         </div>
-        
+
         {/* Información del libro debajo de la portada */}
         <div className="mt-2 text-center">
-            {/* Título */}
-            <h3 className="text-sm font-semibold leading-tight text-foreground line-clamp-2">
-                {book.title}
-            </h3>
-            {/* Autor */}
-            <p className="text-sm italic mt-0.5">
-                {book.author}
-            </p>
-            {/* Saga */}
-            {book.saga && (<p className="text-sm mt-0.5" style={{ color: darkGreen }}>
-              {book.saga} </p>
-            )}
+          {/* Título */}
+          <h3 className="text-sm font-semibold leading-tight text-foreground line-clamp-2">
+            {book.title}
+          </h3>
+          {/* Autor */}
+          <p className="text-sm italic mt-0.5">
+            {book.author}
+          </p>
+          {/* Saga */}
+          {book.saga && (<p className="text-sm mt-0.5" style={{ color: darkGreen }}>
+            {book.saga} </p>
+          )}
         </div>
       </div>
-      
+
       {/* Download Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-5xl bg-paper border-gold/30">
-          <DialogHeader>
+        <DialogContent className="sm:max-w-5xl h-[90vh] md:h-[600px] bg-paper border-gold/30 flex flex-col overflow-hidden">
+          
+          <DialogHeader className="shrink-0">
             <DialogTitle className="font-display text-2xl text-foreground text-center">
               {book.title}
             </DialogTitle>
-            <p className="font-body text-md text-muted-foreground text-center italic mb-4"style={{ color: darkRed }}>
-              {book.author} 
+            <p className="font-body text-md text-muted-foreground text-center italic mb-4" style={{ color: darkRed }}>
+              {book.author}
               {book.saga && (
-                    <span className="ml-2" style={{ color: darkGreen }}> 
-                        (Saga: {book.saga})
-                    </span>
-                  )
-                }
+                <span className="ml-2" style={{ color: darkGreen }}>
+                  (Saga: {book.saga})
+                </span>
+              )
+              }
             </p>
           </DialogHeader>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
+
+          {/* Contenedor principal del grid: 'h-full' y 'overflow-hidden' para contener los hijos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full overflow-hidden pb-2">
+
             {/* Columna 1: Portada */}
-            <div className="md:col-span-1 flex justify-center">
+            <div className="md:col-span-1 flex justify-center items-start h-full">
               <img
                 src={book.cover}
                 alt={`Portada de ${book.title}`}
-                className="w-full max-w-xs aspect-[3/4] object-cover rounded-md shadow-xl"
+                className="w-full max-w-xs aspect-[3/4] object-cover rounded-md shadow-xl max-h-[400px]"
               />
             </div>
 
             {/* Columna 2: Descripción y Botones */}
-            <div className="md:col-span-2 flex flex-col justify-between">
-                <div>
-                    <h4 className="font-display text-lg text-gold mb-2 " style={{ color: darkRed }}>Sinopsis</h4>
-                    <p className="font-body text-sm mb-6" style={{ textAlign: "justify" }}>
-                       {book.description || "No hay una descripción disponible para este libro."}
+            {/* 'flex flex-col h-full' para distribuir espacio verticalmente */}
+            <div className="md:col-span-2 flex flex-col h-full justify-between">
+              
+              {/* Bloque superior: Sinopsis y detalles */}
+              <div className="flex flex-col min-h-0">
+                <h4 className="font-display text-lg text-gold mb-2 shrink-0" style={{ color: darkRed }}>Sinopsis</h4>
+                <div className="h-[200px] overflow-y-auto pr-4 mb-4 border border-transparent rounded-sm">
+                    <p className="font-body text-base text-foreground/90 whitespace-pre-line" style={{ textAlign: "justify" }}>
+                    {book.description || "No hay una descripción disponible para este libro."}
                     </p>
-                    
-                    {/* Detalles adicionales */}
-                    <div className="flex gap-4 text-xs text-muted-foreground">
-                        {book.year && <span>Año: {book.year}</span>}
-                        {book.genre && <span>Género: {book.genre}</span>}
-                    </div>
-
-                    <div className="w-full h-px bg-gold/20 my-4" />
                 </div>
 
-                {/* Botones de Descarga/Lectura */}
-                <div className="flex flex-col gap-3">
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
-                    onClick={() => handleDownload('epub')}
-                    disabled={!book.epubUrl}
-                  >
-                    <File className="w-5 h-5 text-gold" />
-                    <div className="flex flex-col items-start">
-                      <span className="font-display text-sm">Descargar EPUB</span>
-                      <span className="font-body text-xs text-muted-foreground">Formato para e-readers</span>
-                    </div>
-                    <Download className="w-4 h-4 ml-auto text-muted-foreground" />
-                  </Button>
-                  
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
-                    onClick={() => handleDownload('pdf')}
-                    disabled={!book.pdfUrl}
-                  >
-                    <FileText className="w-5 h-5 text-gold" />
-                    <div className="flex flex-col items-start">
-                      <span className="font-display text-sm">Descargar PDF</span>
-                      <span className="font-body text-xs text-muted-foreground">Formato universal</span>
-                    </div>
-                    <Download className="w-4 h-4 ml-auto text-muted-foreground" />
-                  </Button>
-                  
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
-                    onClick={() => handleDownload('online')}
-                    disabled={!book.onlineUrl}
-                  >
-                    <BookOpen className="w-5 h-5 text-gold" />
-                    <div className="flex flex-col items-start">
-                      <span className="font-display text-sm">Leer Online</span>
-                      <span className="font-body text-xs text-muted-foreground">Abrir en nueva pestaña</span>
-                    </div>
-                    <BookOpen className="w-4 h-4 ml-auto text-muted-foreground" />
-                  </Button>
+                {/* Detalles adicionales (Fijos debajo de la descripción) */}
+                <div className="flex gap-4 text-xs text-muted-foreground shrink-0">
+                  {book.year && <span>Año: {book.year}</span>}
+                  {book.genre && <span>Género: {book.genre}</span>}
                 </div>
+
+                <div className="w-full h-px bg-gold/20 my-4 shrink-0" />
+              </div>
+
+              {/* Botones de Descarga/Lectura (Siempre abajo) */}
+              <div className="flex flex-col gap-3 shrink-0">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  onClick={() => handleDownload('epub')}
+                  disabled={!book.epubUrl}
+                >
+                  <File className="w-5 h-5 text-gold" />
+                  <div className="flex flex-col items-start">
+                    <span className="font-display text-sm">Descargar EPUB</span>
+                    <span className="font-body text-xs text-muted-foreground">Formato para e-readers</span>
+                  </div>
+                  <Download className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  onClick={() => handleDownload('pdf')}
+                  disabled={!book.pdfUrl}
+                >
+                  <FileText className="w-5 h-5 text-gold" />
+                  <div className="flex flex-col items-start">
+                    <span className="font-display text-sm">Descargar PDF</span>
+                    <span className="font-body text-xs text-muted-foreground">Formato universal</span>
+                  </div>
+                  <Download className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+
+                <Button
+                  variant="outline"
+                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  onClick={() => handleDownload('online')}
+                  disabled={!book.onlineUrl}
+                >
+                  <BookOpen className="w-5 h-5 text-gold" />
+                  <div className="flex flex-col items-start">
+                    <span className="font-display text-sm">Leer Online</span>
+                    <span className="font-body text-xs text-muted-foreground">Abrir en nueva pestaña</span>
+                  </div>
+                  <BookOpen className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+              </div>
             </div>
           </div>
         </DialogContent>

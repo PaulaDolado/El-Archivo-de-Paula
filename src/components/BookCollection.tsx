@@ -138,9 +138,9 @@ const sampleBooks: Book[] = [
     saga: "Tomo 26-30", 
     description:"Cuenta la historia del legendario espadachín Musashi Miyamoto, la figura histórica más importante del Japón en lo que se refiere al desarrollo de las técnicas de lucha con espada. Desde su juventud como el violento e iracundo joven llamado Takezo, sobreviviendo (aun estando del lado perdedor) a una de las batallas más sangrientas de la historia: Sekigahara; hasta su decisión de pasar a llamarse Musashi y embarcarse en una búsqueda de autosuperación personal que lo llevará a enfrentarse con los más grandes expertos de las artes marciales del país.",
     year: 2009,
-    genre: "Cómics manga, novelas gráficas", 
+    genre: "Cómics manga, novelas gráficas",
     epubUrl: "https://drive.google.com/uc?export=download&id=1vD5E0I8kskD-3BGGhupj6WxuaPEuam-E",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1CbEzp7WTyYljnPeUrAi6RKnMWWW0QzFx",
     onlineUrl: "",
   },
   {
@@ -153,7 +153,7 @@ const sampleBooks: Book[] = [
     year: 2007,
     genre: "Cómics manga, novelas gráficas",
     epubUrl: "https://drive.google.com/uc?export=download&id=15qQTmj2EXeeQrqxn-O9KRIAMPk_1aQIN",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1m-EMINRTWKCJx-zy5phIcCMmbQiuuKpl",
     onlineUrl: "",
   },
   {

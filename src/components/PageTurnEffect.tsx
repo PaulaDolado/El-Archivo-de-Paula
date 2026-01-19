@@ -167,30 +167,22 @@ const handleCollectionSearchSubmit = (e) => {
           {/* Back button */}
           <button
             onClick={handleGoBack}
-            className={cn(
-              "fixed top-6 left-16 md:left-20 z-50",
-              "flex items-center gap-2 px-4 py-2",
-              "font-display text-sm tracking-wider uppercase",
-              "text-muted-foreground hover:text-foreground",
-              "transition-all duration-300",
-              "hover:-translate-x-1"
-            )}
-          >
+            className={cn( "fixed top-6 left-6 md:left-20 z-50", "flex items-center gap-2 px-4 py-2", "font-display text-sm tracking-wider uppercase", "text-muted-foreground hover:text-foreground", "transition-all duration-300", "hover:-translate-x-1" )} >
             <ChevronRight className="w-4 h-4 rotate-180" />
             <span>Volver</span>
           </button>
 
           {/* BUSCADOR COLLECTION (Derecha) */}
-          <div className="fixed top-4 right-4 md:right-8 z-50 w-full max-w-xs">
+          <div className="fixed top-16 md:top-4 right-6 md:right-8 z-50 w-full max-w-xs">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
                <Input type="text"
                 placeholder="Buscar en Mi Colección..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                 onKeyDown={handleCollectionSearchSubmit} 
-                 className="w-full pl-10 py-2 bg-white border border-gray-300 text-gray-800 placeholder:text-gray-500 font-body text-sm rounded-lg focus:border-gold focus:ring-gold/20 shadow-md"
-                 onClick={(e) => e.stopPropagation()}
+                onKeyDown={handleCollectionSearchSubmit} 
+                className="w-full pl-10 py-2 bg-white border border-gray-300 text-gray-800 placeholder:text-gray-500 font-body text-sm rounded-lg focus:border-gold focus:ring-gold/20 shadow-md"
+                onClick={(e) => e.stopPropagation()}
                 />
                 </div>
           </div>

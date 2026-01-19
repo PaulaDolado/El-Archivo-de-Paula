@@ -102,7 +102,6 @@ const BookCard = ({ book, className }: BookCardProps) => {
         <DialogContent
           className={cn(
             "sm:max-w-5xl w-full bg-paper border-gold/30 flex flex-col p-4 md:p-8",
-            "overflow-y-auto",
             "h-[100dvh] md:h-[600px]"
           )}
         >

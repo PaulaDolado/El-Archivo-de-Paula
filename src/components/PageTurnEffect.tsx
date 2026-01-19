@@ -14,7 +14,7 @@ const PageTurnEffect = () => {
   const [submittedQuery, setSubmittedQuery] = useState("");
 
   const handlePageTurn = useCallback(() => {
-    if (isAnimating || isPageTurned) return;
+    if (isAnimating || isPageTurned) return;  
     
     setIsAnimating(true);
     setIsPageTurned(true);
@@ -29,9 +29,8 @@ const PageTurnEffect = () => {
 
   // **NUEVA FUNCIÓN:** Maneja la pulsación de Enter en el input de búsqueda
   const handleSearchSubmit = (e) => {
-    // Verifica si se ha presionado la tecla 'Enter'
     if (e.key === 'Enter') {
-      e.preventDefault(); // Previene cualquier acción por defecto del formulario (si existiera)
+      e.preventDefault(); 
       // 1. Guarda la consulta de búsqueda actual
       setSubmittedQuery(searchQuery);
       // 2. "Pasa la página" para mostrar la colección
@@ -42,7 +41,7 @@ const PageTurnEffect = () => {
 const handleGoBack = useCallback(() => {
     if (isAnimating) return;
     setIsPageTurned(false);
-    // **Opcional:** Limpiar la consulta cuando se regresa a la portada
+    //Limpiar la consulta cuando se regresa a la portada
     setSubmittedQuery(""); 
     setSearchQuery(""); 
   }, [isAnimating]);
@@ -113,10 +112,17 @@ const handleCollectionSearchSubmit = (e) => {
         </div>
 
         {/* Click hint on right side */}
-        <div 
-          className="absolute right-0 top-0 bottom-0 w-1/3 md:w-1/4 flex items-center justify-end pr-8 cursor-pointer group"
-          onClick={handlePageTurn}
-        >
+          <div 
+            className="
+              absolute right-0 w-1/3 md:w-1/4
+              flex justify-end pr-8 cursor-pointer group
+              top-[55%] md:top-0
+              md:bottom-0
+              md:items-center
+            "
+            onClick={handlePageTurn}
+          >
+
           <div className={cn(
             "flex flex-col items-center gap-3 text-paper/60",
             "transition-all duration-300",

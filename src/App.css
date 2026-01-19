@@ -1,25 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 2rem;
   text-align: center;
 }
-@media (max-width: 768px) {
-  /* Bajamos las flechas para que no choquen con el buscador */
-  .swiper-button-next, 
-  .swiper-button-prev,
-  [class*="arrow"], 
-  [class*="nav-button"] {
-    top: 70% !important; /* Las baja un poco más */
-  }
-
-  /* Aseguramos que el buscador tenga espacio */
-  header + div, 
-  .min-h-screen {
-    padding-top: 140px !important; /* Empuja todo el contenido hacia abajo para que el Header no tape nada */
-  }
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;

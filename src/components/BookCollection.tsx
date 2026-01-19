@@ -1189,7 +1189,7 @@ return (
               </div>
             ))
           ) : (
-            <div className="col-span-full text-center py-12 text-white">
+            <div className="col-span-full text-center py-12"style={{ color: "rgb(109, 12, 25)"}}>
               <p className="font-body text-lg italic">
                 No se encontraron libros que coincidan con tu búsqueda
               </p>

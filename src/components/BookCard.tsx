@@ -101,8 +101,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
       {/* Download Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-5xl h-[90vh] md:h-[600px] bg-paper border-gold/30 flex flex-col overflow-hidden">
-          
+        <DialogContent className="sm:max-w-5xl w-full h-[100vh] md:h-[600px] bg-paper border-gold/30 flex flex-col overflow-y-auto p-4 md:p-8">
           <DialogHeader className="shrink-0">
             <DialogTitle className="font-display text-2xl text-foreground text-center">
               {book.title}
@@ -118,11 +117,11 @@ const BookCard = ({ book, className }: BookCardProps) => {
             </p>
           </DialogHeader>
 
-          {/* Contenedor principal del grid: 'h-full' y 'overflow-hidden' para contener los hijos */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full overflow-hidden pb-2">
+          {/* Contenedor principal del grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* Columna 1: Portada */}
-            <div className="md:col-span-1 flex justify-center items-start h-full">
+            <div className="md:col-span-1 flex justify-center items-start mb-4 md:mb-0">
               <img
                 src={book.cover}
                 alt={`Portada de ${book.title}`}
@@ -131,11 +130,10 @@ const BookCard = ({ book, className }: BookCardProps) => {
             </div>
 
             {/* Columna 2: Descripción y Botones */}
-            {/* 'flex flex-col h-full' para distribuir espacio verticalmente */}
-            <div className="md:col-span-2 flex flex-col h-full justify-between">
-              
+            <div className="md:col-span-2 flex flex-col flex-1 overflow-hidden">
+
               {/* Bloque superior: Sinopsis y detalles */}
-              <div className="flex flex-col min-h-0">
+              <div className="flex flex-col gap-3 shrink-0">
                 <h4 className="font-display text-lg text-gold mb-2 shrink-0" style={{ color: darkRed }}>Sinopsis</h4>
                 <div className="h-[200px] overflow-y-auto pr-4 mb-4 border border-transparent rounded-sm">
                     <p className="font-body text-base text-foreground/90 whitespace-pre-line" style={{ textAlign: "justify" }}>
@@ -152,11 +150,11 @@ const BookCard = ({ book, className }: BookCardProps) => {
                 <div className="w-full h-px bg-gold/20 my-4 shrink-0" />
               </div>
 
-              {/* Botones de Descarga/Lectura (Siempre abajo) */}
-              <div className="flex flex-col gap-3 shrink-0">
+              {/* Botones de descarga */}
+              <div className="flex flex-col gap-3 mt-2 md:mt-0">
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
                   onClick={() => handleDownload('epub')}
                   disabled={!book.epubUrl}
                 >
@@ -170,7 +168,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
                   onClick={() => handleDownload('pdf')}
                   disabled={!book.pdfUrl}
                 >
@@ -184,7 +182,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
                   onClick={() => handleDownload('online')}
                   disabled={!book.onlineUrl}
                 >

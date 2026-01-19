@@ -75,7 +75,7 @@ const PageTurnEffect = () => {
       {/* Landing Page (Cover) */}
       <div
         className={cn(
-          "fixed inset-0 z-30 flex flex-col items-center cursor-pointer select-none transition-transform duration-700 ease-in-out",
+          "fixed inset-0 ml-8 md:ml-12 z-30 flex flex-col items-center cursor-pointer select-none transition-transform duration-700 ease-in-out",
           isPageTurned && "translate-x-[-100%] opacity-0 pointer-events-none"
         )}
         style={{
@@ -85,9 +85,9 @@ const PageTurnEffect = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-       >
+      >
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 flex flex-col items-center pt-24 md:pt-32 px-8 md:px-12 max-w-2xl w-full">
+        <div className="relative z-10 flex flex-col items-center pt-24 md:pt-32 px-8 max-w-2xl w-full">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-[0.2em] uppercase text-center mb-6 animate-fade-in-up">
             <span className="text-white">El Archivo de Paula</span>
           </h1>
@@ -145,12 +145,12 @@ const PageTurnEffect = () => {
       {/* Book Collection Page (Behind) */}
       <div
         className={cn(
-          "fixed inset-0 z-20 bg-[#b8ae90] transition-opacity duration-500",
+          "fixed inset-0 ml-8 md:ml-12 z-20 bg-[#b8ae90] transition-opacity duration-500",
           !isPageTurned && "opacity-0 pointer-events-none",
           isPageTurned && "opacity-100"
         )}
       >
-        <div  ref={scrollContainerRef}>
+        <div className="relative h-full overflow-y-auto" ref={scrollContainerRef}>
           <BookCollection
             className={isPageTurned ? "animate-page-reveal" : ""}
             searchQuery={submittedQuery}

@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
 
 .gradient-header {
   top: -112px;

@@ -1106,12 +1106,10 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
 
   // Estilos CSS para el fondo de la CUADRÍCULA DE LIBROS (collectionBg2)
   const bookGridBackgroundStyle = {
-    // Establecer la NUEVA imagen de fondo SOLO para el grid
     backgroundImage: `url(${collectionBg2})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    // Aseguramos que la posición sea relativa para el overlay
     position: "relative" as "relative", 
   };
 
@@ -1122,8 +1120,8 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.1)", // Negro semi-transparente (40% opacidad)
-    // El overlay tiene z-index 1, el contenido del grid tendrá z-index 2 o más
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    // El overlay z-index = 1, el contenido del grid --> 2 o+
     zIndex: 1, 
   };
 
@@ -1131,25 +1129,47 @@ return (
     <div className={cn("min-h-screen pt-28 pb-16 px-8 md:px-16",className )}
       // Este es el fondo GENERAL
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(194, 174, 150, 0.95) 0%, rgba(194, 174, 150, 0.5) 12%, transparent 5%), url(${collectionBg})`,
+        backgroundImage: `url(${collectionBg})`, 
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
-      }}
-    >
-      {/* Sección de Encabezado con efecto de fondo traslúcido (Color #c2ae96) */}
-      <div className="max-w-6xl mx-auto mb-16 text-center"> 
-        {/* Título Principal */}
-        <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-primary mb-6 animate-fade-in-up">
-          Mi Colección
-        </h1>
+      }}>
+      {/* Sección de Encabezado */}
+      <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-12">
+        
+        <div 
+          className="absolute inset-y-0 w-full z-0 backdrop-blur-[2px] border-y border-white/5" 
+          style={{
+            top: "-112px", 
+            bottom: -50,  
+            left: 0,
+            right: 0,
+            background: `linear-gradient(to right, 
+              transparent 0%, 
+              rgba(245, 230, 202, 0.4) 15%, 
+              rgba(245, 230, 202, 0.85) 50%, 
+              rgba(245, 230, 202, 0.4) 85%,
+              transparent 100%
+            )`
+          }}
+        />
 
-        {/* Separador y Subtítulo */}
-        <div className="flex items-center gap-4 mb-4">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-          <span className="font-display text-xl tracking-[0.4em] text-primary uppercase">
-            Descubre y descarga libros en PDF, EPUB o lee online.
-          </span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+        {/* Contenido centrado:
+            He reducido el padding (py-4) para que la franja sea estrecha.
+        */}
+        <div className="relative z-10 max-w-6xl mx-auto px-8 py-4 text-center">
+          {/* Título Principal - Tamaño ajustado para ser más compacto */}
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-primary mb-2 animate-fade-in-up drop-shadow-sm">
+            Mi Colección
+          </h1>
+
+          {/* Separador y Subtítulo */}
+          <div className="flex items-center justify-center gap-4 max-w-3xl mx-auto">
+            <div className="h-px flex-1 bg-primary/20" />
+            <span className="font-display text-xs md:text-sm lg:text-base tracking-[0.3em] text-primary/70 uppercase font-medium whitespace-nowrap">
+              Libros en PDF, EPUB o online
+            </span>
+            <div className="h-px flex-1 bg-primary/20" />
+          </div>
         </div>
       </div>
 
@@ -1165,14 +1185,10 @@ return (
         <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {filteredBooks.length > 0 ? (
             filteredBooks.map((book, index) => (
-              <div
+              <div 
                 key={book.id}
                 className="animate-fade-in-up opacity-0"
-                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
-              >
-                {/* NOTA: Asegúrate de que BookCard utilice texto de color claro 
-                (ej. text-white) para destacar sobre el fondo oscuro.
-                */}
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}>
                 <BookCard book={book} />
               </div>
             ))
@@ -1185,7 +1201,6 @@ return (
           )}
         </div>
       </div>
-      {/* --- FIN: Contenedor con Imagen de Fondo Específica --- */}
 
       {/* Footer decoration */}
       <div className="max-w-6xl mx-auto mt-16 flex justify-center">

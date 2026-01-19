@@ -1135,10 +1135,10 @@ return (
       }}>
       {/* Sección de Encabezado */}
       <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-3 ">  
-        <div className="absolute inset-y-0 w-screen z-0 backdrop-blur-[2px] border-y border-white/5" 
-          style={{
-            top: "-112px", 
-            bottom: -50,  
+        <div className="absolute z-0 backdrop-blur-[2px] border-y border-white/5 w-screen
+               top-[-112px] bottom-[-20px] 
+               md:top-[-112px] md:bottom-[-15px]"
+          style={{  
             left: 0,
             right: 0,
             background: `linear-gradient(to right, 

@@ -1166,7 +1166,7 @@ return (
           <div className="flex items-center justify-center gap-4 max-w-3xl mx-auto">
             <div className="h-px flex-1 bg-primary/20" />
             <span className="font-display text-xs md:text-sm lg:text-base tracking-[0.3em] text-primary/70 uppercase font-medium whitespace-nowrap">
-              Libros en PDF, EPUB o online
+              Descarga libros en PDF, EPUB o lee online
             </span>
             <div className="h-px flex-1 bg-primary/20" />
           </div>

@@ -1,8 +1,17 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+}
+@media (max-width: 768px) {
+  /* Bajamos las flechas para que no choquen con el buscador */
+  .swiper-button-next, 
+  .swiper-button-prev,
+  [class*="arrow"], 
+  [class*="nav-button"] {
+    top: 70% !important; /* Las baja un poco más */
+  }
 }
 
 .logo {

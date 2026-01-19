@@ -12,9 +12,56 @@ interface BookCollectionProps {
   searchQuery?: string;
 }
 
-const sampleBooks: Book[] = [ 
+const sampleBooks: Book[] = [
+   {
+    id: "77",
+    title: "Juego de Tronos",
+    author: "George R.R. Martin",
+    cover: "https://m.media-amazon.com/images/I/41OOriHgObL._SY445_SX342_ML2_.jpg",
+    saga: "Canción de hielo y fuego #01",
+    description: `«Cuando se juega al juego de tronos, solo se puede ganar o morir. No hay puntos intermedios.»
+En un mundo diferente al nuestro, en el que los veranos y los inviernos duran generaciones, un gran conflicto está a punto de estallar. Robert Baratheon ocupa el Trono de Hierro en el cálido y opulento sur de Poniente. Se lo arrebató tras una sangrienta guerra al último rey loco de la dinastía Targaryen, señores de dragones.
+Sin embargo, ahora su poder se ve amenazado: en el norte, el Muro erigido para proteger el reino de las bestias y de los extraños se tambalea. Hace siglos que nadie ve a los caminantes blancos, pero ¿quiénes son entonces esos seres de ojos azules y fríos que se ocultan en las sombras de los bosques y que les arrebatan la vida y la mente a aquellos desafortunados que se cruzan en su camino? El final del verano está próximo, se acerca el invierno y solo un milagro podrá disipar las tinieblas.`,
+    year: 1996,
+    genre: "Fantasía, Fantasía Épica",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1Pesgdq3HqhvPBWafY-X973zvtnrUVeDe",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1CiiIcZkCvlpQiv0--4jfyIbC8bVNF3LR",
+    onlineUrl: "",
+  },
+   {
+    id: "78",
+    title: "Choque de Reyes",
+    author: "George R.R. Martin",
+    cover: "https://m.media-amazon.com/images/I/516JHbFQZNL._ML2_.jpg",
+    saga: "Canción de hielo y fuego #02",
+    description: `«Llegará un día en el que te sientas segura y feliz, y de repente tu alegría se te convertirá en cenizas en la boca, y ese día sabrás que la deuda ha quedado saldada.»
+En el cielo sobre los Siete Reinos, que se hallan asolados por una guerra devastadora, aparece un siniestro cometa color sangre. ¿Acaso se trata de otro augurio terrible sobre las catástrofes que están por llegar?
+El verano ha terminado, y cuatro líderes se disputan el Trono de Hierro. Mientras tanto, al otro lado del mar, la orgullosa princesa exiliada Daenerys Targaryen está dispuesta a arriesgarlo todo con tal de recuperar la corona que le pertenece por derecho. Puede que, para ella, el cometa de sangre no sea un mal presagio, sino el heraldo de la venganza.
+Y mientras la batalla continúa, al norte, más allá del Muro, las fuerzas oscuras se vuelven cada vez más poderosas.`,
+    year: 1998,
+    genre: "Fantasía, Fantasía Épica",
+    epubUrl: "https://drive.google.com/uc?export=download&id=16vu_-rdxdxNWuKT6j0fLOK5uBEHftw8n",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1yO1_vKB2Q_gqPyZFE-9xX65zUDticYFy",
+    onlineUrl: "",
+  },
+   {
+    id: "79",
+    title: "Tormenta de Espadas",
+    author: "George R.R. Martin",
+    cover: "https://m.media-amazon.com/images/I/51h7bx2AjUL._SY445_SX342_ML2_.jpg",
+    saga: "Canción de hielo y fuego #03",
+    description: `«Se Acerca el Invierno, anunciaba el lema de los Stark, y sin duda había caído con crueldad sobre ellos.»
+El juego de alianzas, traiciones y engaños para hacerse con el Trono de Hierro se vuelve más despiadado tras la muerte del joven rey Renly Baratheon. Aunque la ambición de los que se disputan la victoria no conoce límites, la amenaza más terrible acecha tanto a los cuatro reyes como a un Poniente devastado por el conflicto.
+Desde el lejano norte, una horda de bárbaros y gigantes se cierne lentamente sobre los Siete Reinos. Sin embargo, junto al pueblo libre se aproxima un enemigo incluso más estremecedor: los Otros, unos guerreros sobrenaturales que no temen a la muerte porque la conocen muy bien.
+La Guardia de la Noche, minada y debilitada, tiene los días contados. Su última esperanza recae sobre los hombros de Jon Nieve, bastardo de Invernalia. Puede que el resultado de la guerra por el poder supremo aún esté por decidirse...`,
+    year: 2000,
+    genre: "Fantasía, Fantasía Épica",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1hc5iqRxRY2y7t0dmxj-I_UD76B1n_Hw_",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1oeAhUvdptdPUi3KNCEODYsAhcbmVuKj6",
+    onlineUrl: "",
+  },
   {
-    id: "47",
+    id: "74",
     title: "The Shadow of What Was Lost",
     author: "James Islington",
     cover: "https://m.media-amazon.com/images/I/51ouHDJYMgL._SY445_SX342_QL70_ML2_.jpg",
@@ -31,7 +78,7 @@ And in the far north, an ancient enemy long thought defeated, begins to stir.`,
     onlineUrl: "",
   },
   {
-    id: "48",
+    id: "75",
     title: "An Echo of Things to Come",
     author: "James Islington",
     cover: "https://m.media-amazon.com/images/I/51S9GNF+AAL._SY445_SX342_QL70_ML2_.jpg",
@@ -46,7 +93,7 @@ Meanwhile, Caeden continues to wrestle with the impossibly heavy burdens of his 
     onlineUrl: "",
   },
   {
-    id: "49",
+    id: "76",
     title: "The Light of All That Falls",
     author: "James Islington",
     cover: "https://m.media-amazon.com/images/I/41EZLbYAspL._SY445_SX342_QL70_ML2_.jpg",

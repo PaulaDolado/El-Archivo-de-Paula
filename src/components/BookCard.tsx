@@ -102,8 +102,8 @@ const BookCard = ({ book, className }: BookCardProps) => {
         <DialogContent
           className={cn(
             "sm:max-w-5xl w-full bg-paper border-gold/30 flex flex-col p-4 md:p-8",
-            "overflow-y-auto",
-            "h-[100dvh] md:h-[600px]"
+            "md:h-[600px] md:overflow-hidden", // Desktop: altura fija, sin scroll
+            "h-[100dvh] overflow-y-auto"       // Móvil: ocupa toda la ventana y scroll si hace falta
           )}
         >
           <DialogHeader className="shrink-0">

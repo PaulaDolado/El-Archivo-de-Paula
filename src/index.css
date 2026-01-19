@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.gradient-header {
+  top: -112px;
+  bottom: -50px;
+}
+
+@media (max-width: 767px) {
+  .gradient-header {
+    top: -112px;
+    bottom: -4px;
+  }
+}
+
 @layer base {
   :root {
     /* Paper & Parchment tones */

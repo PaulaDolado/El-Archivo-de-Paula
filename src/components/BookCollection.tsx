@@ -1134,13 +1134,10 @@ return (
         backgroundSize: 'auto',
       }}>
       {/* Sección de Encabezado */}
-      <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-12">
-        
+      <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-0 md:mb-12">      
         <div 
-          className="absolute inset-y-0 w-full z-0 backdrop-blur-[2px] border-y border-white/5" 
+          className="absolute inset-y-0 w-full z-0 backdrop-blur-[2px] border-y border-white/5 gradient-header"
           style={{
-            top: "-112px", 
-            bottom: -50,  
             left: 0,
             right: 0,
             background: `linear-gradient(to right, 
@@ -1165,7 +1162,7 @@ return (
           {/* Separador y Subtítulo */}
           <div className="flex items-center justify-center gap-4 max-w-3xl mx-auto">
             <div className="h-px flex-1 bg-primary/20" />
-            <span className="font-display text-xs md:text-sm lg:text-base tracking-[0.3em] text-primary/70 uppercase font-medium whitespace-nowrap">
+            <span className="font-display text-xs md:text-sm lg:text-base tracking-[0.3em] text-primary/70 uppercase font-medium whitespace-normal md:whitespace-nowrap">
               Descarga libros en PDF, EPUB o lee online
             </span>
             <div className="h-px flex-1 bg-primary/20" />
@@ -1173,7 +1170,7 @@ return (
         </div>
       </div>
 
-      {/* --- INICIO: Nuevo Contenedor para la Imagen de Fondo Específica del Grid --- */}
+      {/* --- INICIO:  Contenedor para la img Fondo  --- */}
       <div 
         className="max-w-7xl mx-auto rounded-xl shadow-2xl p-6" // Añadimos padding y sombra para destacarlo del fondo general
         style={bookGridBackgroundStyle} // Aplicamos collectionBg2

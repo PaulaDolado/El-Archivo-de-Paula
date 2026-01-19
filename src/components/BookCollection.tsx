@@ -1151,7 +1151,6 @@ return (
         />
 
         {/* Contenido centrado:
-            He reducido el padding (py-4) para que la franja sea estrecha.
         */}
         <div className="relative z-10 max-w-6xl mx-auto px-8 py-4 text-center">
           {/* Título Principal - Tamaño ajustado para ser más compacto */}

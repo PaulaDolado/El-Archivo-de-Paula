@@ -1126,7 +1126,7 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
   };
 
 return (
-    <div className={cn("min-h-screen pt-28 pb-16 px-8 md:px-16",className )}
+    <div className={cn("min-h-screen pt-28 pb-16 px-8 md:px-16 overflow-x-hidden",className )}
       // Este es el fondo GENERAL
       style={{
         backgroundImage: `url(${collectionBg})`, 
@@ -1134,24 +1134,24 @@ return (
         backgroundSize: 'auto',
       }}>
       {/* Sección de Encabezado */}
-      <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-0 md:mb-12">      
-        <div 
-          className="absolute inset-y-0 w-full z-0 backdrop-blur-[2px] border-y border-white/5 gradient-header"
+      <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-3 ">  
+        <div className="absolute inset-y-0 w-screen z-0 backdrop-blur-[2px] border-y border-white/5" 
           style={{
+            top: "-112px", 
+            bottom: -50,  
             left: 0,
             right: 0,
             background: `linear-gradient(to right, 
               transparent 0%, 
-              rgba(247, 225, 185, 0.4) 15%, 
-              rgba(243, 222, 184, 0.85) 50%, 
-              rgba(249, 227, 186, 0.4) 85%,
+              rgba(245, 230, 202, 0.4) 15%, 
+              rgba(245, 230, 202, 0.85) 50%, 
+              rgba(245, 230, 202, 0.4) 85%,
               transparent 100%
             )`
           }}
         />
 
-        {/* Contenido centrado:
-        */}
+        {/* Contenido centrado  */}
         <div className="relative z-10 max-w-6xl mx-auto px-8 py-4 text-center">
           {/* Título Principal - Tamaño ajustado para ser más compacto */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-primary mb-2 animate-fade-in-up drop-shadow-sm">
@@ -1177,7 +1177,7 @@ return (
         {/* Overlay sobre collectionBg2 para mejorar la legibilidad del texto del libro */}
         <div className="rounded-xl" style={gridOverlayStyle}></div> 
 
-        {/* Books Grid - Z-index 10 asegura que esté por encima del overlay */}
+        {/* Books Grid  */}
         <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {filteredBooks.length > 0 ? (
             filteredBooks.map((book, index) => (

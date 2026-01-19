@@ -38,9 +38,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
     "from-indigo-900 to-indigo-800",
     "from-slate-800 to-slate-700",
   ];
-  const colorIndex = parseInt(book.id) % colors.length;
-  // const spineColor = colors[colorIndex]; // Variable no usada en este snippet, pero mantenida por consistencia
-
+  // const colorIndex = parseInt(book.id) % colors.length;
   const handleDownload = (type: 'epub' | 'pdf' | 'online') => {
     // Placeholder URLs - in a real app, these would be actual file URLs
     const urls = {
@@ -101,7 +99,13 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
       {/* Download Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-5xl w-full h-[100vh] md:h-[600px] bg-paper border-gold/30 flex flex-col overflow-y-auto p-4 md:p-8">
+        <DialogContent
+          className={cn(
+            "sm:max-w-5xl w-full bg-paper border-gold/30 flex flex-col p-4 md:p-8",
+            "overflow-y-auto",
+            "h-[100dvh] md:h-[600px]"
+          )}
+        >
           <DialogHeader className="shrink-0">
             <DialogTitle className="font-display text-2xl text-foreground text-center">
               {book.title}
@@ -112,14 +116,12 @@ const BookCard = ({ book, className }: BookCardProps) => {
                 <span className="ml-2" style={{ color: darkGreen }}>
                   (Saga: {book.saga})
                 </span>
-              )
-              }
+              )}
             </p>
           </DialogHeader>
 
           {/* Contenedor principal del grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
             {/* Columna 1: Portada */}
             <div className="md:col-span-1 flex justify-center items-start mb-4 md:mb-0">
               <img

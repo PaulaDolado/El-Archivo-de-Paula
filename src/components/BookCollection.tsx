@@ -164,7 +164,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     id: "70",
     title: "Berserk",
     author: "Kentaro Miura",
-    cover: "https://www.pro-bems.com/IMAGES/images_1/BER07316441/m/BER07316441_1.jpg", 
+    cover: "https://m.media-amazon.com/images/I/51g1rcOeWzL._SY445_SX342_ML2_.jpg", 
     saga: "Tomo 22-28", 
     description: `Guts es un guerrero vestido de negro de los pies a la cabeza que porta una gigantesca espada más larga que su propia estatura y un robusto brazo ortopédico de hierro...
 Berserk es una historia de batallas épicas, de venganzas, de muerte y de luchas por conseguir el poder, por conseguir un nombre en una sociedad noble y despreciativa con las clases “inferiores”. A esto se le une la línea evolutiva que siguen los personajes implicados en la trama y el conocimiento que poco a poco van teniendo los protagonistas sobre ellos mismos y sus motivaciones.

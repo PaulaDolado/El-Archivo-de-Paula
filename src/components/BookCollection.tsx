@@ -76,7 +76,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 1990,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
     epubUrl: "https://www.mediafire.com/file/db0s0fnz3cxm2yr/Berserk_Tomo_01-07.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://www.mediafire.com/file/ybjra2aydo6hq7m/Berserk_Tomo_01-07--ElArchivoDePaula.zip/file",
     onlineUrl: "",
   },
   {

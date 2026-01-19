@@ -128,7 +128,7 @@ const handleCollectionSearchSubmit = (e) => {
             "transition-all duration-300",
             "group-hover:text-white group-hover:translate-x-1"
           )}>
-            <span className="font-body text-sm italic hidden md:block">
+            <span className="font-body text-xs italic block md:block text-center mt-1">
               Pasar página
             </span>
             <ChevronRight 

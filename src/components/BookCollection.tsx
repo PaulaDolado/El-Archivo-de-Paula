@@ -228,7 +228,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     id: "58",
     title: "Vagabond",
     author: "Takehiko Inoue",
-    cover: "https://m.media-amazon.com/images/I/51UWqKOHEsL._SY445_SX342_ML2_.jpg", 
+    cover: "https://m.media-amazon.com/images/I/41KTTjlIwZL._SY445_SX342_ML2_.jpg", 
     saga: "Tomo 01-05", 
     description:"Cuenta la historia del legendario espadachín Musashi Miyamoto, la figura histórica más importante del Japón en lo que se refiere al desarrollo de las técnicas de lucha con espada. Desde su juventud como el violento e iracundo joven llamado Takezo, sobreviviendo (aun estando del lado perdedor) a una de las batallas más sangrientas de la historia: Sekigahara; hasta su decisión de pasar a llamarse Musashi y embarcarse en una búsqueda de autosuperación personal que lo llevará a enfrentarse con los más grandes expertos de las artes marciales del país.",
     year: 1998,

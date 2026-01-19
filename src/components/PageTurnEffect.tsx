@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import BookCollection from "./BookCollection";
 import { ChevronRight, Search } from "lucide-react";
@@ -10,34 +10,39 @@ const PageTurnEffect = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [submittedQuery, setSubmittedQuery] = useState("");
-  const [isScrolled, setIsScrolled] = useState(false); // estado para scroll en móvil
+  const [isScrolled, setIsScrolled] = useState(false); // estado scroll móvil
 
-  // Detectar scroll solo en móvil
+  const scrollContainerRef = useRef(null); // ref contenedor scrollable
+
+  // Detectar scroll en el contenedor solo en móvil
   useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
     const handleScroll = () => {
       if (window.innerWidth < 768) { // breakpoint 'md'
-        setIsScrolled(window.scrollY > 20);
+        setIsScrolled(container.scrollTop > 20);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handlePageTurn = useCallback(() => {
-    if (isAnimating || isPageTurned) return;  
+    if (isAnimating || isPageTurned) return;
     setIsAnimating(true);
     setIsPageTurned(true);
     setSubmittedQuery(searchQuery);
-    
+
     setTimeout(() => {
       setIsAnimating(false);
     }, 800);
   }, [isAnimating, isPageTurned, searchQuery]);
 
   const handleSearchSubmit = (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault(); 
+    if (e.key === "Enter") {
+      e.preventDefault();
       setSubmittedQuery(searchQuery);
       handlePageTurn();
     }
@@ -46,12 +51,12 @@ const PageTurnEffect = () => {
   const handleGoBack = useCallback(() => {
     if (isAnimating) return;
     setIsPageTurned(false);
-    setSubmittedQuery(""); 
-    setSearchQuery(""); 
+    setSubmittedQuery("");
+    setSearchQuery("");
   }, [isAnimating]);
 
   const handleCollectionSearchSubmit = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       setSubmittedQuery(searchQuery);
     }
   };
@@ -68,7 +73,7 @@ const PageTurnEffect = () => {
       </div>
 
       {/* Landing Page (Cover) */}
-      <div 
+      <div
         className={cn(
           "fixed inset-0 ml-8 md:ml-12 z-30 flex flex-col items-center cursor-pointer select-none transition-transform duration-700 ease-in-out",
           isPageTurned && "translate-x-[-100%] opacity-0 pointer-events-none"
@@ -86,7 +91,10 @@ const PageTurnEffect = () => {
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-[0.2em] uppercase text-center mb-6 animate-fade-in-up">
             <span className="text-white">El Archivo de Paula</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-paper/90 text-center mb-12 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p
+            className="font-body text-lg md:text-xl text-paper/90 text-center mb-12 leading-relaxed animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             Una colección personal de libros, historias y mundos por descubrir
           </p>
           <div className="relative w-full max-w-md animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
@@ -104,7 +112,7 @@ const PageTurnEffect = () => {
         </div>
 
         {/* Click hint on right side */}
-        <div 
+        <div
           className="
             absolute right-0 w-1/3 md:w-1/4
             flex justify-end pr-8 cursor-pointer group
@@ -114,36 +122,39 @@ const PageTurnEffect = () => {
           "
           onClick={handlePageTurn}
         >
-          <div className={cn(
-            "flex flex-col items-center gap-3 text-paper/60 transition-all duration-300 group-hover:text-white group-hover:translate-x-1"
-          )}>
-            <span className="font-body text-xs italic block md:block text-center mt-1">
-              Pasar página
-            </span>
-            <ChevronRight 
-              className={cn(
-                "w-8 h-8 transition-transform duration-300 group-hover:scale-110"
-              )} 
+          <div
+            className={cn(
+              "flex flex-col items-center gap-3 text-paper/60 transition-all duration-300 group-hover:text-white group-hover:translate-x-1"
+            )}
+          >
+            <span className="font-body text-xs italic block md:block text-center mt-1">Pasar página</span>
+            <ChevronRight
+              className={cn("w-8 h-8 transition-transform duration-300 group-hover:scale-110")}
             />
           </div>
-          <div className={cn(
-            "absolute inset-0 bg-gradient-to-l from-white/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-          )} />
+          <div
+            className={cn(
+              "absolute inset-0 bg-gradient-to-l from-white/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            )}
+          />
         </div>
 
         <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-black/30 to-transparent" />
       </div>
 
       {/* Book Collection Page (Behind) */}
-      <div 
+      <div
         className={cn(
-          "fixed inset-0 ml-8 md:ml-12 z-20 bg-[#b8ae90] transition-opacity duration-500",  
+          "fixed inset-0 ml-8 md:ml-12 z-20 bg-[#b8ae90] transition-opacity duration-500",
           !isPageTurned && "opacity-0 pointer-events-none",
           isPageTurned && "opacity-100"
         )}
       >
-        <div className="relative h-full overflow-y-auto">
-          <BookCollection className={isPageTurned ? "animate-page-reveal" : ""} searchQuery={submittedQuery} />
+        <div className="relative h-full overflow-y-auto" ref={scrollContainerRef}>
+          <BookCollection
+            className={isPageTurned ? "animate-page-reveal" : ""}
+            searchQuery={submittedQuery}
+          />
         </div>
 
         {/* Botón Volver */}
@@ -153,8 +164,9 @@ const PageTurnEffect = () => {
             "flex items-center gap-2 px-4 py-2 font-display text-sm tracking-wider uppercase transition-all duration-300",
             "text-muted-foreground hover:text-foreground hover:-translate-x-1",
             "top-4 left-4 md:top-6 md:left-20 fixed z-50",
-            // Móvil: esconder al hacer scroll
-            isScrolled ? "translate-y-[-100%] opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
+            isScrolled
+              ? "translate-y-[-120%] opacity-0 pointer-events-none"
+              : "translate-y-0 opacity-100"
           )}
         >
           <ChevronRight className="w-4 h-4 rotate-180" />
@@ -162,10 +174,14 @@ const PageTurnEffect = () => {
         </button>
 
         {/* Buscador Collection */}
-        <div className={cn(
-          "fixed w-full max-w-xs right-4 top-16 md:top-4 md:right-8 transition-all duration-300 z-50",
-          isScrolled ? "translate-y-[-100%] opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
-        )}>
+        <div
+          className={cn(
+            "fixed w-full max-w-xs right-4 top-16 md:top-4 md:right-8 transition-all duration-300 z-50",
+            isScrolled
+              ? "translate-y-[-120%] opacity-0 pointer-events-none"
+              : "translate-y-0 opacity-100"
+          )}
+        >
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
             <Input
@@ -173,7 +189,7 @@ const PageTurnEffect = () => {
               placeholder="Buscar en Mi Colección..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              onKeyDown={handleCollectionSearchSubmit} 
+              onKeyDown={handleCollectionSearchSubmit}
               className="w-full pl-10 py-2 bg-white border border-gray-300 text-gray-800 placeholder:text-gray-500 font-body text-sm rounded-lg focus:border-gold focus:ring-gold/20 shadow-md"
               onClick={(e) => e.stopPropagation()}
             />

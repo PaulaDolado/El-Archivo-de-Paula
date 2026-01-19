@@ -48,7 +48,7 @@ Y mientras la batalla continúa, al norte, más allá del Muro, las fuerzas oscu
     id: "79",
     title: "Tormenta de Espadas",
     author: "George R.R. Martin",
-    cover: "https://m.media-amazon.com/images/I/51h7bx2AjUL._SY445_SX342_ML2_.jpg",
+    cover: "https://pictures.abebooks.com/isbn/9788416035076-es.jpg",
     saga: "Canción de hielo y fuego #03",
     description: `«Se Acerca el Invierno, anunciaba el lema de los Stark, y sin duda había caído con crueldad sobre ellos.»
 El juego de alianzas, traiciones y engaños para hacerse con el Trono de Hierro se vuelve más despiadado tras la muerte del joven rey Renly Baratheon. Aunque la ambición de los que se disputan la victoria no conoce límites, la amenaza más terrible acecha tanto a los cuatro reyes como a un Poniente devastado por el conflicto.

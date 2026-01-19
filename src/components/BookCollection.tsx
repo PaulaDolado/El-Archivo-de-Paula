@@ -12,7 +12,56 @@ interface BookCollectionProps {
   searchQuery?: string;
 }
 
-const sampleBooks: Book[] = [
+const sampleBooks: Book[] = [ 
+  {
+    id: "47",
+    title: "The Shadow of What Was Lost",
+    author: "James Islington",
+    cover: "https://m.media-amazon.com/images/I/51ouHDJYMgL._SY445_SX342_QL70_ML2_.jpg",
+    saga: "The Licanius Trilogy #01", 
+    description: `AS DESTINY CALLS, A JOURNEY BEGINS
+It has been twenty years since the god-like Augurs were overthrown and killed. Now, those who once served them - the Gifted - are spared only because they have accepted the rebellion's Four Tenets, vastly limiting their own powers.
+As a young Gifted, Davian suffers the consequences of a war lost before he was even born. He and others like him are despised. But when Davian discovers he wields the forbidden powers of the Augurs, he sets in motion a chain of events that will change everything.
+To the west, a young man whose fate is intertwined with Davian's wakes up in the forest, covered in blood and with no memory of who he is . . .
+And in the far north, an ancient enemy long thought defeated, begins to stir.`,
+    year: 2014,
+    genre: "Fantasía, Fantasía Épica",
+    epubUrl: "https://drive.google.com/uc?export=download&id=164QB_Kj4lrzSOhZ9rPWYAgxRz-Zlkxy0",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1RJsWqj2jzOPw6IOHIsahZXbM-cHe5qUK",
+    onlineUrl: "",
+  },
+  {
+    id: "48",
+    title: "An Echo of Things to Come",
+    author: "James Islington",
+    cover: "https://m.media-amazon.com/images/I/51S9GNF+AAL._SY445_SX342_QL70_ML2_.jpg",
+    saga: "The Licanius Trilogy #02", 
+    description: `AS SHADOWS RISE, A DARKNESS AWAKES
+In the wake of the devastating attack on Ilin Illan, an amnesty has been declared for all Augurs - finally allowing them to emerge from hiding and openly oppose the dark forces massing against Andarra. However, as Davian and his new allies hurry north towards the ever-weakening Boundary, fresh horrors along their path suggest that their reprieve may have come far too late.
+Meanwhile, Caeden continues to wrestle with the impossibly heavy burdens of his past. Yet as more and more of his memories return, he begins to realise that the motivations of the two sides in this ancient war may not be as clear-cut as they first seemed . . .`,
+    year: 2017,
+    genre: "Fantasía, Fantasía Épica", 
+    epubUrl: "https://drive.google.com/uc?export=download&id=1jZfFeix2aqm3oLAF8FZvgD_3TX5CGmGm",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1r_oGmWi8BU7TSk8I5F5P4iqnvQCReFvn",
+    onlineUrl: "",
+  },
+  {
+    id: "49",
+    title: "The Light of All That Falls",
+    author: "James Islington",
+    cover: "https://m.media-amazon.com/images/I/41EZLbYAspL._SY445_SX342_QL70_ML2_.jpg",
+    saga: "The Licanius Trilogy #03", 
+    description: `The Light of All That Falls concludes the epic adventure that began in The Shadow of What Was Lost, the acclaimed fantasy blockbuster from James Islington.
+The Boundary is whole once again, but it may be too late.
+Banes now stalk Andarra, while in Ilin Illan, the political machinations of a generation come to a head as Wirr's newfound ability forces his family's old enemies into action.
+Imprisoned and alone in a strange land, Davian is pitted against the remaining Venerate as they work tirelessly to undo Asha's sacrifice - even as he struggles with what he has learned about the friend he chose to set free.
+And Caeden, now facing the consequences of his centuries-old plan, must finally confront its reality - heartbroken at how it began, and devastated by how it must end.`,
+    year: 2019,
+    genre: "Fantasía, Fantasía Épica",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1r5yCI3HSxVRdJ5E9NjiGy-fSWZLTdcLq",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1zYGzt4tS9wWCe8YC_WE9TwZvtACMcU2B",
+    onlineUrl: "",
+  },
 {
     id: "67",
     title: "Berserk",
@@ -216,7 +265,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 2011,
     genre: "Cómics manga, novelas gráficas",
     epubUrl: "https://drive.google.com/uc?export=download&id=1GTyPfjYWL3f03MY_gQ7cnugIk-KoiNM7",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1XDCZAehahTJJlKJBbxESVR7kM1fXLw2N",
     onlineUrl: "",
   },
   {
@@ -229,7 +278,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 2013,
     genre: "Cómics manga, novelas gráficas", 
     epubUrl: "https://drive.google.com/uc?export=download&id=1TfAALmNZ13WTO5MvW8nkzGxIl_5Ec1Co",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1uvlmM3v1mXcVPlDYtqABanlU4z2n30XM",
     onlineUrl: "",
   },
   {

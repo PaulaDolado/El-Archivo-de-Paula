@@ -1145,9 +1145,9 @@ return (
             right: 0,
             background: `linear-gradient(to right, 
               transparent 0%, 
-              rgba(245, 230, 202, 0.4) 15%, 
-              rgba(245, 230, 202, 0.85) 50%, 
-              rgba(245, 230, 202, 0.4) 85%,
+              rgba(247, 225, 185, 0.4) 15%, 
+              rgba(243, 222, 184, 0.85) 50%, 
+              rgba(249, 227, 186, 0.4) 85%,
               transparent 100%
             )`
           }}

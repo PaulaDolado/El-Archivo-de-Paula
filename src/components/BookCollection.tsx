@@ -13,6 +13,23 @@ interface BookCollectionProps {
 }
 
 const sampleBooks: Book[] = [
+     {
+    id: "80",
+    title: "El ladrón de lengua negra",
+    author: "Christopher Buehlman",
+    cover: "https://m.media-amazon.com/images/I/81iWL1S5xAL._UF1000,1000_QL80_.jpg",
+    saga: "Canción de hielo y fuego #01",
+    description: `Kinch Na Shannack le debe una pequeña fortuna al Gremio de los Ladrones, que lo educó en las artes del latrocinio; formación que, entre otras cosas, incluye violar cerraduras, luchar con cuchillos, escalar paredes, caer sin hacerse daño, urdir mentiras, tender trampas y utilizar un puñado de conjuros bastante discretos.
+Su deuda le ha llevado a esconderse en el bosque junto a la antigua carretera, acechando y listo para asaltar al primer incauto que se cruce en su camino. Hoy, sin embargo, Kinch Na Shannack ha elegido a la víctima equivocada.
+Galva, una guerrera superviviente de las encarnizadas guerras contra los goblins y leal seguidora de la diosa de la muerte, está buscando a su reina, desaparecida desde que una lejana ciudad
+del norte sucumbiera a los ataques de los gigantes.
+Una vez frustrado su intento de robo y afortunado por haber escapado con vida, Kinch descubre que su destino está ligado al de Galva. Sus enemigos en común, y un cúmulo de amenazas bastante insólitas a las que los dos se enfrentan, empujan al ladrón y a la guerrera a embarcarse en un periplo de épicas dimensiones. Deberán luchar contra goblins hambrientos de carne humana y krakens al acecho en las siniestras profundidades. En este mundo, como comprobarán en el transcurso de sus aventuras, el honor es un lujo que no está al alcance de todos.`,
+    year: 2022,
+    genre: "Fantasía, Aventuras, Humor",
+    epubUrl: "https://drive.google.com/uc?export=download&id=1Pesgdq3HqhvPBWafY-X973zvtnrUVeDe",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1CiiIcZkCvlpQiv0--4jfyIbC8bVNF3LR",
+    onlineUrl: "",
+  },
    {
     id: "77",
     title: "Juego de Tronos",
@@ -140,7 +157,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 1994,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
     epubUrl: "https://www.mediafire.com/file/m8m2q6ea0dpcdqh/Berserk_Tomo_08-14.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://www.mediafire.com/file/0wljxq1gtc1gyy6/Berserk_-_T08-14_--ElArchivoDePaula.zip/file",
     onlineUrl: "",
   },
   {
@@ -157,7 +174,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 1998,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
     epubUrl: "https://www.mediafire.com/file/a8h5bgyijmg8j6z/Berserk_Tomo_15-21.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://www.mediafire.com/file/teiuk2yomsx0205/Berserk+-+T15-21+--ElArchivoDePaula.zip/file",
     onlineUrl: "",
   },
   {
@@ -174,7 +191,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 2001,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen", 
     epubUrl: "https://www.mediafire.com/file/kdjrm1jc5mdsxom/Berserk_Tomo_22-28.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://www.mediafire.com/file/e6u1g5l58hkc5qn/Berserk_-_T22-28_--ElArchivoDePaula.zip/file",
     onlineUrl: "",
   },
   {
@@ -191,7 +208,7 @@ Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman p
     year: 2005,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
     epubUrl: "https://www.mediafire.com/file/p7olqdiumm1iw5m/Berserk_Tomo_29-35.zip/file",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    pdfUrl: "https://www.mediafire.com/file/51nrtpjo5ffjtox/Berserk__T29-35_--ElArchivoDePaula.zip/file",
     onlineUrl: "",
   },
   {
@@ -207,8 +224,8 @@ El protagonista es Gutts (Gatsu), un mercenario que comenzó sus andaduras cuand
 Grifith va a reclutar a Gutts y le hará miembro de su banda, de la que forman parte el resto de los protagonistas: Caska, Judeau, Ricket y Pippin serán los personajes más cercanos a Gutts.`,
     year: 2011,
     genre: "Cómics manga, novelas gráficas, Fantasía oscura, Seinen",
-    epubUrl: "https://drive.google.com/uc?export=download&id=1npWU2iSc6ZwhoaHOJBR2L0v8zXZ00QkA",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=",
+    epubUrl: "https://www.mediafire.com/file/z96i0nm3ijsg5b1/Berserk_T36-42_--_ElArchivoDePaula.zip/file",
+    pdfUrl: "https://www.mediafire.com/file/dqcb42oylt62olf/Berserk_T36-42pdf--_ElArchivoDePaula.zip/file", 
     onlineUrl: "",
   },
   {

@@ -4,7 +4,7 @@ export interface Book {
   author: string;
   cover: string; 
   year?: number;
-  genre?: string;
+  genre?: string[];
   saga?: string;     
   description?: string; 
   epubUrl?: string;

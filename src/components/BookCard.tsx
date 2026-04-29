@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle,} from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Download, BookOpen, FileText, File } from "lucide-react";
+import { useSearchParams } from "react-router-dom"; // Importante para el filtrado
 
 interface Book {
   id: string;
@@ -25,22 +26,20 @@ interface BookCardProps {
 
 const BookCard = ({ book, className }: BookCardProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  // Generate a unique color based on book id for variety
   const darkGreen = '#3e5732ff';
   const darkRed = '#6d0414ff';
 
-  const colors = [
-    "from-leather to-leather-light",
-    "from-amber-900 to-amber-800",
-    "from-emerald-900 to-emerald-800",
-    "from-rose-900 to-rose-800",
-    "from-indigo-900 to-indigo-800",
-    "from-slate-800 to-slate-700",
-  ];
-  // const colorIndex = parseInt(book.id) % colors.length;
+  // Función para filtrar por género
+  const handleGenreClick = (e: React.MouseEvent, genre: string) => {
+    e.stopPropagation(); // Evita que el clic se propague al abrir el diálogo
+    searchParams.set("genre", genre);
+    setSearchParams(searchParams);
+    setIsDialogOpen(false); // Cerramos el modal al filtrar
+  };
+
   const handleDownload = (type: 'epub' | 'pdf' | 'online') => {
-    // Placeholder URLs - in a real app, these would be actual file URLs
     const urls = {
       epub: book.epubUrl || `#download-epub-${book.id}`,
       pdf: book.pdfUrl || `#download-pdf-${book.id}`,
@@ -50,9 +49,8 @@ const BookCard = ({ book, className }: BookCardProps) => {
     if (type === 'online') {
       window.open(urls.online, '_blank');
     } else {
-      // In a real implementation, this would trigger a download
       const link = document.createElement('a');
-      link.href = urls[type];
+      link.href = urls[type] as string;
       link.download = `${book.title}.${type}`;
       link.click();
     }
@@ -63,16 +61,12 @@ const BookCard = ({ book, className }: BookCardProps) => {
     <>
       <div
         className={cn(
-          "group relative cursor-pointer",
-          "transition-all duration-500 ease-out",
-          "hover:-translate-y-2",
+          "group relative cursor-pointer transition-all duration-500 ease-out hover:-translate-y-2",
           className
         )}
         onClick={() => setIsDialogOpen(true)}
       >
-        {/* Book Container */}
         <div className="relative aspect-[3/4]">
-          {/* Cover Image */}
           <img
             src={book.cover}
             alt={`Portada de ${book.title}`}
@@ -80,49 +74,40 @@ const BookCard = ({ book, className }: BookCardProps) => {
           />
         </div>
 
-        {/* Información del libro debajo de la portada */}
         <div className="mt-2 text-center">
-          {/* Título */}
           <h3 className="text-sm font-semibold leading-tight text-foreground line-clamp-2">
             {book.title}
           </h3>
-          {/* Autor */}
-          <p className="text-sm italic mt-0.5">
-            {book.author}
-          </p>
-          {/* Saga */}
-          {book.saga && (<p className="text-sm mt-0.5" style={{ color: darkGreen }}>
-            {book.saga} </p>
+          <p className="text-sm italic mt-0.5">{book.author}</p>
+          {book.saga && (
+            <p className="text-sm mt-0.5" style={{ color: darkGreen }}>
+              {book.saga}
+            </p>
           )}
         </div>
       </div>
 
-      {/* Download Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent
           className={cn(
-            "sm:max-w-5xl w-full bg-paper border-gold/30 flex flex-col p-4 md:p-8",
-            "overflow-y-auto md:overflow-y-hidden",
-            "h-[100dvh] md:h-[600px]"
+            "sm:max-w-5xl w-full bg-paper border-gold/30 flex flex-col p-4 md:p-8 overflow-y-auto md:overflow-y-hidden h-[100dvh] md:h-[600px]"
           )}
         >
           <DialogHeader className="shrink-0">
             <DialogTitle className="font-display text-2xl text-foreground text-center">
               {book.title}
             </DialogTitle>
-            <p className="font-body text-md text-muted-foreground text-center italic mb-4" style={{ color: darkRed }}>
+            <div className="font-body text-md text-center italic mb-4" style={{ color: darkRed }}>
               {book.author}
               {book.saga && (
                 <span className="ml-2" style={{ color: darkGreen }}>
                   (Saga: {book.saga})
                 </span>
               )}
-            </p>
+            </div>
           </DialogHeader>
 
-          {/* Contenedor principal del grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Columna 1: Portada */}
             <div className="md:col-span-1 flex justify-center items-start mb-4 md:mb-0">
               <img
                 src={book.cover}
@@ -131,38 +116,49 @@ const BookCard = ({ book, className }: BookCardProps) => {
               />
             </div>
 
-            {/* Columna 2: Descripción y Botones */}
             <div className="md:col-span-2 flex flex-col flex-1 overflow-hidden">
-
-              {/* Bloque superior: Sinopsis y detalles */}
               <div className="flex flex-col gap-3 shrink-0">
-                <h4 className="font-display text-lg text-gold mb-2 shrink-0" style={{ color: darkRed }}>Sinopsis</h4>
+                <h4 className="font-display text-lg mb-2 shrink-0" style={{ color: darkRed }}>
+                  Sinopsis
+                </h4>
                 <div className="h-[200px] overflow-y-auto pr-4 mb-4 border border-transparent rounded-sm">
-                    <p className="font-body text-base text-foreground/90 whitespace-pre-line" style={{ textAlign: "justify" }}>
+                  <p className="font-body text-base text-foreground/90 whitespace-pre-line" style={{ textAlign: "justify" }}>
                     {book.description || "No hay una descripción disponible para este libro."}
-                    </p>
+                  </p>
                 </div>
 
-                {/* Detalles adicionales (Fijos debajo de la descripción) */}
-                <div className="flex gap-4 text-xs text-muted-foreground shrink-0">
+                {/* Detalles con etiquetas clickeables */}
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground shrink-0">
                   {book.year && <span>Año: {book.year}</span>}
-                  {book.genre && (<span>Género: {book.genre.join(", ")}</span>
-)}
+                  
+                  {book.genre && (
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <span>Género:</span>
+                      {book.genre.map((g) => (
+                        <button
+                          key={g}
+                          onClick={(e) => handleGenreClick(e, g)}
+                          className="px-2 py-0.5 bg-gold/10 border border-gold/20 rounded-full text-[10px] uppercase font-medium hover:bg-gold hover:text-white transition-colors duration-200 cursor-pointer"
+                        >
+                          {g}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <div className="w-full h-px bg-gold/20 my-4 shrink-0" />
               </div>
 
-              {/* Botones de descarga */}
               <div className="flex flex-col gap-3 mt-2 md:mt-0">
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10"
                   onClick={() => handleDownload('epub')}
                   disabled={!book.epubUrl}
                 >
                   <File className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start">
+                  <div className="flex flex-col items-start text-left">
                     <span className="font-display text-sm">Descargar EPUB</span>
                     <span className="font-body text-xs text-muted-foreground">Formato para e-readers</span>
                   </div>
@@ -171,12 +167,12 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10"
                   onClick={() => handleDownload('pdf')}
                   disabled={!book.pdfUrl}
                 >
                   <FileText className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start">
+                  <div className="flex flex-col items-start text-left">
                     <span className="font-display text-sm">Descargar PDF</span>
                     <span className="font-body text-xs text-muted-foreground">Formato universal</span>
                   </div>
@@ -185,12 +181,12 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
+                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10"
                   onClick={() => handleDownload('online')}
                   disabled={!book.onlineUrl}
                 >
                   <BookOpen className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start">
+                  <div className="flex flex-col items-start text-left">
                     <span className="font-display text-sm">Leer Online</span>
                     <span className="font-body text-xs text-muted-foreground">Abrir en nueva pestaña</span>
                   </div>

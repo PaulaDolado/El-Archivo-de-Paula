@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Download, BookOpen, FileText, File } from "lucide-react";
-import { useSearchParams } from "react-router-dom"; // Importante para el filtrado
+import { useSearchParams } from "react-router-dom";
 
 interface Book {
   id: string;
@@ -31,12 +31,11 @@ const BookCard = ({ book, className }: BookCardProps) => {
   const darkGreen = '#3e5732ff';
   const darkRed = '#6d0414ff';
 
-  // Función para filtrar por género
   const handleGenreClick = (e: React.MouseEvent, genre: string) => {
-    e.stopPropagation(); // Evita que el clic se propague al abrir el diálogo
+    e.stopPropagation(); 
     searchParams.set("genre", genre);
     setSearchParams(searchParams);
-    setIsDialogOpen(false); // Cerramos el modal al filtrar
+    setIsDialogOpen(false); 
   };
 
   const handleDownload = (type: 'epub' | 'pdf' | 'online') => {
@@ -59,6 +58,7 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
   return (
     <>
+      {/* VISTA PREVIA (CARD) - Géneros eliminados de aquí */}
       <div
         className={cn(
           "group relative cursor-pointer transition-all duration-500 ease-out hover:-translate-y-2",
@@ -78,15 +78,16 @@ const BookCard = ({ book, className }: BookCardProps) => {
           <h3 className="text-sm font-semibold leading-tight text-foreground line-clamp-2">
             {book.title}
           </h3>
-          <p className="text-sm italic mt-0.5">{book.author}</p>
+          <p className="text-sm italic mt-0.5 text-muted-foreground">{book.author}</p>
           {book.saga && (
-            <p className="text-sm mt-0.5" style={{ color: darkGreen }}>
+            <p className="text-[11px] mt-0.5 font-medium" style={{ color: darkGreen }}>
               {book.saga}
             </p>
           )}
         </div>
       </div>
 
+      {/* VENTANA DETALLE (MODAL) */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent
           className={cn(
@@ -118,80 +119,79 @@ const BookCard = ({ book, className }: BookCardProps) => {
 
             <div className="md:col-span-2 flex flex-col flex-1 overflow-hidden">
               <div className="flex flex-col gap-3 shrink-0">
-                <h4 className="font-display text-lg mb-2 shrink-0" style={{ color: darkRed }}>
+                <h4 className="font-display text-lg mb-1 shrink-0" style={{ color: darkRed }}>
                   Sinopsis
                 </h4>
-                <div className="h-[200px] overflow-y-auto pr-4 mb-4 border border-transparent rounded-sm">
+                <div className="h-[180px] overflow-y-auto pr-4 mb-2 border border-transparent rounded-sm">
                   <p className="font-body text-base text-foreground/90 whitespace-pre-line" style={{ textAlign: "justify" }}>
-                    {book.description || "No hay una descripción disponible para este libro."}
+                    {book.description || "No hay una descripción disponible."}
                   </p>
                 </div>
 
-                {/* Detalles con etiquetas clickeables */}
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground shrink-0">
-                  {book.year && <span>Año: {book.year}</span>}
-                  
-                  {book.genre && (
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      <span>Género:</span>
-                      {book.genre.map((g) => (
-                        <button
-                          key={g}
-                          onClick={(e) => handleGenreClick(e, g)}
-                          className="px-2 py-0.5 bg-gold/10 border border-gold/20 rounded-full text-[10px] uppercase font-medium hover:bg-gold hover:text-white transition-colors duration-200 cursor-pointer"
-                        >
-                          {g}
-                        </button>
-                      ))}
-                    </div>
-                  )}
+                {/* GÉNEROS SOLO VISIBLES AQUÍ COMO ETIQUETAS */}
+                <div className="flex flex-wrap items-center gap-2 my-2">
+                  <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Géneros:</span>
+                  {book.genre?.map((g) => (
+                    <button
+                      key={g}
+                      onClick={(e) => handleGenreClick(e, g)}
+                      className="text-[11px] px-3 py-1 bg-gold/10 border border-gold/30 rounded-full hover:bg-gold hover:text-white transition-all duration-200"
+                    >
+                      {g}
+                    </button>
+                  ))}
                 </div>
 
-                <div className="w-full h-px bg-gold/20 my-4 shrink-0" />
+                <div className="flex gap-4 text-xs text-muted-foreground shrink-0">
+                  {book.year && <span>Año: {book.year}</span>}
+                </div>
+
+                <div className="w-full h-px bg-gold/20 my-2 shrink-0" />
               </div>
 
-              <div className="flex flex-col gap-3 mt-2 md:mt-0">
+              <div className="flex flex-col gap-3 mt-auto">
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10"
+                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10"
                   onClick={() => handleDownload('epub')}
                   disabled={!book.epubUrl}
                 >
                   <File className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="font-display text-sm">Descargar EPUB</span>
-                    <span className="font-body text-xs text-muted-foreground">Formato para e-readers</span>
+                  <div className="flex flex-col items-start">
+                    <span className="font-display text-sm font-bold">Descargar EPUB</span>
+                    <span className="font-body text-xs text-muted-foreground">Para e-readers</span>
                   </div>
                   <Download className="w-4 h-4 ml-auto text-muted-foreground" />
                 </Button>
 
                 <Button
                   variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10"
+                  className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10"
                   onClick={() => handleDownload('pdf')}
                   disabled={!book.pdfUrl}
                 >
                   <FileText className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="font-display text-sm">Descargar PDF</span>
-                    <span className="font-body text-xs text-muted-foreground">Formato universal</span>
+                  <div className="flex flex-col items-start">
+                    <span className="font-display text-sm font-bold">Descargar PDF</span>
+                    <span className="font-body text-xs text-muted-foreground">Universal</span>
                   </div>
                   <Download className="w-4 h-4 ml-auto text-muted-foreground" />
                 </Button>
 
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10"
-                  onClick={() => handleDownload('online')}
-                  disabled={!book.onlineUrl}
-                >
-                  <BookOpen className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start text-left">
-                    <span className="font-display text-sm">Leer Online</span>
-                    <span className="font-body text-xs text-muted-foreground">Abrir en nueva pestaña</span>
-                  </div>
-                  <BookOpen className="w-4 h-4 ml-auto text-muted-foreground" />
-                </Button>
+                {book.onlineUrl && (
+                  <Button
+                    variant="outline"
+                    className="w-full justify-start gap-3 py-6 border-gold/30 hover:bg-gold/10"
+                    onClick={() => handleDownload('online')}
+                  >
+                    <BookOpen className="w-5 h-5 text-gold" />
+                    <div className="flex flex-col items-start">
+                      <span className="font-display text-sm font-bold">Leer Online</span>
+                      <span className="font-body text-xs text-muted-foreground">Abrir visor</span>
+                    </div>
+                    <BookOpen className="w-4 h-4 ml-auto text-muted-foreground" />
+                  </Button>
+                )}
               </div>
             </div>
           </div>

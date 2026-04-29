@@ -26,8 +26,8 @@ del norte sucumbiera a los ataques de los gigantes.
 Una vez frustrado su intento de robo y afortunado por haber escapado con vida, Kinch descubre que su destino está ligado al de Galva. Sus enemigos en común, y un cúmulo de amenazas bastante insólitas a las que los dos se enfrentan, empujan al ladrón y a la guerrera a embarcarse en un periplo de épicas dimensiones. Deberán luchar contra goblins hambrientos de carne humana y krakens al acecho en las siniestras profundidades. En este mundo, como comprobarán en el transcurso de sus aventuras, el honor es un lujo que no está al alcance de todos.`,
     year: 2022,
     genre: "Fantasía, Aventuras, Humor",
-    epubUrl: "https://drive.google.com/uc?export=download&id=1Pesgdq3HqhvPBWafY-X973zvtnrUVeDe",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=1CiiIcZkCvlpQiv0--4jfyIbC8bVNF3LR",
+    epubUrl: "https://drive.google.com/uc?export=download&id=14QJmGY0FA31s554NpWSxHMaEMckknWF8",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=14Qgl_P99yHsuzRZxI1G7XLCG2NdGNycI",
     onlineUrl: "",
   },
    {

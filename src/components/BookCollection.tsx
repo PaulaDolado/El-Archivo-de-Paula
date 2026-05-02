@@ -2,7 +2,7 @@
   import BookCard from "./BookCard";
   import { Book } from "@/interfaces/book";
   import { useMemo } from "react";
-  import { useSearchParams } from "react-router-dom";
+  import { useNavigate, useSearchParams } from "react-router-dom";
   import collectionBg from "@/assets/collection-bg.jpeg";
   import collectionBg2 from "@/assets/collection2-bg.jpeg";
 
@@ -1153,12 +1153,48 @@
 
   const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectionProps) => {
     const [params] = useSearchParams();
-    const SearchQuery = incomingQuery ?? params.get("q") ?? "";
-    const genreFilter = params.get("genre") ?? "";
+    const navigate = useNavigate();
 
-    const filteredBooks = useMemo(() => { 
-      const query = SearchQuery.toLowerCase().trim();
-      const genre = genreFilter.toLowerCase().trim();
+    const SearchQuery = incomingQuery ?? params.get("q") ?? "";
+    const genreParam = params.get("genre") ?? "";
+
+    const normalize = (str) =>
+    str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); //quita accentos
+
+    const selectedGenres = useMemo(() => {
+    return genreParam
+      ? genreParam.split(",").map((g) => g.toLowerCase())
+      : [];
+  }, [genreParam]);
+
+  const genres = useMemo(() => {
+    return Array.from(
+      new Set(sampleBooks.flatMap((book) => book.genre || []))
+    );
+  }, []);
+
+  const toggleGenre = (genre: string) => {
+    const normalized = normalize(genre);
+
+    let updated = [...selectedGenres];
+
+    if (updated.includes(normalized)) {
+      updated = updated.filter((g) => g !== normalized);
+    } else {
+      updated.push(normalized);
+    }
+
+    const params = new URLSearchParams();
+
+    if (SearchQuery) params.set("q", SearchQuery);
+    if (updated.length > 0) params.set("genre", updated.join(","));
+
+    navigate(`?${params.toString()}`);
+  };
+
+  // 🔍 Filtro final
+  const filteredBooks = useMemo(() => {
+    const query = SearchQuery.toLowerCase().trim();
 
     return sampleBooks.filter((book) => {
       const matchesSearch =
@@ -1167,11 +1203,15 @@
         book.author.toLowerCase().includes(query);
 
       const matchesGenre =
-        !genre || (book.genre && book.genre.some((g) => g.toLowerCase() === genre));
+        selectedGenres.length === 0 ||
+        (book.genre &&
+          book.genre.some((g) =>
+            selectedGenres.includes(normalize(g))
+          ));
 
       return matchesSearch && matchesGenre;
     });
-  }, [SearchQuery, genreFilter]);
+  }, [SearchQuery, selectedGenres]);
 
     // Estilos CSS para el fondo de la CUADRÍCULA DE LIBROS (collectionBg2)
     const bookGridBackgroundStyle = {
@@ -1226,7 +1266,6 @@
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-primary mb-2 animate-fade-in-up drop-shadow-sm">
               Mi Colección
             </h1>
-
             {/* Separador y Subtítulo */}
             <div className="flex items-center justify-center gap-4 max-w-3xl mx-auto">
               <div className="h-px flex-1 bg-primary/20" />
@@ -1237,6 +1276,44 @@
             </div>
           </div>
         </div>
+
+        {/* 🎬 FILTRO TIPO NETFLIX */}
+      <div className="max-w-7xl mx-auto mb-6 px-2">
+        <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+
+          <button
+            onClick={() => navigate(SearchQuery ? `?q=${SearchQuery}` : "")}
+            className={cn(
+              "px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all",
+              selectedGenres.length === 0
+                ? "bg-primary text-white shadow-md scale-105"
+                : "bg-white/80 text-gray-700 hover:bg-white"
+            )}
+          >
+            Todos
+          </button>
+
+          {genres.map((genre) => {
+            const isActive = selectedGenres.includes(normalize(genre));
+
+            return (
+              <button
+                key={genre}
+                onClick={() => toggleGenre(genre)}
+                className={cn(
+                  "px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all duration-200 border border-black/10",
+                  isActive
+                    ? "bg-primary text-white shadow-md scale-105"
+                    : "bg-white/80 text-gray-700 hover:bg-white hover:scale-105"
+                )}
+              >
+                {genre}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
 
         {/* --- INICIO:  Contenedor para la img Fondo  --- */}
         <div 

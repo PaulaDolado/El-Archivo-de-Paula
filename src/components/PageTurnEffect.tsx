@@ -11,6 +11,7 @@ const PageTurnEffect = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [submittedQuery, setSubmittedQuery] = useState("");
   const [isScrolled, setIsScrolled] = useState(false); // estado scroll móvil
+  const [selectedGenre, setSelectedGenre] = useState("");
 
   const scrollContainerRef = useRef(null); // ref contenedor scrollable
 

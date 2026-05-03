@@ -1275,9 +1275,7 @@
               <div className="h-px flex-1 bg-primary/20" />
             </div>
           </div>
-        </div>
-
-        {/* 🎬 FILTRO TIPO NETFLIX */}
+          {/* 🎬 FILTRO TIPO NETFLIX */}
       <div className="max-w-7xl mx-auto mb-6 px-2">
         <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
 
@@ -1313,7 +1311,7 @@
           })}
         </div>
       </div>
-
+        </div>
 
         {/* --- INICIO:  Contenedor para la img Fondo  --- */}
         <div 

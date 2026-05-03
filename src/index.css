@@ -279,6 +279,13 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-button {
     display: none;
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
 }
 
 /* 3. La barra que se mueve (el thumb) */

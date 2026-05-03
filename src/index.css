@@ -290,6 +290,6 @@ body {
 
 /* 3. La barra que se mueve (el thumb) */
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888; /* Color gris sólido o con alpha */
+  background: #6d0414ff; 
   border-radius: 10px;
 }

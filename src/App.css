@@ -44,10 +44,9 @@ body {
   color: #888;
 }
 
-/* Configuración mínima para .custom-scrollbar */
 
-.custom-scrollbar::-webkit-scrollbar-button {
-  display: none;
+::-webkit-scrollbar-button {
+    display: none;
 }
 
 /* 3. La barra que se mueve (el thumb) */

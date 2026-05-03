@@ -353,7 +353,7 @@
       saga: "The Dresden Files #1", 
       description:"As a professional wizard, Harry Dresden knows firsthand that the “everyday” world is actually full of strange and magical things—and most of them don’t play well with humans. And those that do enjoy playing with humans far too much. He also knows he’s the best at what he does. Technically, he’s the only at what he does. But even though Harry is the only game in town, business—to put it mildly—stinks. So when the Chicago P.D. bring him in to consult on a double homicide committed with black magic, Harry's seeing dollar signs. But where there's black magic, there's a black mage behind it. And now that mage knows Harry's name...",
       year: 2000,
-      genre: ["Fantasía", "Ficción", "Magia"], 
+      genre: ["Fantasía", "Ciencia Ficción", "Magia"], 
       epubUrl: "https://drive.google.com/uc?export=download&id=1VrzR756E7_OrKRzXoJ59FrxsdkTZarnC",
       pdfUrl: "https://drive.google.com/uc?export=download&id=10yQsfMZ84YyPo5SAvhVe9eHzrkh1XNsl",
       onlineUrl: "",

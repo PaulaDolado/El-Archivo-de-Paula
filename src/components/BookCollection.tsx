@@ -1275,7 +1275,7 @@
             </div>
           </div>
           {/* FILTRO genero */}
-      <div className="relative z-20 max-w-7xl mx-auto mb-6 px-2 pb-0">
+      <div className="relative z-20 max-w-7xl mx-auto px-2">
         <div className="flex gap-2 overflow-x-auto custom-scrollbar pb-2">
 
           <button

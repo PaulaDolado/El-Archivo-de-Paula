@@ -1299,7 +1299,7 @@
                 key={genre}
                 onClick={() => toggleGenre(genre)}
                 className={cn(
-                  "px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all duration-200 border border-black/10",
+                  "relative z-20 px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all duration-200 border border-black/10",
                   isActive
                     ? "bg-primary text-white shadow-md scale-105"
                     : "bg-white/80 text-gray-700 hover:bg-white hover:scale-105"
@@ -1315,8 +1315,8 @@
 
         {/* --- INICIO:  Contenedor para la img Fondo  --- */}
         <div 
-          className="max-w-7xl mx-auto rounded-xl shadow-2xl p-6" // Añadimos padding y sombra para destacarlo del fondo general
-          style={bookGridBackgroundStyle} // Aplicamos collectionBg2
+          className="max-w-7xl mx-auto rounded-xl shadow-2xl p-6" 
+          style={bookGridBackgroundStyle}
         >
           {/* Overlay sobre collectionBg2 para mejorar la legibilidad del texto del libro */}
           <div className="rounded-xl" style={gridOverlayStyle}></div> 

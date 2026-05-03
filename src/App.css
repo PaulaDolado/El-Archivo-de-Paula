@@ -44,35 +44,26 @@ body {
   color: #888;
 }
 
-/* 1. Definimos el tamaño total de la barra (solo altura para scroll horizontal) */
+/* Configuración mínima para .custom-scrollbar */
+
+/* 1. Definir el grosor de la barra */
 .custom-scrollbar::-webkit-scrollbar {
-  height: 6px;
+  height: 5px; /* Scroll horizontal fino */
+  width: 5px;  /* Scroll vertical fino */
 }
 
-/* 2. El 'Track' es la base por donde se desliza la barra */
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
+/* 2. Ocultar los botones (flechas) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
 }
 
-/* 3. El 'Thumb' es la barra que el usuario arrastra */
+/* 3. La barra que se mueve (el thumb) */
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.25);
+  background: #888; /* Color gris sólido o con alpha */
   border-radius: 10px;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* 🔥 LA CLAVE: Oculta las flechas de los extremos */
-.custom-scrollbar::-webkit-scrollbar-button {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-/* Opcional: Compatibilidad para Firefox */
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+/* 4. Fondo invisible */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
 }

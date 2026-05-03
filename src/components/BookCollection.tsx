@@ -236,7 +236,7 @@
       saga: "Cronicas de Los Caballeros Bastardos #01", 
       description:"La vida de un huérfano suele ser dura y breve en Camorr, una ciudad de canales, palacios y templos, construida sobre las ruinas de una raza desaparecida. Sin embargo, su rápida inteligencia y un innato talento para el robo permiten a Locke Lamora sobrevivir y ser recogido por un sacerdote ciego que ni es sacerdote ni ciego, que transmitirá sus extraordinarias habilidades a su familia de «huérfanos»: los Caballeros Bastardos. Pronto no estará a salvo la riqueza de ningún noble de Camorr, dominio de Locke. Pero la aparición de un oscuro personaje desencadena una guerra por el control de los bajos fondos de la ciudad. Atrapados en un juego mortal, el ingenio y la lealtad de Locke y sus amigos serán sometidos a prueba en su lucha por la vida.",
       year: 2006,
-      genre: ["Fantasía Urbana", "Fantasía de Picaresca/Estafas"],
+      genre: ["Fantasía Urbana", "Fantasía Picaresca/Estafas"],
       epubUrl: "https://drive.google.com/uc?export=download&id=1PQZuR7UJYbr9LEZ_IeTAKfrjt3z6cshL",
       pdfUrl: "https://drive.google.com/uc?export=download&id=1dB2xS0wXvD11qETvVRKmFQiISTxT9xIQ",
       onlineUrl: "",

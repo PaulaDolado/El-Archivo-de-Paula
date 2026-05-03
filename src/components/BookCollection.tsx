@@ -1244,7 +1244,7 @@
         }}>
         {/* Sección de Encabezado */}
         <div className="relative w-screen left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] mb-3 ">  
-          <div className="absolute z-0 backdrop-blur-[2px] border-y border-white/5 w-screen
+          <div className="absolute z-0 backdrop-blur-[2px] border-y border-white/5 w-screen pointer-events-none
                 top-[-112px] bottom-[-20px] 
                 md:top-[-112px] md:bottom-[-15px]"
             style={{  

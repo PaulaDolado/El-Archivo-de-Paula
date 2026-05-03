@@ -1275,9 +1275,9 @@
               <div className="h-px flex-1 bg-primary/20" />
             </div>
           </div>
-          {/* 🎬 FILTRO TIPO NETFLIX */}
+          {/* FILTRO generoX */}
       <div className="relative z-20 max-w-7xl mx-auto mb-6 px-2">
-        <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+        <div className="flex gap-2 overflow-x-auto custom-scrollbar pb-2">
 
           <button
             onClick={() => navigate(SearchQuery ? `?q=${SearchQuery}` : "")}

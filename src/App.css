@@ -45,13 +45,4 @@ body {
 }
 
 
-::-webkit-scrollbar-button {
-    display: none;
-}
-
-/* 3. La barra que se mueve (el thumb) */
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888; /* Color gris sólido o con alpha */
-  border-radius: 10px;
-}
 

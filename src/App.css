@@ -46,13 +46,6 @@ body {
 
 /* Configuración mínima para .custom-scrollbar */
 
-/* 1. Definir el grosor de la barra */
-.custom-scrollbar::-webkit-scrollbar {
-  height: 5px; /* Scroll horizontal fino */
-  width: 5px;  /* Scroll vertical fino */
-}
-
-/* 2. Ocultar los botones (flechas) */
 .custom-scrollbar::-webkit-scrollbar-button {
   display: none;
 }
@@ -63,7 +56,3 @@ body {
   border-radius: 10px;
 }
 
-/* 4. Fondo invisible */
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}

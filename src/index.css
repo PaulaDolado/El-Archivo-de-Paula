@@ -283,7 +283,7 @@ body {
     height: 0;
 }
 
-::-webkit-scrollbar {
+.custom-scrollbar::-webkit-scrollbar {
     width: 10px; 
     height: 10px;
 }

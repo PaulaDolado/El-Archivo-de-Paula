@@ -1230,7 +1230,6 @@
       right: 0,
       bottom: 0,
       backgroundColor: "rgba(0, 0, 0, 0.1)",
-      // El overlay z-index = 1, el contenido del grid --> 2 o+
       zIndex: 1, 
     };
 
@@ -1275,9 +1274,9 @@
               <div className="h-px flex-1 bg-primary/20" />
             </div>
           </div>
-          {/* FILTRO generoX */}
+          {/* FILTRO genero */}
       <div className="relative z-20 max-w-7xl mx-auto mb-6 px-2">
-        <div className="flex gap-2 overflow-x-auto custom-scrollbar pb-2">
+        <div className="flex gap-2 overflow-x-auto custom-scrollbar">
 
           <button
             onClick={() => navigate(SearchQuery ? `?q=${SearchQuery}` : "")}

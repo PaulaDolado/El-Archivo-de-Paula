@@ -1,6 +1,7 @@
 import { Book } from "@/interfaces/book";
 
 export const books: Book[] = [
+
       {
       id: "80",
       title: "El ladrón de lengua negra",

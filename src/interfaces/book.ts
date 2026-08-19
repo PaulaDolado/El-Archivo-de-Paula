@@ -9,5 +9,4 @@ export interface Book {
   description?: string; 
   epubUrl?: string;
   pdfUrl?: string;
-  onlineUrl?: string;
 }

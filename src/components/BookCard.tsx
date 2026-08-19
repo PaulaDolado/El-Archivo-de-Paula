@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Button } from "./ui/button";
-import { Download, BookOpen, FileText, File } from "lucide-react";
+import { Download, FileText, File } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
 
 interface Book {
@@ -16,7 +16,6 @@ interface Book {
   description?: string;
   epubUrl?: string;
   pdfUrl?: string;
-  onlineUrl?: string;
 }
 
 interface BookCardProps {
@@ -38,21 +37,16 @@ const BookCard = ({ book, className }: BookCardProps) => {
     setIsDialogOpen(false);
   };
 
-  const handleDownload = (type: 'epub' | 'pdf' | 'online') => {
+  const handleDownload = (type: 'epub' | 'pdf') => {
     const urls = {
       epub: book.epubUrl || `#download-epub-${book.id}`,
       pdf: book.pdfUrl || `#download-pdf-${book.id}`,
-      online: book.onlineUrl || `#read-online-${book.id}`,
     };
 
-    if (type === 'online') {
-      window.open(urls.online, '_blank');
-    } else {
-      const link = document.createElement('a');
-      link.href = urls[type] as string;
-      link.download = `${book.title}.${type}`;
-      link.click();
-    }
+    const link = document.createElement('a');
+    link.href = urls[type];
+    link.download = `${book.title}.${type}`;
+    link.click();
     setIsDialogOpen(false);
   };
 
@@ -181,19 +175,6 @@ const BookCard = ({ book, className }: BookCardProps) => {
                   <Download className="w-4 h-4 ml-auto text-muted-foreground" />
                 </Button>
 
-                <Button
-                  variant="outline"
-                  className="w-full justify-start gap-3 py-4 border-gold/30 hover:bg-gold/10 hover:border-gold/50 hover:text-current"
-                  onClick={() => handleDownload('online')}
-                  disabled={!book.onlineUrl}
-                >
-                  <BookOpen className="w-5 h-5 text-gold" />
-                  <div className="flex flex-col items-start">
-                    <span className="font-display text-sm">Leer Online</span>
-                    <span className="font-body text-xs text-muted-foreground">Abrir en nueva pestaña</span>
-                  </div>
-                  <BookOpen className="w-4 h-4 ml-auto text-muted-foreground" />
-                </Button>
               </div>
             </div>
           </div>

@@ -23,7 +23,7 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
 
   const selectedGenres = useMemo(() => {
     return genreParam
-      ? genreParam.split(",").map((g) => g.toLowerCase())
+      ? genreParam.split(",").map((g) => normalize(g))
       : [];
   }, [genreParam]);
 

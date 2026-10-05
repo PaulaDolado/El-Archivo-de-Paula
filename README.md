@@ -2,7 +2,7 @@
 
 Biblioteca personal en forma de web: una colección de libros navegable, con búsqueda por título/autor y filtro por género, y acceso directo a la descarga en EPUB o PDF de cada uno.
 
-**Demo:** https://pauladolado.github.io/El-Archivo-de-Paula/
+🔗 **Sitio en vivo:** https://pauladolado.github.io/El-Archivo-de-Paula/
 
 ## Tecnologías
 

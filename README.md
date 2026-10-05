@@ -29,7 +29,6 @@
 - [Gestión del catálogo](#gestión-del-catálogo)
 - [Búsqueda y filtros por URL](#búsqueda-y-filtros-por-url)
 - [Despliegue](#despliegue)
-- [Contribuir](#contribuir)
 - [Licencia](#licencia)
 
 ## Sobre el proyecto

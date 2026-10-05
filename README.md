@@ -39,14 +39,14 @@ El catálogo se define íntegramente en un único archivo de datos tipado, por l
 
 ## Funcionalidades
 
-- 📖 **Portada interactiva** con animación de paso de página hacia la colección.
-- 🔍 **Búsqueda por título o autor**, disponible tanto en la portada como dentro de la colección.
-- 🏷️ **Filtro por género** con selección múltiple; los géneros se generan automáticamente a partir del catálogo.
-- 🗂️ **Ficha de detalle** en un diálogo modal: sinopsis, año, saga y géneros clicables.
-- ⬇️ **Descarga en EPUB y PDF**; los botones se desactivan si el formato no está disponible.
-- 🔗 **Estado en la URL**: búsquedas y filtros se reflejan en los parámetros de la URL, de modo que se pueden compartir.
-- 📱 **Diseño responsive**, con controles que se ocultan al hacer scroll en móvil.
-- 🌐 **SEO y redes sociales**: metadatos Open Graph y Twitter Card, y títulos gestionados con `react-helmet-async`.
+- **Portada interactiva** con animación de paso de página hacia la colección.
+- **Búsqueda por título o autor**, disponible tanto en la portada como dentro de la colección.
+- **Filtro por género** con selección múltiple; los géneros se generan automáticamente a partir del catálogo.
+- **Ficha de detalle** en un diálogo modal: sinopsis, año, saga y géneros clicables.
+- **Descarga en EPUB y PDF**; los botones se desactivan si el formato no está disponible.
+- **Estado en la URL**: búsquedas y filtros se reflejan en los parámetros de la URL, de modo que se pueden compartir.
+- **Diseño responsive**, con controles que se ocultan al hacer scroll en móvil.
+- **SEO y redes sociales**: metadatos Open Graph y Twitter Card, y títulos gestionados con `react-helmet-async`.
 
 ## Stack tecnológico
 

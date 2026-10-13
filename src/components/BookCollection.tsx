@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import BookCard from "./BookCard";
 import { books } from "@/data/books";
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { Check, ChevronLeft, ChevronRight, X } from "lucide-react";
 import collectionBg from "@/assets/collection-bg.jpeg";
 
 interface BookCollectionProps {
@@ -26,23 +27,31 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
       : [];
   }, [genreParam]);
 
+  // Géneros únicos (sin distinguir tildes ni mayúsculas) con su nº de libros,
+  // ordenados de más a menos libros
   const genres = useMemo(() => {
-    return Array.from(
-      new Set(books.flatMap((book) => book.genre || []))
+    const byKey = new Map<string, { label: string; count: number }>();
+
+    books.forEach((book) => {
+      const seen = new Set<string>();
+
+      (book.genre || []).forEach((label) => {
+        const key = normalize(label);
+        if (seen.has(key)) return;
+        seen.add(key);
+
+        const entry = byKey.get(key);
+        if (entry) entry.count++;
+        else byKey.set(key, { label, count: 1 });
+      });
+    });
+
+    return Array.from(byKey, ([key, value]) => ({ key, ...value })).sort(
+      (a, b) => b.count - a.count || a.label.localeCompare(b.label, "es")
     );
   }, []);
 
-  const toggleGenre = (genre: string) => {
-    const normalized = normalize(genre);
-
-    let updated = [...selectedGenres];
-
-    if (updated.includes(normalized)) {
-      updated = updated.filter((g) => g !== normalized);
-    } else {
-      updated.push(normalized);
-    }
-
+  const updateGenres = (updated: string[]) => {
     const params = new URLSearchParams();
 
     if (SearchQuery) params.set("q", SearchQuery);
@@ -50,6 +59,60 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
 
     navigate(`?${params.toString()}`);
   };
+
+  const toggleGenre = (key: string) => {
+    updateGenres(
+      selectedGenres.includes(key)
+        ? selectedGenres.filter((g) => g !== key)
+        : [...selectedGenres, key]
+    );
+  };
+
+  // Flechas y degradados del carrusel de géneros
+  const genreScrollRef = useRef<HTMLDivElement>(null);
+  const [canScroll, setCanScroll] = useState({ left: false, right: false });
+
+  useEffect(() => {
+    const el = genreScrollRef.current;
+    if (!el) return;
+
+    const update = () =>
+      setCanScroll({
+        left: el.scrollLeft > 4,
+        right: el.scrollLeft + el.clientWidth < el.scrollWidth - 4,
+      });
+
+    update();
+    document.fonts?.ready.then(update);
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    el.addEventListener("scroll", update, { passive: true });
+    return () => {
+      observer.disconnect();
+      el.removeEventListener("scroll", update);
+    };
+  }, []);
+
+  const scrollGenres = (direction: 1 | -1) => {
+    const el = genreScrollRef.current;
+    el?.scrollBy({ left: direction * el.clientWidth * 0.7, behavior: "smooth" });
+  };
+
+  const genreFadeMask = `linear-gradient(to right, transparent 0, #000 ${canScroll.left ? 48 : 0}px, #000 calc(100% - ${canScroll.right ? 48 : 0}px), transparent 100%)`;
+
+  const chipClass = (isActive: boolean) =>
+    cn(
+      "inline-flex items-center gap-1.5 shrink-0 px-4 py-1.5 rounded-full border font-body text-base font-semibold whitespace-nowrap transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
+      isActive
+        ? "bg-primary text-primary-foreground border-primary shadow-md"
+        : "bg-[#f5ecd9]/90 text-primary border-primary/20 hover:bg-[#fffaf0] hover:border-primary/40 hover:-translate-y-0.5 hover:shadow-sm"
+    );
+
+  const countClass = (isActive: boolean) =>
+    cn(
+      "min-w-[1.5rem] px-1.5 rounded-full text-xs font-body leading-5 text-center",
+      isActive ? "bg-white/20" : "bg-primary/10 text-primary/80"
+    );
 
   // 🔍 Filtro final
   const filteredBooks = useMemo(() => {
@@ -145,40 +208,77 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
           </div>
         </div>
         {/* FILTRO genero */}
-        <div className="relative z-20 max-w-7xl mx-auto px-2">
-          <div className="flex gap-2 overflow-x-auto custom-scrollbar pb-2">
-
+        <div className="relative z-20 max-w-7xl mx-auto pl-10 md:pl-14 pr-6 md:pr-10">
+          <div className="flex items-center gap-2" role="group" aria-label="Filtrar por género">
             <button
-              onClick={() => navigate(SearchQuery ? `?q=${SearchQuery}` : "")}
-              className={cn(
-                "px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all",
-                selectedGenres.length === 0
-                  ? "bg-primary text-white shadow-md scale-105"
-                  : "bg-white/80 text-gray-700 hover:bg-white"
-              )}
+              onClick={() => updateGenres([])}
+              aria-pressed={selectedGenres.length === 0}
+              className={chipClass(selectedGenres.length === 0)}
             >
               Todos
+              <span className={countClass(selectedGenres.length === 0)}>{books.length}</span>
             </button>
 
-            {genres.map((genre) => {
-              const isActive = selectedGenres.includes(normalize(genre));
+            <div className="h-6 w-px shrink-0 bg-primary/25" />
 
-              return (
+            <div className="relative flex-1 min-w-0">
+              {canScroll.left && (
                 <button
-                  key={genre}
-                  onClick={() => toggleGenre(genre)}
-                  className={cn(
-                    "relative z-20 px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all duration-200 border border-black/10",
-                    isActive
-                      ? "bg-primary text-white shadow-md scale-105"
-                      : "bg-white/80 text-gray-700 hover:bg-white hover:scale-105"
-                  )}
+                  onClick={() => scrollGenres(-1)}
+                  aria-label="Ver géneros anteriores"
+                  className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-30 h-8 w-8 items-center justify-center rounded-full bg-[#f5ecd9] border border-primary/30 text-primary shadow-md hover:bg-white transition-colors"
                 >
-                  {genre}
+                  <ChevronLeft className="h-4 w-4" />
                 </button>
-              );
-            })}
+              )}
+
+              <div
+                ref={genreScrollRef}
+                className="flex gap-2 overflow-x-auto py-2 px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                style={{ maskImage: genreFadeMask, WebkitMaskImage: genreFadeMask }}
+              >
+                {genres.map(({ key, label, count }) => {
+                  const isActive = selectedGenres.includes(key);
+
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => toggleGenre(key)}
+                      aria-pressed={isActive}
+                      className={chipClass(isActive)}
+                    >
+                      {isActive && <Check className="h-3.5 w-3.5" />}
+                      {label}
+                      <span className={countClass(isActive)}>{count}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {canScroll.right && (
+                <button
+                  onClick={() => scrollGenres(1)}
+                  aria-label="Ver más géneros"
+                  className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 h-8 w-8 items-center justify-center rounded-full bg-[#f5ecd9] border border-primary/30 text-primary shadow-md hover:bg-white transition-colors"
+                >
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+              )}
+            </div>
           </div>
+
+          {selectedGenres.length > 0 && (
+            <div className="flex justify-center">
+              <button
+                onClick={() => updateGenres([])}
+                className="inline-flex items-center gap-1 font-body text-sm italic text-primary/80 hover:text-primary underline-offset-4 hover:underline"
+              >
+                <X className="h-3.5 w-3.5" />
+                Quitar filtros ({selectedGenres.length}) · {filteredBooks.length}{" "}
+                {filteredBooks.length === 1 ? "libro" : "libros"}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

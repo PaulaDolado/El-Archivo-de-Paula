@@ -4,7 +4,6 @@ import { books } from "@/data/books";
 import { useMemo } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import collectionBg from "@/assets/collection-bg.jpeg";
-import collectionBg2 from "@/assets/collection2-bg.jpeg";
 
 interface BookCollectionProps {
   className?: string;
@@ -73,24 +72,35 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
     });
   }, [SearchQuery, selectedGenres]);
 
-  // Estilos CSS para el fondo de la CUADRÍCULA DE LIBROS (collectionBg2)
-  const bookGridBackgroundStyle = {
-    backgroundImage: `url(${collectionBg2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    position: "relative" as const,
-  };
+  // Textura de papel/papiro: grano fino + fibras horizontales
+  const paperTexture = `url("data:image/svg+xml,${encodeURIComponent(
+    `<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'>
+      <filter id='grano'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/>
+        <feColorMatrix values='0 0 0 0 0.45  0 0 0 0 0.33  0 0 0 0 0.18  0 0 0 0.55 0'/>
+      </filter>
+      <filter id='fibras'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.012 0.35' numOctaves='2' stitchTiles='stitch'/>
+        <feColorMatrix values='0 0 0 0 0.5  0 0 0 0 0.38  0 0 0 0 0.2  0 0 0 0.35 0'/>
+      </filter>
+      <rect width='100%' height='100%' filter='url(#grano)' opacity='0.35'/>
+      <rect width='100%' height='100%' filter='url(#fibras)' opacity='0.5'/>
+    </svg>`
+  )}")`;
 
-  // El overlay para oscurecer la imagen del grid y hacer el texto legible
-  const gridOverlayStyle = {
-    position: "absolute" as const,
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.1)",
-    zIndex: 1,
+  // Estilos CSS para el fondo de la CUADRÍCULA DE LIBROS (papel crema envejecido)
+  const bookGridBackgroundStyle = {
+    backgroundColor: "#ece0c4",
+    backgroundImage: [
+      paperTexture,
+      "radial-gradient(ellipse at 20% 15%, rgba(255, 250, 235, 0.55), transparent 55%)",
+      "radial-gradient(ellipse at 85% 80%, rgba(160, 120, 70, 0.18), transparent 60%)",
+      "radial-gradient(ellipse at 70% 25%, rgba(180, 140, 85, 0.12), transparent 50%)",
+    ].join(", "),
+    boxShadow:
+      "inset 0 0 60px rgba(120, 80, 40, 0.35), inset 0 0 12px rgba(100, 60, 30, 0.25), 0 25px 50px -12px rgba(0, 0, 0, 0.45)",
+    border: "1px solid rgba(109, 4, 20, 0.15)",
+    position: "relative" as const,
   };
 
   return (
@@ -177,9 +187,6 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
         className="max-w-7xl mx-auto rounded-xl shadow-2xl p-6"
         style={bookGridBackgroundStyle}
       >
-        {/* Overlay sobre collectionBg2 para mejorar la legibilidad del texto del libro */}
-        <div className="rounded-xl" style={gridOverlayStyle}></div>
-
         {/* Books Grid  */}
         <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {filteredBooks.length > 0 ? (
@@ -208,6 +215,27 @@ const BookCollection = ({ className, searchQuery: incomingQuery }: BookCollectio
           <div className="w-2 h-2 rotate-45 bg-[#6d0414]/60" />
           <div className="w-12 h-px bg-[#6d0414]/40" />
         </div>
+      </div>
+
+      {/* Footer links */}
+      <div className="w-fit mx-auto mt-6 mb-8 px-6 py-3 rounded-xl bg-[#f5ecd9]/95 border border-[#6d0414]/20 shadow-lg flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 font-body text-base italic">
+        <a
+          href="https://github.com/PaulaDolado?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#6d0414] underline-offset-4 hover:underline transition-colors"
+        >
+          Ver más proyectos propios
+        </a>
+        <div className="hidden sm:block w-1.5 h-1.5 rotate-45 bg-[#6d0414]/60" />
+        <a
+          href="https://pauladolado.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#6d0414] underline-offset-4 hover:underline transition-colors"
+        >
+          Saber más de mí
+        </a>
       </div>
     </div>
   );
